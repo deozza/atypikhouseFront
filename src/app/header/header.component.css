@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+li {
+  margin: 20px;
+  list-style: none;
+}
+#home {
+  position: absolute;
+  left: 5%;
+}
