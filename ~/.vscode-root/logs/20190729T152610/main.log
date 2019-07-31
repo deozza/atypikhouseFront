@@ -3,3 +3,31 @@
 [2019-07-29 15:26:40.595] [main] [info] update#setState idle
 [2019-07-29 16:26:40.501] [main] [info] update#setState checking for updates
 [2019-07-29 16:26:40.813] [main] [info] update#setState idle
+[2019-07-29 17:14:56.932] [main] [error] Backup: Could not save workspaces.json: Error: ENOENT: no such file or directory, open '/Users/amy/Desktop/atypikhouse-app/~/.vscode-root/Backups/workspaces.json'
+[2019-07-29 17:14:58.248] [main] [error] Error: ENOENT: no such file or directory, open '/Users/amy/Desktop/atypikhouse-app/~/.vscode-root/storage.json'
+    at Object.openSync (original-fs.js:436:3)
+    at Object.t.writeFileSync (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:146:560)
+    at d.saveSync (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:301:3)
+    at d.setItem (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:300:822)
+    at e.setItem (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:301:335)
+    at e.updateMenu (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:342:726)
+    at a.updateMenubar (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:354:366)
+    at i.call (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:245:204)
+    at _.onPromise (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:169:384)
+    at _.onRawMessage (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:169:13)
+    at protocolListener.protocol.onMessage.e (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:168:552)
+    at u.fire (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:54:760)
+    at e (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:50:408)
+    at u.fire (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:54:760)
+    at e (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:50:554)
+    at u.fire (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:54:760)
+    at EventEmitter.n (/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-main/main.js:52:206)
+    at EventEmitter.emit (events.js:182:13)
+    at WebContents.<anonymous> (/Applications/Visual Studio Code.app/Contents/Resources/electron.asar/browser/api/web-contents.js:347:13)
+    at WebContents.emit (events.js:182:13)
+[2019-07-29 17:15:11.185] [main] [error] Backup: Could not save workspaces.json: Error: ENOENT: no such file or directory, open '/Users/amy/Desktop/atypikhouse-app/~/.vscode-root/Backups/workspaces.json'
+[2019-07-29 17:18:37.199] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?)). Details: Keys: extensionsAssistant/recommendations Length: 104
+[2019-07-29 17:18:47.344] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?)). Details: Keys: extensionsAssistant/recommendations Length: 104
+[2019-07-29 17:28:58.815] [main] [info] update#setState checking for updates
+[2019-07-29 17:28:58.949] [main] [info] update#setState idle
+[2019-07-29 17:37:40.682] [main] [error] Error: ENOENT: no such file or directory, unlink '/Users/amy/Desktop/atypikhouse-app/~/.vscode-root/User/globalStorage/state.vscdb'

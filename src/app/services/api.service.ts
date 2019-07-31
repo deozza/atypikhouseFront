@@ -11,24 +11,16 @@ export class ApiService {
   registerUrl = 'http://localhost:8000/api/token';
 
   constructor(private http: HttpClient, private auth: AuthService) {}
+  authorization = this.auth.getToken();
   httpOptions = {
     headers: new HttpHeaders({
       'Access-Control-Allow-Headers' : 'origin, Authorization',
       'Access-Control-Allow-Origin' : '*',
       'Content-Type': 'application/json',
-      Authorization: 'token_userActif'
-
-
+      Authorization: this.authorization
     })
 
   };
-
-
-
-
-
-
-
 
   get(id: string, url: string, callback) {
     this.http.get(`${this.endpoint}/${url}/${id}`)
@@ -38,11 +30,10 @@ export class ApiService {
   }
 
   getList(url: string, callback) {
-    this.http.get(`${this.endpoint}/${url}`, this.httpOptions)
+    this.http.get(`${this.endpoint}/${url}`)
     .subscribe(response => {
       callback(response);
-    },
-    error => console.error(error.message));
+    });
   }
 
   addItem(url: string, value: any, callback) {

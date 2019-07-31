@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ export class AuthService {
 
   storageKey: string = 'token_userActive';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   setToken(token: string) {
     localStorage.setItem(this.storageKey, token);
@@ -24,6 +25,7 @@ export class AuthService {
 
   logout() {
     localStorage.removeItem(this.storageKey);
+    this.router.navigate(['/login']);
   }
 
 }

@@ -2,6 +2,7 @@
     "telemetry.machineId": "316b908de8edfef4f8604619637153d823ecbc729ecd8c5cb06d5b80a71743a8",
     "openedPathsList": {
         "workspaces3": [
+            "file:///Users/amy/Desktop/atypikhouseFront",
             "file:///Users/amy/Desktop/atypikhouse-app"
         ],
         "files2": []
@@ -45,7 +46,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/amy/Desktop/atypikhouse-app",
+                                        "fsPath": "/Users/amy/Desktop/atypikhouseFront",
+                                        "external": "file:///Users/amy/Desktop/atypikhouseFront",
+                                        "path": "/Users/amy/Desktop/atypikhouseFront",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/atypikhouseFront"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///Users/amy/Desktop/atypikhouse-app",
                                         "path": "/Users/amy/Desktop/atypikhouse-app",
                                         "scheme": "file"
@@ -309,7 +321,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -760,8 +773,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"

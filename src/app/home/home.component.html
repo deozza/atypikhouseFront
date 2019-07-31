@@ -1,1 +1,8 @@
-<p>home works!</p>
+
+<input [(ngModel)]="searchTerm" placeholder="search text goes here">
+
+<div class="home" >
+<app-estate *ngFor="let estate of filteredList" [estate]="estate" #childComponent></app-estate>
+</div>
+
+

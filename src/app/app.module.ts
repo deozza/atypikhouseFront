@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
-import { ApiService } from 'services/api.service';
-import { AuthService } from 'services/auth.service';
+import { ApiService } from 'src/app/services/api.service';
+import { AuthService } from 'src/app/services/auth.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +16,10 @@ import { NewHoteComponent } from './new-hote/new-hote.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { BookingComponent } from './booking/booking.component';
+import { FilterPipe} from './filter.pipe';
+import { Pipe, PipeTransform } from '@angular/core';
+import { EstateComponent } from './estate/estate.component';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { BookingComponent } from './booking/booking.component';
     HelpComponent,
     HomeComponent,
     BookingComponent,
+    EstateComponent,
 
   ],
   imports: [
@@ -37,12 +42,15 @@ import { BookingComponent } from './booking/booking.component';
     BrowserAnimationsModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    MatCardModule,
   ],
 
   providers: [
     ApiService,
-    AuthService
+    AuthService,
+    FilterPipe
   ],
   bootstrap: [AppComponent]
 })
