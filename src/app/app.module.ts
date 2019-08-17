@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,12 @@ import { BookingComponent } from './booking/booking.component';
 import { FilterPipe} from './filter.pipe';
 import { Pipe, PipeTransform } from '@angular/core';
 import { EstateComponent } from './estate/estate.component';
+import { UploadFileComponent } from './upload-file/upload-file.component';
+import { FileUploadModule} from 'ng2-file-upload';
+import { AddEstateComponent } from './add-estate/add-estate.component';
+import { UserComponent } from './user/user.component';
+import { GetUsersComponent } from './get-users/get-users.component';
+import { RequestPasswordComponent } from './request-password/request-password.component';
 
 
 @NgModule({
@@ -33,6 +39,12 @@ import { EstateComponent } from './estate/estate.component';
     HomeComponent,
     BookingComponent,
     EstateComponent,
+    UploadFileComponent,
+    AddEstateComponent,
+    UserComponent,
+    GetUsersComponent,
+    RequestPasswordComponent,
+    
 
   ],
   imports: [
@@ -45,6 +57,8 @@ import { EstateComponent } from './estate/estate.component';
     AppRoutingModule,
     MatIconModule,
     MatCardModule,
+    FileUploadModule,
+    ReactiveFormsModule
   ],
 
   providers: [

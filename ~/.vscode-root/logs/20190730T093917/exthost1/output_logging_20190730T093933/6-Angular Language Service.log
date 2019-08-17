@@ -11001,3 +11001,2537 @@ getTemplateReferences: 0ms
 updating project structure from ...
 updated: ng - 242ms
 getDiagnostics: 62ms
+getHoverAt: 2ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 102ms
+getDiagnostics: 105ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+updated: ng - 394ms
+getDiagnostics: 110ms
+getCompletions: 72ms
+getDiagnostics: 37ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 37ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 45ms
+getDiagnostics: 10ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 178ms
+getDiagnostics: 36ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 58ms
+updating project structure from ...
+updated: ng - 82ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 386ms
+getCompletions: 74ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 46ms
+getCompletions: 44ms
+getCompletions: 54ms
+getDiagnostics: 8ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 187ms
+getDiagnostics: 34ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getCompletions: 33ms
+getDiagnostics: 41ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 173ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 63ms
+getCompletions: 39ms
+getDiagnostics: 38ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 162ms
+getHoverAt: 0ms
+getDiagnostics: 31ms
+getHoverAt: 1ms
+getCompletions: 74ms
+getDiagnostics: 33ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 128ms
+getHoverAt: 0ms
+getDiagnostics: 34ms
+getCompletions: 52ms
+getDiagnostics: 32ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 104ms
+getDiagnostics: 30ms
+getHoverAt: 0ms
+getDiagnostics: 31ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 97ms
+getDiagnostics: 54ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file/upload-file.component.spec.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file/upload-file.component.ts
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 227ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 388ms
+getTemplateReferences: 0ms
+getDiagnostics: 16ms
+getDiagnostics: 126ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 122ms
+getDiagnostics: 164ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 121ms
+getDiagnostics: 35ms
+getCompletions: 88ms
+getDiagnostics: 153ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 104ms
+getDiagnostics: 56ms
+getCompletions: 110ms
+getDiagnostics: 135ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 129ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 94ms
+getDiagnostics: 44ms
+getHoverAt: 13ms
+getHoverAt: 10ms
+getDiagnostics: 91ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 108ms
+getDiagnostics: 35ms
+getDiagnostics: 173ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getHoverAt: 181ms
+getHoverAt: 7ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 11ms
+getDiagnostics: 15ms
+getDiagnostics: 144ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 182ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 169ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 16ms
+getDiagnostics: 100ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 109ms
+getDiagnostics: 39ms
+getDiagnostics: 105ms
+getDiagnostics: 179ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 118ms
+getDiagnostics: 40ms
+getHoverAt: 5ms
+getHoverAt: 4ms
+getCompletions: 120ms
+getDiagnostics: 14ms
+getDiagnostics: 179ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 110ms
+getDiagnostics: 31ms
+getDiagnostics: 103ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 118ms
+getDiagnostics: 55ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 171ms
+getDiagnostics: 62ms
+getDiagnostics: 110ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getHoverAt: 107ms
+updating project structure from ...
+getTemplateReferences: 50ms
+updated: ng - 0ms
+getDiagnostics: 7ms
+getHoverAt: 121ms
+getDiagnostics: 50ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getHoverAt: 76ms
+getHoverAt: 110ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 6ms
+getCompletions: 131ms
+getCompletions: 196ms
+getCompletions: 86ms
+getCompletions: 225ms
+getCompletions: 91ms
+getCompletions: 145ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 89ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 2ms
+getHoverAt: 3ms
+getHoverAt: 3ms
+getHoverAt: 3ms
+getHoverAt: 5ms
+getCompletions: 145ms
+getCompletions: 183ms
+getDiagnostics: 9ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 164ms
+getDiagnostics: 39ms
+getCompletions: 93ms
+getDiagnostics: 62ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 121ms
+getDiagnostics: 67ms
+getDiagnostics: 68ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 159ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 147ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 174ms
+getDiagnostics: 36ms
+getDiagnostics: 95ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 174ms
+getDiagnostics: 48ms
+getDiagnostics: 107ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 118ms
+getDiagnostics: 62ms
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/index.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/index.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/ng2-file-upload.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-drop.directive.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-item.class.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-like-object.class.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-select.directive.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-type.class.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-upload.module.d.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/node_modules/.staging/ng2-file-upload-ae405ab6/file-upload/file-uploader.class.d.ts
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 13ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 302ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 271ms
+getDiagnostics: 40ms
+getHoverAt: 0ms
+getDiagnostics: 35ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 681ms
+getDiagnostics: 58ms
+getDiagnostics: 36ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 173ms
+getDiagnostics: 64ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 191ms
+getDiagnostics: 47ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getCompletions: 41ms
+getDiagnostics: 59ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 250ms
+getDiagnostics: 317ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 127ms
+getDiagnostics: 43ms
+getDiagnostics: 38ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 291ms
+getDiagnostics: 46ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getCompletions: 42ms
+getDiagnostics: 46ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 192ms
+getDiagnostics: 39ms
+getDiagnostics: 45ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 241ms
+getDiagnostics: 41ms
+getHoverAt: 0ms
+getDiagnostics: 32ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 139ms
+getDiagnostics: 47ms
+getDiagnostics: 50ms
+getDiagnostics: 47ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 234ms
+getDiagnostics: 37ms
+getDiagnostics: 57ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 172ms
+getDiagnostics: 35ms
+getDiagnostics: 37ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 114ms
+getDiagnostics: 35ms
+getDiagnostics: 120ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 247ms
+getDiagnostics: 47ms
+getDiagnostics: 76ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 123ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 15ms
+getHoverAt: 3ms
+getHoverAt: 8ms
+getDiagnostics: 118ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 157ms
+getDiagnostics: 201ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 177ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 233ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 339ms
+getDiagnostics: 94ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 81ms
+getDiagnostics: 323ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 200ms
+getDiagnostics: 30ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 121ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 152ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getDiagnostics: 78ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 138ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 1ms
+getDiagnostics: 153ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 323ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 113ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 156ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 9ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 84ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 172ms
+updating project structure from ...
+getTemplateReferences: 1ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getHoverAt: 0ms
+getDiagnostics: 131ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 162ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 85ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 148ms
+getDiagnostics: 119ms
+getDiagnostics: 136ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 95ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 141ms
+getDiagnostics: 103ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 161ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 69ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 120ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 72ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 144ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 73ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 130ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 71ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 128ms
+getDiagnostics: 85ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 315ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 118ms
+getDiagnostics: 27ms
+getDiagnostics: 64ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 118ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getDiagnostics: 126ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 227ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getCompletions: 53ms
+getDiagnostics: 145ms
+getDiagnostics: 281ms
+getDiagnostics: 90ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 237ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getCompletions: 46ms
+getDiagnostics: 77ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 138ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 97ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 145ms
+updating project structure from ...
+getTemplateReferences: 1ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 72ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 131ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getCompletions: 30ms
+getDiagnostics: 227ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 366ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 49ms
+getDiagnostics: 68ms
+getDiagnostics: 160ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 124ms
+getDiagnostics: 44ms
+getCompletions: 31ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 135ms
+getDiagnostics: 27ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 156ms
+getHoverAt: 22ms
+getHoverAt: 11ms
+getHoverAt: 10ms
+getHoverAt: 10ms
+getHoverAt: 12ms
+getCompletions: 141ms
+getDiagnostics: 64ms
+getDiagnostics: 154ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 101ms
+getDiagnostics: 58ms
+getCompletions: 93ms
+getDiagnostics: 50ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 289ms
+getCompletions: 182ms
+getDiagnostics: 143ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 156ms
+getDiagnostics: 62ms
+getDiagnostics: 124ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 149ms
+getDiagnostics: 62ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getCompletions: 71ms
+getDiagnostics: 91ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 172ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getDiagnostics: 1ms
+getCompletions: 30ms
+getDiagnostics: 63ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 127ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 84ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 326ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 97ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 169ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 1ms
+getDiagnostics: 79ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 165ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+getDiagnostics: 58ms
+updating project structure from ...
+getTemplateReferences: 49ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 167ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 140ms
+getHoverAt: 1ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getDiagnostics: 1ms
+getDiagnostics: 73ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 123ms
+getDiagnostics: 70ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 360ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getDiagnostics: 2ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getDiagnostics: 156ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 143ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 1ms
+getDiagnostics: 2ms
+getHoverAt: 0ms
+getCompletions: 43ms
+getDiagnostics: 72ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 117ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 2ms
+getDiagnostics: 71ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 146ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 90ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 148ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getCompletions: 54ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 122ms
+getDiagnostics: 57ms
+getDiagnostics: 72ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 132ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 89ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 109ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+getDiagnostics: 82ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 134ms
+getDiagnostics: 0ms
+updating project structure from ...
+getTemplateReferences: 1ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 99ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 235ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 75ms
+getCompletions: 50ms
+getDiagnostics: 192ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 183ms
+getCompletions: 27ms
+getDiagnostics: 148ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 53ms
+getDiagnostics: 65ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 447ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 72ms
+getDiagnostics: 152ms
+updating project structure from ...
+getTemplateReferences: 31ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 122ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 142ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 59ms
+getHoverAt: 1ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 298ms
+getDiagnostics: 2ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getDiagnostics: 96ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 133ms
+getHoverAt: 1ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 73ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 134ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 85ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 147ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 30ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 40ms
+getDiagnostics: 39ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 80ms
+getDiagnostics: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 1ms
+getDiagnostics: 36ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 152ms
+getDiagnostics: 49ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 24ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 125ms
+getDiagnostics: 26ms
+getHoverAt: 0ms
+getDiagnostics: 30ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 47ms
+getDiagnostics: 26ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 159ms
+getHoverAt: 0ms
+getDiagnostics: 62ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getCompletions: 33ms
+getDiagnostics: 34ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 163ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 278ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 27ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 46ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 154ms
+getDiagnostics: 38ms
+getCompletions: 28ms
+getDiagnostics: 28ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 133ms
+getDiagnostics: 34ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getDiagnostics: 48ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 132ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 149ms
+getHoverAt: 1ms
+getDefinitionAt: 0ms
+getDiagnostics: 28ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 149ms
+getDiagnostics: 38ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 22ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 0ms
+getDiagnostics: 34ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 139ms
+getDiagnostics: 38ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 23ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 194ms
+getDiagnostics: 155ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/model
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 106ms
+getDiagnostics: 46ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 12ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 39ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 366ms
+getDiagnostics: 86ms
+getDiagnostics: 56ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 247ms
+getDiagnostics: 56ms
+getDiagnostics: 33ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 135ms
+getDiagnostics: 28ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getDiagnostics: 41ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 185ms
+getDiagnostics: 62ms
+getDiagnostics: 34ms
+getDiagnostics: 61ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 10ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 150ms
+getDiagnostics: 199ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 235ms
+getDiagnostics: 37ms
+getHoverAt: 0ms
+getCompletions: 29ms
+getDiagnostics: 7ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 207ms
+getDiagnostics: 47ms
+getDiagnostics: 31ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 191ms
+getDiagnostics: 49ms
+getDiagnostics: 37ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+updated: ng - 282ms
+getDiagnostics: 46ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 148ms
+getDiagnostics: 165ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 207ms
+getCompletions: 227ms
+getDiagnostics: 143ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 362ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 267ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 219ms
+getHoverAt: 3ms
+getHoverAt: 0ms
+getDiagnostics: 59ms
+getDiagnostics: 40ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 62ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 370ms
+getDiagnostics: 199ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 42ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 207ms
+getDiagnostics: 88ms
+getDiagnostics: 40ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 178ms
+getDiagnostics: 51ms
+getDiagnostics: 33ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 138ms
+getDiagnostics: 27ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 10ms
+getHoverAt: 69ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 321ms
+getDiagnostics: 1ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 118ms
+getHoverAt: 45ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 130ms
+getHoverAt: 164ms
+getDiagnostics: 49ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 339ms
+getDiagnostics: 165ms
+getDiagnostics: 34ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 156ms
+getDiagnostics: 28ms
+getHoverAt: 0ms
+getCompletions: 45ms
+getDiagnostics: 8ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 209ms
+getDiagnostics: 29ms
+getHoverAt: 0ms
+getDiagnostics: 52ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 120ms
+getDiagnostics: 27ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 236ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 299ms
+getHoverAt: 8ms
+getHoverAt: 8ms
+getHoverAt: 10ms
+getDiagnostics: 207ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 139ms
+getDiagnostics: 79ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 298ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 6ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 13ms
+getDiagnostics: 141ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 133ms
+updating project structure from ...
+getTemplateReferences: 1ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 54ms
+getDiagnostics: 162ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 458ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 78ms
+getCompletions: 70ms
+getDiagnostics: 80ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 140ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 136ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 373ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 58ms
+getDiagnostics: 76ms
+updating project structure from ...
+getTemplateReferences: 64ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 154ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 132ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 2ms
+getDiagnostics: 73ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 109ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getCompletions: 44ms
+getDiagnostics: 147ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 330ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 49ms
+getDiagnostics: 96ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 351ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 266ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 444ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 98ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 116ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 273ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 56ms
+updating project structure from ...
+getTemplateReferences: 38ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 54ms
+getDiagnostics: 155ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 331ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getCompletions: 83ms
+getDiagnostics: 95ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 201ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 163ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 585ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 2ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getCompletions: 28ms
+getDiagnostics: 51ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 149ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 78ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 168ms
+getHoverAt: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getCompletions: 38ms
+getDiagnostics: 41ms
+getCompletions: 44ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 373ms
+getDiagnostics: 157ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 220ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 245ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 321ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getCompletions: 31ms
+getDiagnostics: 133ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 147ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 86ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 419ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 109ms
+updating project structure from ...
+getTemplateReferences: 51ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 18ms
+getHoverAt: 10ms
+getHoverAt: 13ms
+getDiagnostics: 192ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 230ms
+getDiagnostics: 170ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 116ms
+updating project structure from ...
+getTemplateReferences: 68ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 22ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 19ms
+getDiagnostics: 135ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 127ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getCompletions: 166ms
+getDiagnostics: 137ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 209ms
+getDiagnostics: 41ms
+getHoverAt: 7ms
+getHoverAt: 6ms
+getHoverAt: 6ms
+getHoverAt: 12ms
+getHoverAt: 5ms
+getCompletions: 96ms
+getDiagnostics: 205ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 137ms
+getDiagnostics: 37ms
+getDiagnostics: 75ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 127ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 16ms
+getDiagnostics: 81ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 121ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 1ms
+updated: ng - 0ms
+getCompletions: 91ms
+getDiagnostics: 161ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 112ms
+getDiagnostics: 289ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 162ms
+getDiagnostics: 42ms
+getHoverAt: 6ms
+getHoverAt: 7ms
+getCompletions: 73ms
+getDiagnostics: 39ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 207ms
+getDiagnostics: 67ms
+getHoverAt: 31ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 17ms
+getDiagnostics: 78ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 161ms
+getTemplateReferences: 0ms
+getDiagnostics: 137ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 343ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 16ms
+getDiagnostics: 6ms
+getHoverAt: 10ms
+getHoverAt: 8ms
+getDiagnostics: 71ms
+getHoverAt: 46ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getHoverAt: 90ms
+updating project structure from ...
+getTemplateReferences: 72ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 11ms
+getDiagnostics: 145ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 127ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 22ms
+getDiagnostics: 136ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 202ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 18ms
+getHoverAt: 8ms
+getHoverAt: 4ms
+getDiagnostics: 75ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 146ms
+getTemplateReferences: 0ms
+getDiagnostics: 94ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 257ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 25ms
+getCompletions: 263ms
+getDiagnostics: 154ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 101ms
+getDiagnostics: 57ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 262ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 126ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 132ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getCompletions: 50ms
+getDiagnostics: 162ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 220ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 149ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 452ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getDiagnostics: 119ms
+getCompletions: 38ms
+getDiagnostics: 164ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 316ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 359ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 2ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 136ms
+getDiagnostics: 231ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getCompletions: 52ms
+getDiagnostics: 275ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 574ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 122ms
+getHoverAt: 1ms
+updating project structure from ...
+getTemplateReferences: 53ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getDiagnostics: 126ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 135ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getCompletions: 68ms
+getDiagnostics: 76ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 458ms
+getDiagnostics: 78ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 190ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 108ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 216ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 73ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+updating project structure from ...
+getTemplateReferences: 36ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 89ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 118ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getCompletions: 47ms
+getDiagnostics: 38ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 143ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 79ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 134ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getHoverAt: 0ms
+getDefinitionAt: 1ms
+getHoverAt: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 76ms
+getHoverAt: 65ms
+getHoverAt: 12ms
+getHoverAt: 15ms
+getHoverAt: 12ms
+getDiagnostics: 189ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 159ms
+getDiagnostics: 59ms
+getHoverAt: 10ms
+getHoverAt: 13ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 0ms
+getHoverAt: 1ms
+getHoverAt: 1ms
+getHoverAt: 0ms
+getCompletions: 67ms
+getDiagnostics: 59ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 138ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 90ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 146ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 1ms
+getDiagnostics: 101ms
+getDiagnostics: 186ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 244ms
+getDiagnostics: 35ms
+getHoverAt: 15ms
+getHoverAt: 20ms
+getHoverAt: 23ms
+getHoverAt: 0ms
+getHoverAt: 12ms
+getHoverAt: 20ms
+getCompletions: 147ms
+getDiagnostics: 7ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 113ms
+updating project structure from ...
+getTemplateReferences: 89ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+getDiagnostics: 170ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 293ms
+getCompletions: 302ms
+getCompletions: 375ms
+getDiagnostics: 34ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 514ms
+getDiagnostics: 6ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 552ms
+getDiagnostics: 26ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 231ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 145ms
+getDiagnostics: 90ms
+getHoverAt: 19ms
+getHoverAt: 23ms
+getHoverAt: 18ms
+getDiagnostics: 112ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 122ms
+getDiagnostics: 59ms
+getHoverAt: 20ms
+getHoverAt: 12ms
+getDiagnostics: 150ms
+getDiagnostics: 187ms
+getCompletions: 180ms
+getDiagnostics: 11ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 94ms
+getDiagnostics: 55ms
+getDiagnostics: 105ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 90ms
+getDiagnostics: 98ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 101ms
+getCompletions: 207ms
+getDiagnostics: 5ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 128ms
+getDiagnostics: 38ms
+getCompletions: 264ms
+getDiagnostics: 9ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 153ms
+getDiagnostics: 68ms
+getDiagnostics: 128ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 272ms
+getCompletions: 551ms
+getDiagnostics: 9ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 229ms
+getDiagnostics: 46ms
+getCompletions: 216ms
+getDiagnostics: 12ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 158ms
+getCompletions: 476ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 75ms
+updating project structure from ...
+getTemplateReferences: 57ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 148ms
+getDiagnostics: 138ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 100ms
+getDiagnostics: 51ms
+getCompletions: 156ms
+getDiagnostics: 7ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 157ms
+getDiagnostics: 44ms
+getDiagnostics: 95ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 119ms
+getDiagnostics: 60ms
+getHoverAt: 13ms
+getCompletions: 119ms
+getDiagnostics: 173ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 128ms
+getDiagnostics: 216ms
+getDiagnostics: 260ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 315ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 1ms
+updated: ng - 0ms
+getDiagnostics: 399ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 186ms
+getDiagnostics: 71ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 173ms
+getHoverAt: 14ms
+getHoverAt: 13ms
+getHoverAt: 10ms
+getHoverAt: 9ms
+getHoverAt: 10ms
+getHoverAt: 22ms
+getHoverAt: 10ms
+getHoverAt: 9ms
+getHoverAt: 25ms
+getHoverAt: 17ms
+getHoverAt: 10ms
+getHoverAt: 9ms
+getHoverAt: 7ms
+getHoverAt: 9ms
+getHoverAt: 5ms
+getCompletions: 157ms
+getDiagnostics: 155ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 245ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getHoverAt: 373ms
+getHoverAt: 152ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 1ms
+getDiagnostics: 43ms
+getDiagnostics: 147ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 185ms
+getDiagnostics: 93ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 215ms
+getHoverAt: 7ms
+getHoverAt: 6ms
+getHoverAt: 7ms
+getCompletions: 159ms
+getDiagnostics: 67ms
+getCompletions: 123ms
+getDiagnostics: 65ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getCompletions: 113ms
+getDiagnostics: 61ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/upload-file
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updating project structure from ...
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+updated: ng - 220ms
+getDiagnostics: 126ms
+getHoverAt: 7ms
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate/add-estate.component.spec.ts
+Detected source file changes: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate/add-estate.component.ts
+getTemplateReferences: 0ms
+updating project structure from ...
+updated: ng - 284ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 397ms
+getDiagnostics: 2ms
+getDiagnostics: 75ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 283ms
+getCompletions: 0ms
+getDiagnostics: 165ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 471ms
+updating project structure from ...
+updated: ng - 0ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 87ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/add-estate
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 150ms
+updating project structure from ...
+updated: ng - 0ms
+getDiagnostics: 1ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/services
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 9ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 16ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 114ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getDiagnostics: 24ms
+Search path: /Users/amy/Desktop/atypikhouseFront/src/app/home
+Config file name: /Users/amy/Desktop/atypikhouseFront/tsconfig.json
+getTemplateReferences: 0ms
+getTemplateReferences: 0ms
+getDiagnostics: 145ms

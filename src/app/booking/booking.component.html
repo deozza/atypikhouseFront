@@ -1,1 +1,29 @@
-<p>booking works!</p>
+<div class="container">
+    <form>
+        <div>
+          <label for="nb__">Nombre de personnes</label>
+          <input type="text" name="nb_people" id="nb_people" [(ngModel)]="booking.nb_people">
+        </div>
+        <div>
+          <label for="coming_at">Date d'arrivee</label>
+          <input type="date" name="coming_at" id="coming_at" [(ngModel)]="booking.coming_at">
+        </div>
+        <div>
+          <label for="leaving_at">Date de depart</label>
+          <input type="date" name="leaving_at" id="leaving_at" [(ngModel)]="booking.leaving_at">
+        </div>
+        <div>
+          <label for="more">Prix</label>
+          <input type="number" name="total_price" id="total_price" [(ngModel)]="booking.total_price">
+        </div>
+
+        <div>
+            <label for="more">Message</label>
+            <input type="text" name="more" id="more" [(ngModel)]="booking.more">
+          </div>
+
+        <div>
+          <button id="btn" type="submit" (click)="save()">Reserver</button>
+        </div>
+      </form>
+</div>

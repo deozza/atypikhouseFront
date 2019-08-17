@@ -1,0 +1,106 @@
+<form>
+    <div class="row">
+        <div class="input-field col s6">
+          <input name="title" id="title" type="text" class="validate" [(ngModel)]="estate.title">
+          <label class="active" for="title">Titre</label>
+        </div>
+        <div class="input-field col s6">
+            <select  multiple name="category" id="category" [(ngModel)]="estate.estate_category">
+              <option *ngFor="let category of categories" [value]="category">
+                {{category}}
+              </option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="input-field col s12">
+          <textarea name="description" id="description" type="text" class="validate" [(ngModel)]="estate.description"></textarea>
+          <label class="active" for="description">Descriotion</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s3">
+          <input name="surface" id="surface" type="number" class="validate" [(ngModel)]="estate.surface">
+          <label class="active" for="surface">Surface</label>
+        </div>
+        <div class="input-field col s3">
+            <input name="rooms" id="rooms" type="number" class="validate" [(ngModel)]="estate.rooms">
+            <label class="active" for="rooms">Nombre de pieces</label>
+        </div>
+        <div class="input-field col s3">
+            <input name="price" id="price" type="number" class="validate" [(ngModel)]="estate.price">
+            <label class="active" for="price">Prix</label>
+          </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="input-field col s12">
+          <select multiple name="utilities" id="utilities" [(ngModel)]="estate.utilities">
+            <option *ngFor="let utility of utilities" [value]="utility">
+              {{ utility }}
+            </option>
+          </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+          <input name="beds" id="beds" type="number" class="validate" [(ngModel)]="estate.beds">
+          <label class="active" for="beds">Lits</label>
+        </div>
+        <div class="input-field col s6">
+            <input name="bath_rooms" id="bath_rooms" type="number" class="validate" [(ngModel)]="estate.bath_rooms">
+            <label class="active" for="bath_rooms">Toilettes</label>
+          </div>
+    </div>
+
+
+    <div class="row">
+        <div class="input-field col s12">
+          <select  multiple name="environment" id="environment" [(ngModel)]="estate.environment">
+            <option *ngFor="let environment of environments" [value]="environment">
+              {{environment}}
+            </option>
+          </select>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="input-field col s3">
+          <textarea name="address" id="address" type="text" class="validate" [(ngModel)]="estate.address"></textarea>
+          <label class="active" for="address">Address</label>
+        </div>
+        <div class="input-field col s3">
+            <input name="postal_code" id="postal_code" type="text" class="validate" [(ngModel)]="estate.postal_code">
+            <label class="active" for="postal_code">Code postal</label>
+          </div>
+          <div class="input-field col s3">
+              <input name="country" id="country" type="text" class="validate" [(ngModel)]="estate.country">
+              <label class="active" for="country">Pays</label>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+            <button class="btn waves-effect waves-light" (click)="cancel()">Annuler
+                <i class="material-icons right">cancel</i>
+            </button>
+          </div>
+        <div class="input-field col s6">
+    <button class="btn waves-effect waves-light" (click)="save()">Submit
+        <i class="material-icons right">send</i>
+    </button>
+  </div>
+
+    </div>
+</form>
+<div *ngIf="isPosted" class="row">
+    <app-upload-file></app-upload-file>
+</div>

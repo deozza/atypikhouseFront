@@ -5,4 +5,12 @@
       <p class="card-text">{{ estate?.city}}</p>
     </div>
 </div>
+<div class="row">
+    <a (click)="viewBooking()">Reserver</a>
+    <div *ngIf="expression">
+        <app-booking></app-booking>
+    </div>
+
+</div>
+
 

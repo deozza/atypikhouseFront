@@ -1,2 +1,26 @@
 [2019-07-30 09:39:20.992] [sharedprocess] [info] main {"machineId":"316b908de8edfef4f8604619637153d823ecbc729ecd8c5cb06d5b80a71743a8"}
 [2019-07-30 09:40:00.996] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-08-01 22:54:04.499] [sharedprocess] [info] Installing extension: johnpapa.vscode-peacock
+[2019-08-01 22:54:04.500] [sharedprocess] [info] Installing extension: johnpapa.winteriscoming
+[2019-08-01 22:54:11.217] [sharedprocess] [info] Downloaded extension: johnpapa.winteriscoming /tmp/1f581cd0-742a-46c3-a3ea-64cea7ae6f39
+[2019-08-01 22:54:11.423] [sharedprocess] [info] Extracted extension to /Users/amy/.vscode/extensions/.johnpapa.winteriscoming-1.3.0: johnpapa.winteriscoming
+[2019-08-01 22:54:11.424] [sharedprocess] [info] Renamed to /Users/amy/.vscode/extensions/johnpapa.winteriscoming-1.3.0
+[2019-08-01 22:54:11.425] [sharedprocess] [info] Installation completed. johnpapa.winteriscoming
+[2019-08-01 22:54:11.453] [sharedprocess] [info] Extensions installed successfully: johnpapa.winteriscoming
+[2019-08-01 22:54:17.662] [sharedprocess] [info] Downloaded extension: johnpapa.vscode-peacock /tmp/1c7e2579-c809-4144-a424-ab39875d978e
+[2019-08-01 22:54:18.406] [sharedprocess] [info] Extracted extension to /Users/amy/.vscode/extensions/.johnpapa.vscode-peacock-3.0.0: johnpapa.vscode-peacock
+[2019-08-01 22:54:18.407] [sharedprocess] [info] Renamed to /Users/amy/.vscode/extensions/johnpapa.vscode-peacock-3.0.0
+[2019-08-01 22:54:18.409] [sharedprocess] [info] Installation completed. johnpapa.vscode-peacock
+[2019-08-01 22:54:18.438] [sharedprocess] [info] Extensions installed successfully: johnpapa.vscode-peacock
+[2019-08-01 22:54:18.456] [sharedprocess] [info] Installing extension: johnpapa.vscode-peacock
+[2019-08-01 22:54:18.457] [sharedprocess] [info] Installing extension: johnpapa.winteriscoming
+[2019-08-01 22:54:18.744] [sharedprocess] [info] Downloaded extension: johnpapa.winteriscoming /tmp/f9ef9cf1-fd6c-4a10-b096-25740f6f9e1a
+[2019-08-01 22:54:18.945] [sharedprocess] [info] Downloaded extension: johnpapa.vscode-peacock /tmp/93178b8b-c125-457d-aac7-4c5da68c0237
+[2019-08-01 22:54:19.002] [sharedprocess] [info] Extracted extension to /Users/amy/.vscode/extensions/.johnpapa.winteriscoming-1.3.0: johnpapa.winteriscoming
+[2019-08-01 22:54:19.002] [sharedprocess] [info] Renamed to /Users/amy/.vscode/extensions/johnpapa.winteriscoming-1.3.0
+[2019-08-01 22:54:19.003] [sharedprocess] [info] Installation completed. johnpapa.winteriscoming
+[2019-08-01 22:54:19.015] [sharedprocess] [info] Extensions installed successfully: johnpapa.winteriscoming
+[2019-08-01 22:54:19.730] [sharedprocess] [info] Extracted extension to /Users/amy/.vscode/extensions/.johnpapa.vscode-peacock-3.0.0: johnpapa.vscode-peacock
+[2019-08-01 22:54:19.730] [sharedprocess] [info] Renamed to /Users/amy/.vscode/extensions/johnpapa.vscode-peacock-3.0.0
+[2019-08-01 22:54:19.731] [sharedprocess] [info] Installation completed. johnpapa.vscode-peacock
+[2019-08-01 22:54:19.747] [sharedprocess] [info] Extensions installed successfully: johnpapa.vscode-peacock

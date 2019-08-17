@@ -1,0 +1,23 @@
+<table>
+    <thead>
+      <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Date de registration</th>
+          <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.registerDate}}</td>
+        <td>
+          <button [disabled]="!user.active" (click)="activateUserAction(user)">Activer</button>
+        </td>
+      </tr>
+
+    </tbody>
+</table>

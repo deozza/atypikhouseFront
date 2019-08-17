@@ -1,8 +1,5 @@
 
-.footer {
-  position: absolute;
-  bottom: 0;
-}
+
 .link {
   display: flex;
   flex-direction: row;

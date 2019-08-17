@@ -1,6 +1,6 @@
 import { Estate } from './estate.model';
 
-export interface Reservation {
+export class Reservation {
   estate: Estate;
   nb_people: number;
   coming_at: Date;

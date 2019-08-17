@@ -1,31 +1,59 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router'
+import { HttpClient, HttpHeaders, HttpParams, HttpRequest, HttpErrorResponse} from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  public token: string;
+  error: string;
+  registerUrl = 'http://localhost:8000/api/token';
 
-  storageKey: string = 'token_userActive';
-
-  constructor(private router: Router) { }
-
-  setToken(token: string) {
-    localStorage.setItem(this.storageKey, token);
-  }
-
-  getToken() {
-    return localStorage.getItem(this.storageKey);
+  constructor(private http: HttpClient, private router: Router) {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    this.token = currentUser && currentUser.token;
   }
 
   isLoggedIn() {
-    return this.getToken() !== null;
+    return this.token !== null;
   }
 
-  logout() {
-    localStorage.removeItem(this.storageKey);
-    this.router.navigate(['/login']);
+  login(payload: any, callback) {
+    this.http.post(this.registerUrl, payload)
+    .subscribe(response => {
+      callback(true);
+      const token  = response['token'];
+      if (token) {
+        this.token = token;
+        localStorage.setItem('currentUser', JSON.stringify({ login: this.login, token: this.token }));
+
+      }
+    }, loginError => this.error = loginError.message + ' : verify  your username or password !  ');
   }
+
+
+
+
+
+  logout(): void {
+    // clear token remove user from local storage to log user out
+    this.token = null;
+    localStorage.removeItem('currentUser');
+  }
+
+  private handelError(error: Response) {
+
+    return Observable.throw(error.json() || 'server error');
+
+  }
+
+
 
 }

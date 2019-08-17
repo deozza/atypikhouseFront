@@ -1,0 +1,14 @@
+peacock: Extension "vscode-peacock" is now active!
+Mementos
+  [
+  {
+    "name": "peacock.favoritesVersion",
+    "type": "globalState",
+    "value": "3.0.0"
+  }
+]
+peacock: Already wrote the favorite colors once
+Peacock is in a workspace, so Peacock functionality is available.
+peacock: Updating the workspace with the following color customizations
+
+peacock: Extension "vscode-peacock" is now deactive

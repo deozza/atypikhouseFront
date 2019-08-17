@@ -16,3 +16,11 @@
 [2019-07-31 10:21:24.376] [main] [info] update#setState idle
 [2019-07-31 14:34:24.282] [main] [info] update#setState checking for updates
 [2019-07-31 14:34:24.562] [main] [info] update#setState idle
+[2019-08-01 09:12:04.635] [main] [info] update#setState checking for updates
+[2019-08-01 09:12:04.642] [main] [error] UpdateService error: La connexion Internet semble interrompue.
+[2019-08-01 09:12:04.642] [main] [info] update#setState idle
+[2019-08-01 10:13:24.091] [main] [info] update#setState checking for updates
+[2019-08-01 10:13:24.409] [main] [info] update#setState idle
+[2019-08-01 14:32:08.232] [main] [info] update#setState checking for updates
+[2019-08-01 14:32:08.237] [main] [error] UpdateService error: La connexion Internet semble interrompue.
+[2019-08-01 14:32:08.237] [main] [info] update#setState idle

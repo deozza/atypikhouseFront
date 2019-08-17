@@ -1,0 +1,2 @@
+[2019-08-01 22:59:20.136] [renderer4] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/Users/amy/Desktop/atypikhouseFront/.vscode'
+[2019-08-01 22:59:20.136] [renderer4] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/Users/amy/Desktop/atypikhouseFront/.vscode'
