@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { AuthService } from './auth.service';
-import { callbackify } from 'util';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  endpoint = 'http://localhost:8000/api';
-  registerUrl = 'https://murmuring-refuge-10283.herokuapp.com/api/token';
+  endpoint = environment.endpoint;
 
   constructor(private http: HttpClient, private auth: AuthService) {}
 
@@ -17,7 +17,7 @@ export class ApiService {
         'Access-Control-Allow-Headers' : 'origin, Authorization',
         'Access-Control-Allow-Origin' : '*',
         'Content-Type': 'application/json, media-type',
-        'Authorization': 'Bearer ' + this.auth.token
+        Authorization: 'Bearer ' + this.auth.token
       })
 
     };
@@ -25,7 +25,7 @@ export class ApiService {
 
 
   get(id: string, url: string, callback) {
-    this.http.get(`${this.endpoint}/${url}/${id}`)
+    this.http.get(`${this.endpoint}/${url}/${id}`, this.httpOptions)
     .subscribe(response => {
       callback(response);
     });
@@ -38,11 +38,8 @@ export class ApiService {
     });
   }
 
-  addItem(url: string, value: any, callback) {
-    this.http.post(`${this.endpoint}/${url}`, value)
-    .subscribe(response => {
-      callback(true);
-    });
+  addItem(url: string, value: any) {
+    return this.http.post(`${this.endpoint}/${url}`, value, this.httpOptions);
   }
 
   updateItem(id: string, url: string, value: any, callback) {

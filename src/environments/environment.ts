@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  registerUrl: 'https://murmuring-refuge-10283.herokuapp.com/api/token',
+  endpoint: 'https://murmuring-refuge-10283.herokuapp.com/api',
+  testUrl: 'http://localhost:8000/api/token',
+  testEndpoint: 'http://localhost:8000/api'
+
+
 };
 
 /*

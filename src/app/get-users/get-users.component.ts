@@ -30,31 +30,24 @@ export class GetUsersComponent implements OnInit {
               private api: ApiService,
               private http: HttpClient) { }
 
+
+
+
+  ngOnInit() {
+    this.getUsers(list => {
+      this.users = list.items;
+      console.log(this.users);
+    });
+  }
+
   goDetails(user: User) {
-    this.router.navigate(['/user', user.id]);
+    this.router.navigate(['/user', user.uuid]);
   }
 
   getUsers(callback) {
     this.http.get(`${this.endpoint}`, this.httpOptions)
     .subscribe(response => {
       callback(response);
-      console.log(response);
-    });
-  }
-
-  activateUserAction(user) {
-    this.api.addItem('user/activate', this.auth.token, result => {
-      if (result) {
-        console.log(result);
-      }
-    });
-
-  }
-
-  ngOnInit() {
-    console.log('init');
-    this.getUsers(list => {
-      this.users = list;
     });
   }
 

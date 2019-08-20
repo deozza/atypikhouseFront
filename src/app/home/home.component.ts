@@ -3,6 +3,7 @@ import { ApiService } from 'src/app/services/api.service';
 import { FilterPipe} from '../filter.pipe';
 import { Pipe, PipeTransform} from '@angular/core';
 import { Estate } from '../model/estate.model';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Estate } from '../model/estate.model';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private api: ApiService, public filter: FilterPipe) { }
+  constructor(private api: ApiService, public filter: FilterPipe, private router: Router) { }
   list: [];
   filteredList: Estate [];
 
@@ -42,37 +43,15 @@ export class HomeComponent implements OnInit {
     this.filteredList = this.list;
   }
 
+  goDetails(estate: Estate) {
+    this.router.navigate(['/estate', estate.uuid]);
+  }
+
 
 
   getEntities() {
-/*this.list = [
-  {
-    title: 'title 1',
-    description: 'description 1',
-    surface: 30,
-    rooms: 2,
-    bath_rooms: 2 ,
-    city: 'Nice'
-  },
-  {
-    title: 'title 2',
-    description: 'description 2',
-    surface: 25,
-    rooms: 1,
-    bath_rooms: 1,
-    city: 'Marseilles'
-  },
-  {
-    title: 'title 3',
-    description: 'description 3',
-    surface: 50,
-    rooms: 2,
-    bath_rooms: 2,
-    city: 'Versailles'
-  }
-];*/
-    this.api.getList('doc/entities', list => {
-      this.list = list;
+    this.api.getList('entities/estate', list => {
+      this.list = list.items;
       console.log(list);
     });
   }

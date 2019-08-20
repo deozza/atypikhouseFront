@@ -19,11 +19,7 @@ export class RequestPasswordComponent implements OnInit {
     const payload = {
       login: value.email,
     };
-    this.api.addItem(this.url, payload, data => {
-      if (data) {
-        this.router.navigate(["/"]);
-      }
-    })
+    this.api.addItem(this.url, payload);
   }
 
 

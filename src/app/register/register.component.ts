@@ -24,12 +24,7 @@ export class RegisterComponent implements OnInit {
   }
 
   saveUser() {
-  this.api.addItem('user', this.newUser, result => {
-    if (result) {
-      console.log('ok');
-      this.router.navigate(['/']);
-    }
-  });
+  this.api.addItem('user', this.newUser);
 }
 
 

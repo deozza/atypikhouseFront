@@ -6,7 +6,9 @@
     <li><a [routerLink]="['/register']">Inscription</a></li>
     <li *ngIf="!auth.isLoggedIn()"><a [routerLink]="['/login']">Login</a></li>
     <li><a [routerLink]="['/help']">Aide</a></li>
+    <li *ngIf="auth.isLoggedIn()"><a [routerLink]="['/profil']">Mon Profil</a></li>
     <li *ngIf="auth.isLoggedIn()"><button (click) = "logout()">Logout</button></li>
+    <li *ngIf="user">Bienvenue {{ user.username }} !</li>
 
   </ul>
 </nav>

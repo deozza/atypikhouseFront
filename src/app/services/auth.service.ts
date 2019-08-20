@@ -3,6 +3,7 @@ import { Router } from '@angular/router'
 import { HttpClient, HttpHeaders, HttpParams, HttpRequest, HttpErrorResponse} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
 
 
@@ -26,7 +27,7 @@ export class AuthService {
   }
 
   login(payload: any, callback) {
-    this.http.post(this.registerUrl, payload)
+    this.http.post(environment.registerUrl, payload)
     .subscribe(response => {
       callback(true);
       const token  = response['token'];

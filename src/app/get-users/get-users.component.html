@@ -1,10 +1,8 @@
 <table>
     <thead>
       <tr>
-          <th>Name</th>
-          <th>Username</th>
+          <th>UserName</th>
           <th>Email</th>
-          <th>Date de registration</th>
           <th>Action</th>
       </tr>
     </thead>
@@ -13,11 +11,8 @@
       <tr *ngFor="let user of users">
         <td>{{user.username}}</td>
         <td>{{user.email}}</td>
-        <td>{{user.registerDate}}</td>
-        <td>
-          <button [disabled]="!user.active" (click)="activateUserAction(user)">Activer</button>
-        </td>
+        <td>Actions a faire</td>
       </tr>
 
     </tbody>
-</table>
+  </table>

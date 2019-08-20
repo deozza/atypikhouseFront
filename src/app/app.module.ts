@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
+import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
+import {MatSelectModule} from '@angular/material/select';
 import { AppRoutingModule } from './app-routing.module';
 import { ApiService } from 'src/app/services/api.service';
 import { AuthService } from 'src/app/services/auth.service';
@@ -12,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { NewHoteComponent } from './new-hote/new-hote.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { BookingComponent } from './booking/booking.component';
@@ -25,6 +25,9 @@ import { AddEstateComponent } from './add-estate/add-estate.component';
 import { UserComponent } from './user/user.component';
 import { GetUsersComponent } from './get-users/get-users.component';
 import { RequestPasswordComponent } from './request-password/request-password.component';
+import { ActivateUserComponent } from './activate-user/activate-user.component';
+import { ProfilComponent } from './profil/profil.component';
+import { EditProfilComponent } from './edit-profil/edit-profil.component';
 
 
 @NgModule({
@@ -34,7 +37,6 @@ import { RequestPasswordComponent } from './request-password/request-password.co
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    NewHoteComponent,
     HelpComponent,
     HomeComponent,
     BookingComponent,
@@ -44,13 +46,15 @@ import { RequestPasswordComponent } from './request-password/request-password.co
     UserComponent,
     GetUsersComponent,
     RequestPasswordComponent,
-    
+    ActivateUserComponent,
+    ProfilComponent,
+    EditProfilComponent,
+
 
   ],
   imports: [
     MatInputModule,
     HttpClientModule,
-    MatFormFieldModule,
     BrowserAnimationsModule,
     FormsModule,
     BrowserModule,
@@ -58,6 +62,7 @@ import { RequestPasswordComponent } from './request-password/request-password.co
     MatIconModule,
     MatCardModule,
     FileUploadModule,
+    MatSelectModule,
     ReactiveFormsModule
   ],
 

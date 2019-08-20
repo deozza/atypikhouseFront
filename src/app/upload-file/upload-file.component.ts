@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-upload-file',
@@ -35,7 +36,7 @@ export class UploadFileComponent implements OnInit {
           data.append('file', fileItem);
           data.append('fileSeq', 'seq' + j);
           data.append( 'dataType', this.uploadForm.controls.type.value);
-          
+
           //this.uploadFile(data).subscribe(data => alert(data.message));
         }
         this.uploader.clearQueue();
