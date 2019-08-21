@@ -1,0 +1,138 @@
+footer{
+  background-color: #1C233F;
+  height:auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:20px 10px;
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer a{
+  text-decoration: none;
+  color:#fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+}
+#logo-footer{
+  width:200px;
+  height:80px;
+}
+#socialmedia{
+  width:150px;
+  height:40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#socialmedia a{
+  display: block;
+  height:40px;
+  width:40px;
+}
+#socialmedia a:first-child{
+  background-image: url(../../../assets/images/twitter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#socialmedia a:nth-child(2){
+  background-image: url(../../../assets/images/facebook.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#socialmedia a:last-child{
+  background-image: url(../../../assets/images/instagram.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#socialmedia a:hover:first-child{
+  background-image: url(../../../assets/images/twitter-hover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#socialmedia a:hover:nth-child(2){
+  background-image: url(../../../assets/images/facebook-hover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#socialmedia a:hover:last-child{
+  background-image: url(../../../assets/images/instagram-hover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#footer-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+}
+#footer-links a{
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:10px;
+}
+#footer-links a:hover{
+  color:#00AAAA;
+  text-decoration: underline;
+}
+#footer-links:after{
+  content:"Copyright TechOnMe 2019";
+  font-family: 'Roboto', sans-serif;
+  color:#6A6B6E;
+  position: absolute;
+  bottom:-20px;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding:20px 10px 40px;;
+  }
+  footer #logo-footer{
+    margin-bottom: 20px;
+  }
+  #socialmedia{
+    margin-bottom: 20px;
+  }
+  #footer-links{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
