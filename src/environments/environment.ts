@@ -4,11 +4,7 @@
 
 export const environment = {
   production: false,
-  registerUrl: 'https://murmuring-refuge-10283.herokuapp.com/api/token',
-  endpoint: 'https://murmuring-refuge-10283.herokuapp.com/api',
-  testUrl: 'http://localhost:8000/api/token',
-  testEndpoint: 'http://localhost:8000/api'
-
+  apiUrl: 'https://murmuring-refuge-10283.herokuapp.com/api'
 
 };
 
