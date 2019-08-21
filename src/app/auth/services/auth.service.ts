@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 import {Observable, throwError} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
-import {Credentials} from '../model/credentials.model';
-import {Token} from '../model/token.model';
+import {Credentials} from '../../model/credentials.model';
+import {Token} from '../../model/token.model';
 
 const API_URL = environment.apiUrl;
 const TOKEN_COOKIE_NAME = 'ATYPIKHOUSE.AUTH.TOKEN';
