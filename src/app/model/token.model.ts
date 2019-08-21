@@ -4,5 +4,6 @@ export class Token {
 
   public constructor(entity = null) {
     this.uuid = entity !== null ? entity.uuid : '';
-    this.kind = entity !== null ? entity.kind : '';
+    this.token = entity !== null ? entity.token : '';
+  }
  }

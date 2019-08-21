@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 import { environment } from '../../environments/environment';
 import {Observable, throwError} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
-import {Credentials} from '../entity/credentials';
+import {Credentials} from '../model/credentials.model';
+import {Token} from '../model/token.model';
 
 const API_URL = environment.apiUrl;
 const TOKEN_COOKIE_NAME = 'ATYPIKHOUSE.AUTH.TOKEN';
@@ -19,7 +20,7 @@ export class AuthService {
     ) { }
 
     public postToken(credential: Credentials): Observable<Token> {
-        return this.http.post<string>(API_URL + '/token', credential).pipe(
+        return this.http.post<Token>(API_URL + '/token', credential).pipe(
             tap((t)=>{
                 if(this.handleToken(t))
                 {

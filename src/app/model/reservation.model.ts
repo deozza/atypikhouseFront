@@ -1,4 +1,5 @@
 import { Estate } from './estate.model';
+import {User} from './user.model';
 
 export class Reservation {
   uuid: string ;

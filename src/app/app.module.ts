@@ -7,11 +7,6 @@ import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AuthTokenInterceptor } from './token.interceptor';
 
-import { AppRoutingModule }                      from './app-routing.module';
-import { AppComponent }                          from './app.component';
-import {FormsModule}                             from '@angular/forms';
-import {HTTP_INTERCEPTORS, HttpClientModule}     from '@angular/common/http';
-
 
 @NgModule({
   declarations: [
