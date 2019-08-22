@@ -9,11 +9,13 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AuthTokenInterceptor } from './token.interceptor';
 
 import { FooterComponent } from './ui/footer/footer.component';
+import { MenuComponent } from './ui/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
