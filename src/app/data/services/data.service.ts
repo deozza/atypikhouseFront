@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { environment } from '../../../environments/environment';
 import {Observable, throwError} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
 import { Entity } from 'src/app/model/entity.model';
 import { List } from 'src/app/model/list.model';
+import { stringify } from 'querystring';
 
 const API_URL = environment.apiUrl;
 
@@ -44,16 +45,23 @@ export class DataService {
     return this.http.patch<Entity>(API_URL + '/entity/' + uuid, value);
   }
 
-  uploadFile()
+  postFile(uuid: string, property: string, file: Blob)
   {
+    return this.http.post(API_URL + '/entity/' + uuid + '/file/' + property, file);
+  }
+
+  deleteFile(uuid: string, property: string, filename: string = null)
+  {
+    if(filename !== null) {
+      let headers = new HttpHeaders();
+      headers.append('X-File-Name', filename);
+      return this.http.delete(API_URL + '/entity/' + uuid + '/file/' + property, {headers: headers});
+    }
+    return this.http.delete(API_URL + '/entity/' + uuid + '/file/' + property);
 
   }
 
 
-  getFiles()
-  {
-
-  }
 
 
 }

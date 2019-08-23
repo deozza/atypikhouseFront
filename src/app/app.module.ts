@@ -10,12 +10,16 @@ import { AuthTokenInterceptor } from './token.interceptor';
 
 import { FooterComponent } from './ui/footer/footer.component';
 import { MenuComponent } from './ui/menu/menu.component';
+import { LoginComponent } from './ui/login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     MenuComponent,
+    LoginComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

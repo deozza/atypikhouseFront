@@ -104,8 +104,6 @@ footer a{
   content:"Copyright TechOnMe 2019";
   font-family: 'Roboto', sans-serif;
   color:#6A6B6E;
-  position: absolute;
-  bottom:-20px;
 }
 
 @media only screen and (max-width: 1023px) {
