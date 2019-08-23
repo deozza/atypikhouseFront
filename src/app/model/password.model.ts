@@ -1,10 +1,10 @@
 export class Password {
-  first_options: string ;
-  second_options: string;
+  first: string ;
+  second: string;
 
 
   public constructor(entity = null) {
-    this.first_options      = entity !== null ? entity.first_options    : '';
-    this.second_options     = entity !== null ? entity.second_options   : '';
+    this.first      = entity !== null ? entity.first    : '';
+    this.second     = entity !== null ? entity.second   : '';
   }
  }

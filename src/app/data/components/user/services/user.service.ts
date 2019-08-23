@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../../environments/environment';
 import {Observable, throwError} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
-import {User} from '../../model/user.model';
-import {List} from '../../model/list.model';
+import {User} from '../../../../model/user.model';
+import {List} from '../../../../model/list.model';
 
 const API_URL = environment.apiUrl;
 
@@ -34,9 +34,7 @@ export class UserService {
       return this.http.post<User>(API_URL + '/user', user);
     }
 
-    public patchUserCurrent(user:User): Observable<User> {
-      return this.http.patch<User>(API_URL + '/user', user);
-    }
+
 
     public patchUserActivate(token:string): Observable<User> {
       return this.http.patch<User>(API_URL + '/user/activate', token);
