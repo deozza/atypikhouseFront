@@ -22,9 +22,9 @@ export class AuthService {
     public postToken(credential: Credentials): Observable<Token> {
         return this.http.post<Token>(API_URL + '/token', credential).pipe(
             tap((t)=>{
-                if(this.handleToken(t))
+                if(this.handleToken(t.token))
                 {
-                    this.setToken(t);
+                    this.setToken(t.token);
                 }
                 else
                 {
@@ -47,12 +47,12 @@ export class AuthService {
         return localStorage.getItem(TOKEN_COOKIE_NAME) != undefined;
     }
 
-    private deleteToken() {
+    public deleteToken() {
         localStorage.clear();
     }
 
-    public handleToken(token: Token) {
-        const parsedToken = this.parseJwt(token.token);
+    public handleToken(token: string) {
+        const parsedToken = this.parseJwt(token);
         return parsedToken !== undefined;
     }
 

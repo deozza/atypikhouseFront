@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 })
 export class MenuComponent implements OnInit {
   isConnected: boolean;
-  constructor(private auth: AuthService) { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
     this.isConnected = this.auth.hasToken();
@@ -37,9 +37,10 @@ export class MenuComponent implements OnInit {
     burger.onclick = toggleMenu;
 
 
+  }
 
-
-
+  logout() {
+    this.auth.deleteToken();
   }
 
 }

@@ -12,11 +12,11 @@
     <!--
 Non-connecté-->
       <a href="">Host</a>
-      <a href="" class="active-link">Sign-up</a>
+      <a [routerLink]="['/sign-up']" class="active-link">Sign-up</a>
       <a [routerLink]="['/login']">Login</a>
       <a href="">Aide</a>
     <!--Si connecté -->
-  <div [hidden]="isConnected" id="profile-item"></div>
+  <div [hidden]="!isConnected" id="profile-item"></div>
   </nav>
   <div id="burger" class="burger"></div>
 
@@ -30,7 +30,7 @@ Non-connecté-->
     <!--Si Anoonce -->
     <!-- <a href="">Mes Annonces</a>-->
     <a href="">Recommander</a>
-    <a href="">Log-out</a>
+   <a><button (click)="logout()">Log-out</button></a>
   </nav>
 </header>
 
@@ -41,7 +41,7 @@ Non-connecté-->
 
     <ng-container *ngIf="isConnected">
         <li><a href="">Host</a></li>
-          <li><a href="" class="active-link">Sign-up</a></li>
+          <li><a [routerLink]="['/sign-up']" class="active-link">Sign-up</a></li>
             <li><a href="">Login</a></li>
     </ng-container>
     <!--connecté-->
