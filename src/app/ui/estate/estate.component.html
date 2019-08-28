@@ -1,0 +1,150 @@
+
+<section>
+  <div id="estate-content">
+      <div id="reservation-overlay">
+          <div id="reservation-overlay-content">
+              <form>
+
+              <div id="reservation-dates">
+                  <div class="reservation-date-start input-field col s6">
+                    <label for="coming_at">Date d'arrive</label>
+                      <input type="text" class="datepicker" name="coming_at" id="coming_at" [(ngModel)]="booking.coming_at">
+                  </div>
+                  <div class="reservation-date-end input-field col s6">
+                      <label for="leaving_at">Date depart</label>
+                      <input type="text" class="datepicker" name="leaving_at" id="leaving_at" [(ngModel)]="booking.leaving_at">
+                  </div>
+              </div>
+              <div class="reservation-price">
+              <p>Prix par nuit</p>
+<!--                   <p class="reservation-price-empty">Renseignez les dates de votre séjour pour avoir le prix</p>-->
+                  <p class="reservation-price-amount">{{estate.properties?.price}}</p>
+              </div>
+
+              <div class="reservation-travellers">
+                  <label for="nb_people">Voyageurs</label>
+                      <input type="number" name="nb_people" id="nb_people" [(ngModel)]="booking.nb_people">
+              </div>
+
+              <div class="reservation-price-total">
+                  <label for="total_price">Prix Total</label>
+                      <input type="number" name="total_price" id="total_price" [(ngModel)]="booking.total_price">
+              </div>
+              <a href="">Je Confirme</a>
+            </form>
+          </div>
+          <div id="close-overlay">+</div>
+
+       </div>
+
+       <div id="estate-image-gallery">
+           <div id="main-estate-image">
+               <img src="lol" alt="">
+           </div>
+           <div id="estate-image-gallery-controller">
+               <div class="estate-image-thumbnail thumbnail-active"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div>
+               <div class="estate-image-thumbnail"><img src=" ../../../assets/images/bg/BG-03.jpg" alt=""></div>
+               <div class="estate-image-thumbnail"><img src="../../../assets/images/bg/BG-02.jpg" alt=""></div>
+               <div class="estate-image-thumbnail"><img src="../../../assets/images/bg/BG-02.jpg" alt=""></div>
+               <div class="estate-image-thumbnail"><img src="../../../assets/images/bg/BG-03.jpg" alt=""></div>
+               <div class="estate-image-thumbnail"><img src="../../../assets/images/bg/BG-02.jpg" alt=""></div>
+           </div>
+       </div>  <div id="estate-listing">
+
+
+          <div id="estate-info-card">
+
+              <div class="estate-basics">
+                  <div class="estate-category"><img src="./../../assets/images/estate-icons/estate-treehouse.png" alt=""></div>
+
+              </div>
+
+              <div class="estate-details">
+                  <h3>{{estate.properties?.title}}</h3>
+                  <div class="estate-location">
+                      <div class="estate-city">
+                          <p>Ville :&nbsp;</p>
+                          <p>{{estate.properties?.city}}</p>
+                      </div>
+                      <div class="estate-country">
+                          <p>Pays :&nbsp;</p>
+                          <p>{{estate.properties?.country}}</p>
+                      </div>
+                      <div class="estate-postalCode">
+                          <p>{{estate.properties?.postal_code}}</p>
+                      </div>
+                  </div>
+                  <div class="estate-dates">
+                      <div class="estate-update">
+                          <p>Mise à jour :&nbsp;</p>
+                          <p>{{estate.last_update | date :  "dd.MM.y"}}</p>
+                      </div>
+                      <div class="estate-doc">
+                          <p>Créée le :&nbsp;</p>
+                          <p>{{estate.date_of_creation | date :  "dd.MM.y"}}</p>
+                      </div>
+                      <div class="estate-owner">
+                          <p>par&nbsp;</p>
+                          <p>{{estate.owner?.username}}</p>
+                      </div>
+                  </div>
+
+                  <div class="estate-keywords">
+
+                      <p class="estate-keyword"><strong>keyword01</strong></p>
+                      <p class="estate-keyword"><strong>keyword01</strong></p>
+                      <p class="estate-keyword"><strong>keyword01</strong></p>
+                      <p class="estate-keyword"><strong>keyword01</strong></p>
+                      <p class="estate-keyword"><strong>keyword01</strong></p>
+
+
+                  </div>
+
+              </div>
+          </div>
+
+          <div id="estate-description-card">
+              <p>{{estate.properties?.description}}</p>
+
+          </div>
+
+          <div id="estate-specs-card">
+              <div class="specs-item">
+                  <p class="specs-label">Surface</p>
+                  <p class="specs-content">{{estate.properties?.surface}}</p>
+              </div>
+              <div class="specs-item">
+                  <p class="specs-label">Nombre de pièces</p>
+                  <p class="specs-content">{{estate.properties?.rooms}}</p>
+              </div>
+              <div class="specs-item">
+                  <p class="specs-label">Lits</p>
+                  <p class="specs-content">{{estate.properties?.beds}}</p>
+              </div>
+              <div class="specs-item">
+                  <p class="specs-label">Salles de bain</p>
+                  <p class="specs-content">{{estate.properties?.bath_room}}</p>
+              </div>
+          </div>
+          <div id="estate-utilities-card">
+            <h4>Utilities</h4>
+             <ul>
+                 <li *ngFor="let item of estate.properties?.utilities"  class="utilities" >{{item}}<i [class]="getClass(item)"></i></li>
+
+             </ul>
+             <h4>Environment</h4>
+             <ul>
+                 <li *ngFor="let item of estate.properties?.environment" class="utilities" [ngClass]="'item'">{{item}} <i class="fas fa-utensils"></i></li>
+
+             </ul>
+         </div>
+          <a href="" id="CTA-reservation">JE RESERVE</a>
+
+      </div>
+  </div>
+
+
+</section>
+
+
+

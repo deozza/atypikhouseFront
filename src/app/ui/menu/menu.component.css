@@ -165,7 +165,9 @@ header a {
 
   #main-nav {
       display: none;
+
   }
+
 
   #mobile-nav {
       z-index: 3000;
@@ -173,7 +175,7 @@ header a {
       position: absolute;
       width: 70%;
       height: 100%;
-      background-color: #007470;
+      background-color: #007470 !important;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -283,4 +285,9 @@ header a {
       background-repeat: no-repeat;
       background-size: contain;
   }
+}
+
+nav#main-nave {
+  background-color: #007470 !important;
+
 }

@@ -12,8 +12,14 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { MenuComponent } from './ui/menu/menu.component';
 import { LoginComponent } from './auth/components/login/login.component';
 import { SignUpComponent } from './auth/components/sign-up/sign-up.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './ui/home/home.component';
 import { AboutComponent } from './ui/about/about.component';
+import { MonthSliderComponent } from './ui/month-slider/month-slider.component';
+import { EstateComponent } from './ui/estate/estate.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ReactiveFormsModule} from '@angular/forms';
+import { MaterialModule } from './material.module';
+
 
 @NgModule({
   declarations: [
@@ -24,18 +30,25 @@ import { AboutComponent } from './ui/about/about.component';
     SignUpComponent,
     HomeComponent,
     AboutComponent,
+    MonthSliderComponent,
+    EstateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+
   ],
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
     useClass: AuthTokenInterceptor,
     multi: true}
+
     ],
   bootstrap: [AppComponent]
 })

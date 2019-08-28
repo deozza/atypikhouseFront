@@ -1,5 +1,6 @@
 import { Estate } from './estate.model';
 import {User} from './user.model';
+import * as moment from 'moment';
 
 export class Reservation {
   uuid: string ;
@@ -10,8 +11,8 @@ export class Reservation {
   date_of_creation: string;
   estate: Estate;
   nb_people: number;
-  coming_at: string;
-  leaving_at: string;
+  coming_at: Date;
+  leaving_at: Date;
   total_price: number;
   more: string;
 
@@ -24,9 +25,12 @@ export class Reservation {
     this.date_of_creation = entity !== null ? entity.date_of_creation : '';
     this.estate = entity !== null ? new Estate(entity.estate) : new Estate();
     this.nb_people = entity !== null ? entity.nb_people : null;
-    this.coming_at = entity !== null ? entity.coming_at : '';
-    this.leaving_at = entity !== null ? entity.leaving_at : '';
+    this.coming_at = entity !== null ? entity.coming_at : new Date();
+    this.leaving_at = entity !== null ? entity.leaving_at : new Date();
     this.total_price = entity !== null ? entity.total_price : null;
     this.more = entity !== null ? entity.more : '';
   }
+
+
  }
+

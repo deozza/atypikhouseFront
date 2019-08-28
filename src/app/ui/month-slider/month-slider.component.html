@@ -1,0 +1,36 @@
+<section>
+  <h3>Les Atypik houses du mois</h3>
+  <div id="month-slider">
+      <div id="slide-container">
+          <div class="month-slide active-slide" (click)="goDetails(estate_1)">
+              <div class="month-slide-content">
+                  <div class="month-slide-label">
+                      <h4>{{estate_1?.properties.country}}</h4>
+                  </div>
+                  <img src="../../../assets/images/bg/BG-01.jpg" alt="">
+
+              </div>
+          </div>
+          <div class="month-slide">
+              <div class="month-slide-content" (click)="goDetails(estate_2)">
+                  <div class="month-slide-label">
+                      <h4>{{estate_2?.properties.country}}</h4>
+                  </div><img src="../../../assets/images/bg/BG-02.jpg" alt="">
+              </div>
+          </div>
+          <div class="month-slide">
+              <div class="month-slide-content" (click)="goDetails()">
+                  <div class="month-slide-label">
+                      <h4>Irland</h4>
+                  </div><img src="../../../assets/images/bg/BG-03.jpg" alt="">
+              </div>
+          </div>
+      </div>
+      <div id="slide-controller">
+          <div class="bullet-slider bullet-slider-active"></div>
+          <div class="bullet-slider"></div>
+          <div class="bullet-slider"></div>
+      </div>
+  </div>
+
+</section>

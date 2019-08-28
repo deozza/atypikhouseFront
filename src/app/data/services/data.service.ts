@@ -29,7 +29,7 @@ export class DataService {
     if (filters !== {}) {
           // tslint:disable-next-line: forin
           for (const key in filters) {
-        url += '&filterBy[' + key + ']=' + filters[key];
+        url += '&filterBy' + key + '=' + filters[key] ;
       }
     }
     return this.http.get<List<Entity>>(url);
@@ -60,6 +60,8 @@ export class DataService {
     return this.http.delete(API_URL + '/entity/' + uuid + '/file/' + property);
 
   }
+
+
 
 
 
