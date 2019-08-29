@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { environment } from '../../../environments/environment';
@@ -14,6 +14,7 @@ const TOKEN_COOKIE_NAME = 'ATYPIKHOUSE.AUTH.TOKEN';
     providedIn: 'root'
 })
 export class AuthService {
+
 
     constructor(
         private http: HttpClient
