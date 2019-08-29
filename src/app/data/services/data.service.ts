@@ -23,13 +23,17 @@ export class DataService {
     return this.http.get<Entity>(API_URL + '/entity/' + uuid);
   }
 
+  public getList() {
+    return this.http.get(API_URL + '/doc/enumerations');
+  }
+
 
   public getEntities(kind: string, count: number = 10, page: number = 1, filters = null): Observable<List<Entity> > {
     let url = API_URL + '/entities/' + kind + '?count=' + count + '&page=' + page ;
     if (filters !== {}) {
           // tslint:disable-next-line: forin
           for (const key in filters) {
-        url += '&filterBy[' + key + ']=' + filters[key] ;
+        url += '&filterBy' + key + '=' + filters[key] ;
       }
     }
     return this.http.get<List<Entity>>(url);

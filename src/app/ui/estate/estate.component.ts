@@ -34,7 +34,8 @@ export class EstateComponent implements OnInit {
       .subscribe(
         (e)=> {this.estate = e ;
           this.price = this.estate.properties.price;
-          this.booking.estate = this.estate
+          this.booking.estate.uuid = params.uuid;
+          console.log(this.booking.estate.uuid);
         },
         (error) => console.log(error)
     );

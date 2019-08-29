@@ -21,5 +21,13 @@ export class Estate {
       this.properties = entity !== null ? new Properties(entity.properties) : new Properties();
     }
 
-   
+    public cleanEstate() {
+      const estate = new Estate(this);
+      delete estate.uuid;
+      delete estate.kind;
+      delete estate.owner;
+      return  estate ;
+    }
+
+
 }

@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import { AuthTokenInterceptor } from './token.interceptor';
+import { EstateFormComponent } from './ui/estate-form/estate-form.component';
 
 import { FooterComponent } from './ui/footer/footer.component';
 import { MenuComponent } from './ui/menu/menu.component';
@@ -33,7 +34,8 @@ import { LineSliderComponent } from './ui/line-slider/line-slider.component';
     AboutComponent,
     MonthSliderComponent,
     EstateComponent,
-    LineSliderComponent
+    LineSliderComponent,
+    EstateFormComponent
   ],
   imports: [
     BrowserModule,

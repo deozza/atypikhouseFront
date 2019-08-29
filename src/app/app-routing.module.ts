@@ -6,12 +6,14 @@ import { SignUpComponent } from './auth/components/sign-up/sign-up.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './ui/home/home.component';
 import { EstateComponent } from './ui/estate/estate.component';
+import { EstateFormComponent } from './ui/estate-form/estate-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'estate/:uuid', component: EstateComponent},
+  { path: 'estate_form', component: EstateFormComponent},
 
 
 ];

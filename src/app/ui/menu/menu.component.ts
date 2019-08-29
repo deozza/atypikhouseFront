@@ -12,9 +12,6 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.isConnected = this.auth.hasToken();
-    console.log(this.isConnected);
-
-
     const burger = document.getElementById('burger');
     const mobilenav = document.getElementById('mobile-nav');
     const profileItem = document.getElementById('profile-item');

@@ -1,4 +1,4 @@
-export class Properties {      
+export class Properties {
         last_update: string;
        date_of_creation: string;
        title: string;
@@ -8,17 +8,17 @@ export class Properties {
        rooms: number;
        price: number;
        image: string[];
-       utilities: string;
+       utilities: string[];
        beds: number;
        bath_room: number;
-       environment: string;
+       environment: string[];
        city: string;
        address: string;
        postal_code: string;
        country: string;
        legal_id: string;
 
-       public constructor(entity = null) {       
+       public constructor(entity = null) {
         this.last_update = entity !== null ? entity.last_update : '';
         this.date_of_creation = entity !== null ? entity.date_of_creation : '';
         this.title = entity !== null ? entity.title : '';
@@ -28,10 +28,10 @@ export class Properties {
         this.rooms = entity !== null ? entity.rooms : null;
         this.price = entity !== null ? entity.price : '';
         this.image = entity !== null ? entity.image : [];
-        this.utilities = entity !== null ? entity.utilities : '';
+        this.utilities = entity !== null ? entity.utilities : [];
         this.beds = entity !== null ? entity.beds : null;
         this.bath_room = entity !== null ? entity.beds : null;
-        this.environment = entity !== null ? entity.environment : '';
+        this.environment = entity !== null ? entity.environment : [];
         this.city = entity !== null ? entity.city : '';
         this.address = entity !== null ? entity.address : '';
         this.postal_code = entity !== null ? entity.postal_code : '';
