@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pagination } from 'src/app/model/pagination.model';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  pagination_slide: Pagination = new Pagination();
   ngOnInit() {
+    this.pagination_slide.count= 4;
   }
 
 }

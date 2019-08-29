@@ -29,15 +29,15 @@ export class DataService {
     if (filters !== {}) {
           // tslint:disable-next-line: forin
           for (const key in filters) {
-        url += '&filterBy' + key + '=' + filters[key] ;
+        url += '&filterBy[' + key + ']=' + filters[key] ;
       }
     }
     return this.http.get<List<Entity>>(url);
   }
 
 
-  public addEntity(value: Entity, kind: string): Observable<Entity> {
-    return this.http.post<Entity>(API_URL + '/entity/' + kind, value);
+  public addEntity(value: any, kind: string): Observable<any> {
+    return this.http.post<any>(API_URL + '/entity/' + kind, value);
   }
 
 

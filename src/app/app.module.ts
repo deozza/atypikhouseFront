@@ -19,6 +19,7 @@ import { EstateComponent } from './ui/estate/estate.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import { MaterialModule } from './material.module';
+import { LineSliderComponent } from './ui/line-slider/line-slider.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MaterialModule } from './material.module';
     HomeComponent,
     AboutComponent,
     MonthSliderComponent,
-    EstateComponent
+    EstateComponent,
+    LineSliderComponent
   ],
   imports: [
     BrowserModule,

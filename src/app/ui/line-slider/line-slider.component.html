@@ -1,0 +1,16 @@
+<section>
+    <h3>Nos recommandations</h3>
+    <div class="line-slider">
+        <div class="line-slider-container">
+            <div *ngIf="!pagination.changingPage" class="line-slides-container">
+              <div *ngFor="let item of entities?.items" class="line-slides-page">
+                <div  class="line-slide-item"><img src="../../../assets/images/bg/BG-01.jpg" alt="">
+                  <div class="line-slide-label"><p>{{item.properties?.city}}</p><p><strong>{{ item.properties.city}},</strong> {{ item.properties.country}}</p></div>
+                </div>
+              </div>
+            </div>
+            <p *ngIf="pagination.page > 1" class="line-slider-prev" (click)="changeCurrentPage(pagination.page-1)">&lt;</p>
+            <p *ngIf="pagination.page > pagination.nb_pages"  class="line-slider-next" (click)="changeCurrentPage(pagination.page+1)">&gt;</p>
+        </div>
+    </div>
+</section>

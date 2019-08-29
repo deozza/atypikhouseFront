@@ -20,7 +20,7 @@ export class MonthSliderComponent implements OnInit {
   ngOnInit() {
     this.estateOfTheMonth = new List<Entity>() ;
     this.pagination = new Pagination();
-    this.pagination.filters = {'validationState':'estate_of_the_month'};
+    this.pagination.filters = {'equal.validationState':'estate_of_the_month'};
     this.pagination.count = 3;
     this.dataService.getEntities('estate', this.pagination.count, 1, this.pagination.filters).subscribe(
         (e)=> {this.estateOfTheMonth = e;
