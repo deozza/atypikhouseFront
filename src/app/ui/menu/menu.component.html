@@ -7,20 +7,26 @@
         alt="AtypikHouse" title="Logo Atypik House"></a>
 
   </h1>
-  <nav id="main-nav" style="background-color: #007470;">
+  <nav  id="main-nav" style="background-color: #007470;">
     <a href="">Réserver</a>
     <!--
 Non-connecté-->
+<<<<<<< HEAD
       <a [routerLink]="['/estate_form']">Host</a>
+=======
+      <a href="">Host</a>
+    <ng-container *ngIf="!isConnected">
+>>>>>>> 1c1f005544b9db56bbba70c9ce22ff48528adbe5
       <a [routerLink]="['/sign-up']" class="active-link">Sign-up</a>
       <a [routerLink]="['/login']">Login</a>
+    </ng-container>
       <a href="">Aide</a>
     <!--Si connecté -->
   <div [hidden]="!isConnected" id="profile-item"></div>
   </nav>
   <div id="burger" class="burger"></div>
 
-  <nav id="profile-links" class="profile-links-hidden">
+  <nav id="profile-links"  class="profile-links-hidden">
     <a href="">Profil</a>
     <a href="">Messagerie</a>
     <a href="">Mes Réservations</a>
@@ -39,13 +45,13 @@ Non-connecté-->
     <li><a href="">Réserver</a></li>
     <!--Non-connecté-->
 
-    <ng-container *ngIf="isConnected">
+    <ng-container *ngIf="!isConnected">
         <li><a href="">Host</a></li>
           <li><a [routerLink]="['/sign-up']" class="active-link">Sign-up</a></li>
             <li><a href="">Login</a></li>
     </ng-container>
     <!--connecté-->
-    <ng-container *ngIf="!isConnected">
+    <ng-container *ngIf="isConnected">
       <li><a href="">Profil</a></li>
       <li><a href="">Messagerie</a></li>
       <li><a href="">Mes Réservations</a></li>

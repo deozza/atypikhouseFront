@@ -1,94 +1,139 @@
 <section>
-    <div id="add-estate">
-        <h3>Créer votre annonce</h3>
+  <div id="add-estate">
+    <h3>Créer votre annonce</h3>
+    <div class="add-estate-form">
+      <form class="col s12" #form="ngForm" (ngSubmit)="save(form.value)">
+        <h4>Type de bien</h4>
+        <div class="addEstateCategory">
+          <div *ngFor="let category of enumerations.enumerations?.estate_category">
+            <label for="category">{{category}}</label> <input type="radio" id="estate_category" name="estate_category"
+              [value]="category" [(ngModel)]="estate.estate_category">
+          </div>
+        </div>
         <div class="add-estate-form">
-            <form class="col s12" #form="ngForm" (ngSubmit)="save(form.value)">
-            <h4>Type de bien</h4>
-            <div class="addEstateCategory">
-                <div *ngFor="let category of enumerations.enumerations?.estate_category">
-                    <label for="category">{{category}}</label> <input  type="radio" id="category" name="estate_category" [value]="category" [(ngModel)]="estate.properties.estate_category">
-                </div>
-            </div>
-
-
-        <div class="add-estate-form">
-            <h4>Informations</h4>
+          <h4>Informations</h4>
+          <div class="addEstateLine">
+            <div class="addEstateItem"><label for="title">Titre</label><input name="title" id="title" type="text"
+                [(ngModel)]="estate.title"></div>
             <div class="addEstateLine">
-                <div class="addEstateItem"><label for="title">Titre</label><input name="title" id="title" type="text"  [(ngModel)]="estate.properties.title" ></div>
-                <div class="addEstateLine">
 
-                  <textarea name="address" id="address" type="text" [(ngModel)]="estate.properties.address"></textarea>
-                    <label class="active" for="address">Address</label>
-                  </div>
-                <div class="addEstateItem"><label for="">Ville</label><input name="city" id="city" type="text" [(ngModel)]="estate.properties.city"></div>
-                <div class="addEstateItem"><label for="">Code Postal</label><input name="postal_code" id="postal_code" type="text" [(ngModel)]="estate.properties.postal_code"></div>
-                <div class="addEstateItem"><label for="">Pays</label><input name="country" id="country" type="text" [(ngModel)]="estate.properties.country"></div>
+              <textarea name="address" id="address" type="text" [(ngModel)]="estate.address"></textarea>
+              <label class="active" for="address">Address</label>
             </div>
-            <div class="addEstateDescription">
-                <label for="">Description</label> <textarea rows="5" cols="50" name="description" id="description" type="text"
-                [(ngModel)]="estate.properties.description">
+            <div class="addEstateItem"><label for="">Ville</label><input name="city" id="city" type="text"
+                [(ngModel)]="estate.city"></div>
+            <div class="addEstateItem"><label for="">Code Postal</label><input name="postal_code" id="postal_code"
+                type="text" [(ngModel)]="estate.postal_code"></div>
+            <div class="addEstateItem"><label for="">Pays</label><input name="country" id="country" type="text"
+                [(ngModel)]="estate.country"></div>
+          </div>
+          <div class="addEstateDescription">
+            <label for="">Description</label> <textarea rows="5" cols="50" name="description" id="description"
+              type="text" [(ngModel)]="estate.description">
                     Enter your name
                     </textarea>
 
-            </div>
+          </div>
+          <div class="addEstateLine">
+            <div class="addEstateItem"><label for="">Surface</label><input name="surface" id="surface" type="number"
+                [(ngModel)]="estate.surface"></div>
+            <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms"
+                type="number" [(ngModel)]="estate.rooms"></div>
             <div class="addEstateLine">
-                <div class="addEstateItem"><label for="">Surface</label><input name="surface" id="surface" type="number" [(ngModel)]="estate.properties.surface"></div>
-                <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms" type="number" [(ngModel)]="estate.properties.rooms"></div>
-                <div class="addEstateLine">
-                    <input name="price" id="price" type="number" [(ngModel)]="estate.properties.price">
-                    <label class="active" for="price">Prix</label>
-                  </div>
-                <div class="addEstateItem"><label for="">Lits</label><input name="beds" id="beds" type="number" [(ngModel)]="estate.properties.beds"></div>
-                <div class="addEstateItem"><label for="">Nombre Salle de bain</label><input name="bath_room" id="bath_room" type="number" [(ngModel)]="estate.properties.bath_room"></div>
+              <input name="price" id="price" type="number" [(ngModel)]="estate.price">
+              <label class="active" for="price">Prix</label>
             </div>
+            <div class="addEstateItem"><label for="beds">Lits</label><input name="beds" id="beds" type="number"
+                [(ngModel)]="estate.beds"></div>
+            <div class="addEstateItem"><label for="bath_room">Nombre Salle de bain</label><input name="bath_room" id="bath_room"
+                type="number" [(ngModel)]="estate.bath_room"></div>
+          </div>
 
         </div>
         <div class="add-estate-form">
-            <h4>Utilities</h4>
+          <h4>Utilities</h4>
 
-            <div class="addEstateUtilities">
-                <div *ngFor="let utility of enumerations.enumerations?.utilities">
-                    <input type="checkbox" id="{{utility}}" name="utilities" [value]="utility" (change)="updateUtil(utility, $event)">
-                    <label for="utility">{{ utility }}</label>
-                </div>
-
+          <div class="addEstateUtilities">
+            <div *ngFor="let utility of enumerations.enumerations?.utilities">
+              <input type="checkbox" id="{{utility}}" name="utilities" [value]="utility"
+                (change)="updateUtil(utility, $event)">
+              <label for="utility">{{ utility }}</label>
             </div>
+
+          </div>
 
         </div>
 
         <div class="add-estate-form">
-            <h4>Environment</h4>
+          <h4>Environment</h4>
 
-            <div class="addEstateEnvironment">
-                <div *ngFor="let environment of enumerations.enumerations?.environment">
-                    <input type="checkbox" id="{{environment}}" name="environment" [value]="environment" (change)="updateEnv(environment, $event)">
-                    <label for="environment">{{ environment }}</label>
-                </div>
-
-
+          <div class="addEstateEnvironment">
+            <div *ngFor="let environment of enumerations.enumerations?.environment">
+              <input type="checkbox" id="{{environment}}" name="environment" [value]="environment"
+                (change)="updateEnv(environment, $event)">
+              <label for="environment">{{ environment }}</label>
             </div>
 
-        <a (click)="save()">Valider</a>
+
+          </div>
+
+          <a (click)="save()">Valider</a>
 
 
         </div>
 
 
-        </form>
+      </form>
 
 
     </div>
 
+  </div>
+
+</section><div class="row" >
+    <!-- <form [formGroup]="uploadForm" (ngSubmit)="uploadSubmit()">
+        <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader" multiple/><br/>
+        <br>
+        <div class="drop-zone">
+        <div ng2FileDrop [uploader]="uploader" class="drop-zone">
+
+        </div>
+        </div>
+        <table>
+            <thead>
+            <tr>
+              <th width="90%">
+                File Name
+              </th>
+              <th width="10%">
+                Remove
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of uploader.queue">
+              <th width="90%">
+                <strong>{{ item?.file?.name }}</strong>
+              </th>
+              <th class="text-center" width="10%">
+                <mat-icon (click)="item.remove()">delete</mat-icon>
+              </th>
+            </tr>
+            </tbody>
+          </table>
+          <br>
+        <button mat-raised-button color="accent"  type="submit">Upload Images</button>
+    </form> -->
+
+<form>
+    <div  class="add-estate-form">
+        <h4>Photos</h4>
+
+        <div class="addEstatePhoto">
+            <div class="addPhotoEstate"></div>
+            <input type="file" name="image" id="image" [(ngModel)]="image">
+        </div>
+        <a (click)="uploadFile()">Valider</a>
+
 </div>
-
-</section>
-
-<!-- <div *ngIf="isPosted" class="add-estate-form">
-            <h4>Photos</h4>
-
-            <div class="addEstatePhoto">
-                <div class="addPhotoEstate"></div>
-                <input type="file" name="myFile">
-            </div>
-
-        </div> -->
+</form>

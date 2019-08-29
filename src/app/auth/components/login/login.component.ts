@@ -31,8 +31,7 @@ export class LoginComponent implements OnInit {
     this.auth.postToken(this.credentials).subscribe(
    (t) => {
     this.loading = false;
-    this.router.navigate(['/']);
-    console.log(t);
+    window.location.assign('/');
   },
    (error) => {
     this.loading = false;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { AuthService } from 'src/app/auth/services/auth.service';
 
 @Component({
@@ -7,7 +7,9 @@ import { AuthService } from 'src/app/auth/services/auth.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  isConnected: boolean;
+
+  private isConnected:boolean;
+
   constructor(public auth: AuthService) { }
 
   ngOnInit() {
@@ -29,15 +31,12 @@ export class MenuComponent implements OnInit {
         profileMenu.classList.toggle('profile-links-hidden');
     }
 
-
     profileItem.onclick = toggleProfileMenu;
     burger.onclick = toggleMenu;
-
-
   }
 
   logout() {
     this.auth.deleteToken();
+    window.location.reload();
   }
-
 }

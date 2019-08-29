@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Estate } from 'src/app/model/estate.model';
-import { FormGroup } from '@angular/forms';
 import { DataService } from 'src/app/data/services/data.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
 
 
@@ -23,13 +24,21 @@ export class EstateFormComponent implements OnInit {
   categories: any[];
   environments: any[];
 
-    title = 'Angular File Upload';
+  public uploader: FileUploader = new FileUploader({
+    isHTML5: true
+  });
 
-    constructor(private api: DataService, private route: ActivatedRoute, private router: Router) { }
+
+
+    constructor(private api: DataService, private route: ActivatedRoute, private router: Router, private fb: FormBuilder) { }
 
     ngOnInit() {
       this.estate = new Estate();
       this.getUtilities();
+      this.uploadForm = this.fb.group({
+        document: [null, null],
+        type:  [null, Validators.compose([Validators.required])]
+      });
 
     }
      getUtilities() {
@@ -44,81 +53,43 @@ export class EstateFormComponent implements OnInit {
      updateUtil(service: any, event) {
       console.log(service, event, "Selected");
       if (event.target.checked) {
-        this.estate.properties.utilities.push(service);
+        this.estate.utilities.push(service);
       } else if (!event.target.checked) {
         let index = this.utilities[service];
-        this.utilities.splice(index, 1);
+        this.estate.utilities.splice(index, 1);
       }
-      console.log(this.estate.properties.utilities);
+      console.log(this.estate.utilities);
     }
 
     updateEnv(service: any, event) {
       console.log(service, event, "Selected");
       if (event.target.checked) {
-        this.estate.properties.environment.push(service);
+        this.estate.environment.push(service);
       } else if (!event.target.checked) {
         let index = this.environments[service];
-        this.environments.splice(index, 1);
+        this.estate.environment.splice(index, 1);
       }
-      console.log(this.estate.properties.environment);
+      console.log(this.estate.environment);
     }
 
-     save(value: any) {
-       console.log(value);
-     }
-  //     this.isPosted = true;
-  //     this.api.addEntity(this.estate.cleanEstate(), 'estate')
-  //     .subscribe(
-  //       data => {
-  //         console.log(data);
-  //       },
-  //       error => {
-  //         // tslint:disable-next-line: no-conditional-assignment
-  //         if (error.status = 409) {
-  //           this.entityUuid = error.error.context.uuid;
-  //           console.log( error.status  + ':' +  error.error.context.uuid);
-  //           this.isPosted = true;
-  //         }
-  //       }
-  //     );
-  //   }
-  //   cancel() {
-  //     this.router.navigate(['/']);
-  //   }
+     save() {
+       console.log(this.estate.cleanEstate());
+      this.isPosted = true;
+      this.api.addEntity(this.estate.cleanEstate(), 'estate')
+      .subscribe(
+        data => {
+          console.log(data);
+        },
+        error => {
+          if (error.status = 409) {
+            this.entityUuid = error.error.context.uuid;
+            console.log( error.status  + ':' +  error.error.context.uuid);
+            this.isPosted = true;
+          }
+        }
+      );
+    }
 
-  //   uploadSubmit() {
-  //     // tslint:disable-next-line: prefer-for-of
-  //     for (let i = 0; i < this.uploader.queue.length; i++) {
-  //       const fileItem = this.uploader.queue[i]._file;
-  //       if (fileItem.size > 10000000) {
-  //         alert('Each File should be less than 10 MB of size.');
-  //         return;
-  //       }
-  //     }
-  //     const data = new FormData();
-  //     for (let j = 0; j < this.uploader.queue.length; j++) {
-  //       // tslint:disable-next-line: no-shadowed-variable
-  //       const data = new FormData();
-  //       const fileItem = this.uploader.queue[j]._file;
-  //       console.log(fileItem.name);
-  //       data.append('file', fileItem);
-  //       data.append('fileSeq', 'seq' + j);
-  //       data.append( 'dataType', this.uploadForm.controls.type.value);
-  //       // tslint:disable-next-line: no-shadowed-variable
-  //       this.uploadFile(data).subscribe(data => alert(data.message));
-  //     }
-  //     this.uploader.clearQueue();
-
-
-  // }
-
-  // uploadFile(data: FormData): Observable<any> {
-  //   return this.api.addItem(`entity/${this.entityUuid}/image`, data);
-  //   }
-
-  //   validate() {
-  //     this.router.navigate(['/estate', this.entityUuid]);
-  //   }
 
 
 }
