@@ -4,7 +4,7 @@ section{
 }
 #add-estate{
   width:100%;
-  height:100%;
+  height: 83vh;
   background-color:beige;
   display: flex;
   justify-content: center;

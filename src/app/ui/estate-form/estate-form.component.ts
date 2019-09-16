@@ -119,7 +119,6 @@ export class EstateFormComponent implements OnInit {
       }
 
       for (let j = 0; j < this.uploader.queue.length; j++) {
-
         const fileItem = this.uploader.queue[j]._file;
         console.log(fileItem.name);
         this.photo.push(fileItem);
