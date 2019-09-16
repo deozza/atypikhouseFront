@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './ui/home/home.component';
 import { EstateComponent } from './ui/estate/estate.component';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
+import { AdminLoginComponent } from './auth/components/admin-login/admin-login.component';
+import { CrmComponent } from './ui/crm/crm.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent},
   { path: 'estate/:uuid', component: EstateComponent},
   { path: 'estate_form', component: EstateFormComponent},
+  { path: 'admin', component: AdminLoginComponent},
+  { path: 'crm', component: CrmComponent},
 
 
 ];

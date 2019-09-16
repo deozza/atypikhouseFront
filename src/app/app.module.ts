@@ -8,7 +8,6 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import { AuthTokenInterceptor } from './token.interceptor';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
-
 import { FooterComponent } from './ui/footer/footer.component';
 import { MenuComponent } from './ui/menu/menu.component';
 import { LoginComponent } from './auth/components/login/login.component';
@@ -21,6 +20,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { LineSliderComponent } from './ui/line-slider/line-slider.component';
+import { AdminLoginComponent } from './auth/components/admin-login/admin-login.component';
+import { CrmComponent } from './ui/crm/crm.component';
+
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { LineSliderComponent } from './ui/line-slider/line-slider.component';
     MonthSliderComponent,
     EstateComponent,
     LineSliderComponent,
-    EstateFormComponent
+    EstateFormComponent,
+    AdminLoginComponent,
+    CrmComponent
   ],
   imports: [
     BrowserModule,

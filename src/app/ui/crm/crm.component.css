@@ -1,0 +1,220 @@
+#pageAdmin {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+}
+
+#pageAdmin .container {
+  width: 100%;
+  height: 100vh;
+  background-color: gold;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+#pageAdmin #admin-content {
+  background-color: #fff;
+  height: 100%;
+  width: auto;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 2
+
+}
+
+#pageAdmin #admin-nav {
+  height: 100%;
+  background-color: #007772;
+  width: 300px;
+}
+
+#pageAdmin #admin-nav ul {
+  list-style: none;
+  height: 100%;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+#pageAdmin #admin-nav ul li {
+  display: block;
+  width: 70%;
+  text-align: center;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+
+#pageAdmin #admin-nav ul li a{
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color ease 1s;
+  transition: color ease 0.5s;
+
+}
+
+
+#pageAdmin #admin-nav ul li a:hover,#pageAdmin #admin-nav ul li .active-admin-nav {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  color: #007772;
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color ease 1s;
+  transition: color ease 0.5s;
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  #pageAdmin .container{
+      flex-direction: column;
+  }
+  #pageAdmin .container #admin-content{
+      width:auto;
+      height:auto;
+      padding:10px;
+      box-sizing: 20px;
+  }
+  #pageAdmin .container #admin-nav{
+      width:auto;
+      height:auto;
+      padding:10px;
+      box-sizing: 20px;
+  }
+  #pageAdmin .container #admin-nav ul{
+      width:100%;
+      height:auto;
+
+      min-width: none;
+      max-width: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+  }
+  #pageAdmin .container #admin-nav li{
+      width:auto;
+      margin: 10px;
+      flex: 0 25%;
+
+
+  }
+
+}
+
+
+
+/** PAGES **/
+
+h3 {
+  font-family: 'Pacifico', serif;
+  font-size: 35px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h3:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: #E8A720;
+  left: 53%;
+  bottom: -5px;
+  margin-left: -75px;
+}
+
+
+
+
+
+
+
+/** NOTIFICATIONS **/
+
+#admin-content #admin-notifications {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#admin-content #admin-notifications * {
+  margin: 10px auto;
+}
+
+#admin-content #admin-notifications p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative
+}
+
+#admin-content #admin-notifications .newAdminNotification {
+  background-color: #007772;
+  color: fff;
+}
+
+#admin-content #admin-notifications .newAdminNotification:after {
+  position: absolute;
+  content: "!";
+
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  top: 5px;
+  margin-top: -12px;
+  right: -10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px #555;
+
+}
+
+/**  FIN NOTIFICATIONS **/
+
+
+/** ANNONCES **/
+
+

@@ -1,6 +1,5 @@
 export class Properties {
-        last_update: string;
-       date_of_creation: string;
+
        title: string;
        estate_category: string;
        description: string;
@@ -19,8 +18,7 @@ export class Properties {
        legal_id: string;
 
        public constructor(entity = null) {
-        this.last_update = entity !== null ? entity.last_update : '';
-        this.date_of_creation = entity !== null ? entity.date_of_creation : '';
+
         this.title = entity !== null ? entity.title : '';
         this.estate_category = entity !== null ? entity.estate_category : '';
         this.description = entity !== null ? entity.description : '';

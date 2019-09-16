@@ -23,6 +23,7 @@ export class EstateFormComponent implements OnInit {
   utilities: any[];
   categories: any[];
   environments: any[];
+  photo: Blob;
 
   public uploader: FileUploader = new FileUploader({
     isHTML5: true
@@ -86,6 +87,21 @@ export class EstateFormComponent implements OnInit {
             console.log( error.status  + ':' +  error.error.context.uuid);
             this.isPosted = true;
           }
+        }
+      );
+    }
+    onFileSelected(file: Blob){
+      this.photo = file;
+    }
+    
+    uploadFile() {
+      return this.api.postFile(this.entityUuid, 'image', this.photo)
+      .subscribe(
+        data => {
+          console.log(data);
+        },
+        error => {
+            console.log( error.status  );
         }
       );
     }
