@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
 
 import { AuthTokenInterceptor } from './token.interceptor';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
@@ -21,7 +22,12 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { LineSliderComponent } from './ui/line-slider/line-slider.component';
 import { AdminLoginComponent } from './auth/components/admin-login/admin-login.component';
-import { CrmComponent } from './ui/crm/crm.component';
+import { CrmComponent } from './ui/admin/crm/crm.component';
+import { AvisComponent } from './ui/admin/avis/avis.component';
+import { CategoryComponent } from './ui/admin/category/category.component';
+import { AdminNavComponent } from './ui/admin/admin-nav/admin-nav.component';
+import { FileUploadModule } from 'ng2-file-upload';
+import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 
 
 
@@ -39,7 +45,11 @@ import { CrmComponent } from './ui/crm/crm.component';
     LineSliderComponent,
     EstateFormComponent,
     AdminLoginComponent,
-    CrmComponent
+    CrmComponent,
+    AvisComponent,
+    CategoryComponent,
+    AdminNavComponent,
+    AnnoncesComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +59,8 @@ import { CrmComponent } from './ui/crm/crm.component';
     MaterialModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    FileUploadModule,
+    MatIconModule,
 
   ],
 

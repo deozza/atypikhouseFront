@@ -49,6 +49,12 @@ export class DataService {
     return this.http.patch<Entity>(API_URL + '/entity/' + uuid, value);
   }
 
+  public validateEntity(uuid: string, value: Entity): Observable<Entity> {
+    return this.http.patch<Entity>(API_URL + '/validate/' + uuid, value);
+  }
+  public deleteEntity(uuid: string): Observable<Entity> {
+    return this.http.delete<Entity>(API_URL + '/entity/' + uuid);
+  }
   postFile(uuid: string, property: string, file: Blob)
   {
     return this.http.post(API_URL + '/entity/' + uuid + '/file/' + property, file);

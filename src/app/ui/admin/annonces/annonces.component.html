@@ -1,0 +1,14 @@
+<section id="pageAdmin">
+
+  <div class="container">
+<app-admin-nav></app-admin-nav>
+<div id="admin-content" *ngFor="let item of estates.items" >
+<div id="admin-annonces-overlay" class="admin-overlay-closed"><p>You're about to <strong>
+  {{message}}</strong><br> <strong>this estate</strong><br>are you sure ?</p><div class="estateOptions"><a (click)="cancel()">No</a><a (click)="validate(item)">Yes</a></div><p class="close-overlay">+</p></div><div id="admin-annonces"><h3>Annonces</h3>
+
+  <div class="adminAnnonce" ><div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div><p class="estateTitle">{{ item.properties?.title}}</p><p class="estateCountry">{{ item.properties.country}}</p><p class="estateCity">{{ item.properties.city}}</p><div class="estateOptions"><a (click)="validateEstate()" class="validateEstate"></a><a  class="seeEstate"></a><a (click)="clearEstate()" class="clearEstate"></a></div></div>
+
+</div>
+</div>
+</div>
+</section>

@@ -11,7 +11,7 @@
     <a href="">Réserver</a>
     <!--
 Non-connecté-->
-      <a href="">Host</a>
+      <a [routerLink]="['/estate_form']">Host</a>
     <ng-container *ngIf="!isConnected">
       <a [routerLink]="['/sign-up']" class="active-link">Sign-up</a>
       <a [routerLink]="['/login']">Login</a>
@@ -28,7 +28,7 @@ Non-connecté-->
     <a href="">Mes Réservations</a>
     <a href="">Notifications</a>
     <!-- Aucune Annonce -->
-    <a href="">Host</a>
+    <a [routerLink]="['/estate_form']">Host</a>
     <!--Si Anoonce -->
     <!-- <a href="">Mes Annonces</a>-->
     <a href="">Recommander</a>
@@ -42,9 +42,9 @@ Non-connecté-->
     <!--Non-connecté-->
 
     <ng-container *ngIf="!isConnected">
-        <li><a href="">Host</a></li>
+        <li><a [routerLink]="['/estate_form']">Host</a></li>
           <li><a [routerLink]="['/sign-up']" class="active-link">Sign-up</a></li>
-            <li><a href="">Login</a></li>
+            <li><a [routerLink]="['/login']">Login</a></li>
     </ng-container>
     <!--connecté-->
     <ng-container *ngIf="isConnected">
@@ -53,7 +53,7 @@ Non-connecté-->
       <li><a href="">Mes Réservations</a></li>
       <li><a href="">Notifications</a></li>
       <!-- Aucune Annonce -->
-      <li><a href="">Host</a></li>
+      <li><a [routerLink]="['/estate_form']">Host</a></li>
       <!--Si Anoonce -->
       <!-- <a href="">Mes Annonces</a>-->
       <li><a href="">Recommander</a></li>

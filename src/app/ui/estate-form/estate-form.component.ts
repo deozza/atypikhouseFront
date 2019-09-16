@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
+import { ThrowStmt } from '@angular/compiler';
 
 
 @Component({
@@ -23,7 +24,7 @@ export class EstateFormComponent implements OnInit {
   utilities: any[];
   categories: any[];
   environments: any[];
-  photo: Blob;
+  photo:Blob[] = [];
 
   public uploader: FileUploader = new FileUploader({
     isHTML5: true
@@ -91,11 +92,12 @@ export class EstateFormComponent implements OnInit {
       );
     }
     onFileSelected(file: Blob){
-      this.photo = file;
+      this.photo.push(file);
     }
-    
+
     uploadFile() {
-      return this.api.postFile(this.entityUuid, 'image', this.photo)
+      for (let photo of this.photo )
+      {this.api.postFile(this.entityUuid, 'image', photo)
       .subscribe(
         data => {
           console.log(data);
@@ -104,6 +106,37 @@ export class EstateFormComponent implements OnInit {
             console.log( error.status  );
         }
       );
+    }}
+
+    uploadSubmit() {
+      // tslint:disable-next-line: prefer-for-of
+      for (let i = 0; i < this.uploader.queue.length; i++) {
+        const fileItem = this.uploader.queue[i]._file;
+        if (fileItem.size > 10000000) {
+          alert('Each File should be less than 10 MB of size.');
+          return;
+        }
+      }
+
+      for (let j = 0; j < this.uploader.queue.length; j++) {
+
+        const fileItem = this.uploader.queue[j]._file;
+        console.log(fileItem.name);
+        this.photo.push(fileItem);
+        for (let photo of this.photo ) {
+          this.uploadF(photo).subscribe(data => alert(data));
+        }
+      }
+      this.uploader.clearQueue();
+  }
+
+  uploadF(data: Blob)  {
+    return this.api.postFile(this.entityUuid, 'image', data);
+
+    }
+
+    validate() {
+      this.router.navigate(['/estate', this.entityUuid]);
     }
 
 

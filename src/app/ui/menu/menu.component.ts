@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 })
 export class MenuComponent implements OnInit {
 
-  private isConnected:boolean;
+  public isConnected:boolean;
 
   constructor(public auth: AuthService) { }
 
