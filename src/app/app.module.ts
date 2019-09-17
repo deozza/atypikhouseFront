@@ -29,6 +29,7 @@ import { AdminNavComponent } from './ui/admin/admin-nav/admin-nav.component';
 import { FileUploadModule } from 'ng2-file-upload';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
+import { ProfilComponent } from './ui/profil/profil.component';
 
 
 
@@ -51,7 +52,8 @@ import { HostComponent } from './ui/host/host.component';
     CategoryComponent,
     AdminNavComponent,
     AnnoncesComponent,
-    HostComponent
+    HostComponent,
+    ProfilComponent
 
   ],
   imports: [

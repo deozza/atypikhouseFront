@@ -13,6 +13,7 @@ import { AvisComponent } from './ui/admin/avis/avis.component';
 import { CategoryComponent } from './ui/admin/category/category.component';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
+import { ProfilComponent } from './ui/profil/profil.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'categories', component: CategoryComponent},
   { path: 'annonces', component: AnnoncesComponent},
   { path: 'host', component: HostComponent},
+  { path: 'profil', component: ProfilComponent},
 
 
 
