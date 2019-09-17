@@ -33,15 +33,15 @@ export class MonthSliderComponent implements OnInit {
 
     var bullets = document.getElementsByClassName('bullet-slider');
     var bullet01 = bullets[0],
-        bullet02 = bullets[1],
-        bullet03 = bullets[2];
+        bullet02 = bullets[1]
+
     var slides = document.getElementsByClassName('month-slide');
     var slide01 = slides[0],
-        slide02 = slides[1],
-        slide03 = slides[2];
+        slide02 = slides[1]
+
     bullet01.addEventListener("click",switch01);
     bullet02.addEventListener("click",switch02);
-    bullet03.addEventListener("click",switch03);
+
     function switch01(){
         removeActiveClass();
         slide01.classList.add('active-slide');
@@ -52,11 +52,7 @@ export class MonthSliderComponent implements OnInit {
         slide02.classList.add('active-slide');
         bullet02.classList.add('bullet-slide-active');
     }
-    function switch03(){
-        removeActiveClass();
-        slide03.classList.add('active-slide');
-        bullet03.classList.add('bullet-slide-active');
-    }
+
     function removeActiveClass(){
         for (var i = 0; i < slides.length; i++) {
             slides[i].classList.remove('active-slide');
