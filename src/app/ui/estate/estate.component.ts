@@ -3,6 +3,7 @@ import { DataService } from 'src/app/data/services/data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Reservation } from 'src/app/model/reservation.model';
 import { Estate } from 'src/app/model/estate.model';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 import { Entity } from 'src/app/model/entity.model';
@@ -16,11 +17,11 @@ import { Entity } from 'src/app/model/entity.model';
 export class EstateComponent implements OnInit {
 
 
-  constructor(private api: DataService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
 
   estate:Entity = new Entity;
   booking: Reservation = new Reservation ();
-
+  imagePaths:any[] = [];
   routingSubscription: any;
   price: number;
   src: any;
@@ -35,7 +36,13 @@ export class EstateComponent implements OnInit {
         (e)=> {this.estate = e ;
           this.price = this.estate.properties.price;
           this.booking.estate.uuid = params.uuid;
-          console.log(this.booking.estate.uuid);
+          for(let image of this.estate.properties.image) {
+            if(image){
+              this.imagePaths.push('data:image/jpg;base64,' +
+              (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
+            }
+          }
+          console.log(this.imagePaths);
         },
         (error) => console.log(error)
     );

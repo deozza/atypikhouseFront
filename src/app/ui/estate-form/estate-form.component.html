@@ -2,7 +2,7 @@
   <div id="add-estate" *ngIf="!isPosted">
     <h3>Créer votre annonce</h3>
     <div class="add-estate-form">
-      <form class="col s12" #form="ngForm" (ngSubmit)="save(form.value)">
+      <form class="col s12">
         <h4>Type de bien</h4>
         <div class="addEstateCategory">
           <div *ngFor="let category of enumerations.enumerations?.estate_category">
@@ -32,7 +32,6 @@
               type="text" [(ngModel)]="estate.description">
                     Enter your name
                     </textarea>
-
           </div>
           <div class="addEstateLine">
             <div class="addEstateItem"><label for="">Surface</label><input name="surface" id="surface" type="number"
@@ -45,25 +44,20 @@
             </div>
             <div class="addEstateItem"><label for="beds">Lits</label><input name="beds" id="beds" type="number"
                 [(ngModel)]="estate.beds"></div>
-            <div class="addEstateItem"><label for="bath_room">Nombre Salle de bain</label><input name="bath_room" id="bath_room"
-                type="number" [(ngModel)]="estate.bath_room"></div>
+            <div class="addEstateItem"><label for="bath_room">Nombre Salle de bain</label><input name="bath_room"
+                id="bath_room" type="number" [(ngModel)]="estate.bath_room"></div>
           </div>
-
         </div>
         <div class="add-estate-form">
           <h4>Utilities</h4>
-
           <div class="addEstateUtilities">
             <div *ngFor="let utility of enumerations.enumerations?.utilities">
               <input type="checkbox" id="{{utility}}" name="utilities" [value]="utility"
                 (change)="updateUtil(utility, $event)">
               <label for="utility">{{ utility }}</label>
             </div>
-
           </div>
-
         </div>
-
         <div class="add-estate-form">
           <h4>Environment</h4>
 
@@ -93,45 +87,45 @@
 </section>
 
 <div class="row" *ngIf="isPosted">
-    <h3>Ajouter des images</h3>
+  <h3>Ajouter des images</h3>
   <form [formGroup]="uploadForm" (ngSubmit)="uploadSubmit()">
-      <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader" multiple/><br/>
-      <br>
-      <div class="drop-zone">
+    <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader" multiple /><br />
+    <br>
+    <div class="drop-zone">
       <div ng2FileDrop [uploader]="uploader" class="drop-zone">
 
       </div>
-      </div>
-      <table>
-          <thead>
-          <tr>
-            <th width="90%">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th width="90%">
 
-            </th>
-            <th width="10%">
+          </th>
+          <th width="10%">
 
-            </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr *ngFor="let item of uploader.queue">
-            <th width="90%">
-              <strong>{{ item?.file?.name }}</strong>
-            </th>
-            <th class="text-center" width="10%">
-              <mat-icon (click)="item.remove()">delete</mat-icon>
-            </th>
-          </tr>
-          </tbody>
-        </table>
-        <br>
-      <button mat-raised-button color="accent"  type="submit">Upload Images</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of uploader.queue">
+          <th width="90%">
+            <strong>{{ item?.file?.name }}</strong>
+          </th>
+          <th class="text-center" width="10%">
+            <mat-icon (click)="item.remove()">delete</mat-icon>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <button mat-raised-button color="accent" type="submit">Upload Images</button>
   </form>
 
   <div class="input-field col s6">
-      <button class="btn waves-effect waves-light" (click)="validate()">Valider
-        <i class="material-icons right">send</i>
-      </button>
+    <button class="btn waves-effect waves-light" (click)="validate()">Valider
+      <i class="material-icons right">send</i>
+    </button>
   </div>
 
 </div>

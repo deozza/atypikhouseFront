@@ -4,6 +4,7 @@ import { Pagination } from 'src/app/model/pagination.model';
 import { DataService } from 'src/app/data/services/data.service';
 import { Entity } from 'src/app/model/entity.model';
 import { List } from 'src/app/model/list.model';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class LineSliderComponent implements OnInit {
 
   entities: List<Entity>;
 
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService, private router: Router) { }
 
   ngOnInit() {
     if(this.estate_category !== undefined){
@@ -27,8 +28,10 @@ export class LineSliderComponent implements OnInit {
     }
 
     this.dataService.getEntities(this.kind, this.pagination.count, this.pagination.page, this.pagination.filters)
-    .subscribe(e =>
-      this.updateCurrentPage(e));
+    .subscribe(e =>{
+      console.log(e);
+      this.updateCurrentPage(e)});
+
 
 
   }
@@ -48,6 +51,10 @@ export class LineSliderComponent implements OnInit {
     this.pagination.changingPage = false;
   });
 }
+goDetails(estate: Entity) {
+  console.log("ok");
+  this.router.navigate(['/estate', estate.uuid]);
 
+}
 
 }

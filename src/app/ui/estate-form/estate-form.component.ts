@@ -83,7 +83,7 @@ export class EstateFormComponent implements OnInit {
           console.log(data);
         },
         error => {
-          if (error.status = 409) {
+          if (error.status == 409) {
             this.entityUuid = error.error.context.uuid;
             console.log( error.status  + ':' +  error.error.context.uuid);
             this.isPosted = true;
@@ -91,25 +91,25 @@ export class EstateFormComponent implements OnInit {
         }
       );
     }
-    onFileSelected(file: Blob){
-      this.photo.push(file);
-    }
+    // onFileSelected(file: Blob){
+    //   this.photo.push(file);
+    // }
 
-    uploadFile() {
-      for (let photo of this.photo )
-      {this.api.postFile(this.entityUuid, 'image', photo)
-      .subscribe(
-        data => {
-          console.log(data);
-        },
-        error => {
-            console.log( error.status  );
-        }
-      );
-    }}
+    // uploadFile() {
+    //   for (let photo of this.photo )
+    //   {this.api.postFile(this.entityUuid, 'image', photo)
+    //   .subscribe(
+    //     data => {
+    //       console.log(data);
+    //     },
+    //     error => {
+    //         console.log( error.status  );
+    //     }
+    //   );
+    // }}
 
     uploadSubmit() {
-      // tslint:disable-next-line: prefer-for-of
+     
       for (let i = 0; i < this.uploader.queue.length; i++) {
         const fileItem = this.uploader.queue[i]._file;
         if (fileItem.size > 10000000) {
