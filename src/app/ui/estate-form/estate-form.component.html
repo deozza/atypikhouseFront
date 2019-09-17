@@ -60,20 +60,14 @@
         </div>
         <div class="add-estate-form">
           <h4>Environment</h4>
-
           <div class="addEstateEnvironment">
             <div *ngFor="let environment of enumerations.enumerations?.environment">
               <input type="checkbox" id="{{environment}}" name="environment" [value]="environment"
                 (change)="updateEnv(environment, $event)">
               <label for="environment">{{ environment }}</label>
             </div>
-
-
           </div>
-
           <a (click)="save()">enregister mon bien</a>
-
-
         </div>
 
 
