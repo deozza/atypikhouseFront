@@ -28,6 +28,7 @@ import { CategoryComponent } from './ui/admin/category/category.component';
 import { AdminNavComponent } from './ui/admin/admin-nav/admin-nav.component';
 import { FileUploadModule } from 'ng2-file-upload';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
+import { HostComponent } from './ui/host/host.component';
 
 
 
@@ -49,10 +50,12 @@ import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
     AvisComponent,
     CategoryComponent,
     AdminNavComponent,
-    AnnoncesComponent
+    AnnoncesComponent,
+    HostComponent
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

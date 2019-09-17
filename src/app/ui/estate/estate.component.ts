@@ -36,18 +36,21 @@ export class EstateComponent implements OnInit {
         (e)=> {this.estate = e ;
           this.price = this.estate.properties.price;
           this.booking.estate.uuid = params.uuid;
+          if(this.estate.properties.image){
           for(let image of this.estate.properties.image) {
             if(image){
               this.imagePaths.push('data:image/jpg;base64,' +
               (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
             }
-          }
+          }}
           console.log(this.imagePaths);
         },
         (error) => console.log(error)
     );
     }
   });
+
+
   // javascript
 var thumbnails = document.getElementsByClassName("estate-image-thumbnail");
 var activeThumbnail = document.querySelectorAll('#estate-image-gallery-controller .thumbnail-active img')[0].getAttribute('src');
@@ -80,6 +83,13 @@ closeOverlay.addEventListener("click",function(){
     overlay.style.right = "-100vw";
      document.querySelectorAll("html")[0].style.overflow= "auto";
 })
+}
+
+public getImagePath() {
+  if (this.imagePaths) {
+    return this.imagePaths; //  after get the image from documents service
+  }
+  return "../../../assets/images/bg/BG-03.jpg";
 }
 
 calculate()

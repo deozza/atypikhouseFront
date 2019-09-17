@@ -25,7 +25,6 @@ export class MonthSliderComponent implements OnInit {
     this.dataService.getEntities('estate', this.pagination.count, 1, this.pagination.filters).subscribe(
         (e)=> {this.estateOfTheMonth = e;
         this.estate_1 = this.estateOfTheMonth.items[0];
-        console.log(this.estateOfTheMonth.items[0]);
         this.estate_2 = this.estateOfTheMonth.items[1];
         this.estate_3 = this.estateOfTheMonth.items[1]},
         (error) => console.log(error)
@@ -64,7 +63,6 @@ export class MonthSliderComponent implements OnInit {
   }
 
   goDetails(estate: Estate) {
-    console.log("ok");
     this.router.navigate(['/estate', estate.uuid]);
 
   }

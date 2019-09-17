@@ -20,25 +20,6 @@ export class AnnoncesComponent implements OnInit {
   constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit() {
-    $(".close-overlay").click(function () {
-
-      $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
-
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-
-
-  });
-
-
-
-  // $(".clearEstate,.validateEstate").click(function ($event) {
-  //     $event.preventDefault();
-
-
-  // });
-
-
 
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
@@ -53,7 +34,12 @@ export class AnnoncesComponent implements OnInit {
     );
 
   }
+close(){
+      $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
+      $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
+      $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
 
+}
 
   validateEstate(){
     $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
@@ -68,30 +54,22 @@ export class AnnoncesComponent implements OnInit {
     this.message="erase"
   };
 
-  cancel(){
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-  }
 
   delete(estate: Entity) {
     this.dataService.deleteEntity(estate.uuid).subscribe(
       (t) => {this.router.navigate(['/annonces']);
      },
       (error) => {
-
        console.log(error);
      }
-
     );
-
-
   }
+
   validate(estate: Entity) {
     this.dataService.validateEntity(estate.uuid, estate).subscribe(
       (t) => {this.router.navigate(['/annonces']);
      },
       (error) => {
-
        console.log(error);
      }
 

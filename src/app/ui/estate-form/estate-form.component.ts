@@ -71,7 +71,7 @@ export class EstateFormComponent implements OnInit {
         let index = this.environments[service];
         this.estate.environment.splice(index, 1);
       }
-      console.log(this.estate.environment);
+
     }
 
      save() {
@@ -109,7 +109,7 @@ export class EstateFormComponent implements OnInit {
     // }}
 
     uploadSubmit() {
-     
+
       for (let i = 0; i < this.uploader.queue.length; i++) {
         const fileItem = this.uploader.queue[i]._file;
         if (fileItem.size > 10000000) {
