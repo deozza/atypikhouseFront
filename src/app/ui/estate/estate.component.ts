@@ -87,7 +87,7 @@ closeOverlay.addEventListener("click",function(){
 
 public getImagePath() {
   if (this.imagePaths) {
-    return this.imagePaths; //  after get the image from documents service
+    return this.imagePaths[0]; //  after get the image from documents service
   }
   return "../../../assets/images/bg/BG-03.jpg";
 }

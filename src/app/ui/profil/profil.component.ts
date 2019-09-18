@@ -28,7 +28,5 @@ ngOnInit() {
       );
       }Ò
 
-  ngOnDestroy() {
-    this.routingSubscription.unsubscribe();
-  }
+
 }
