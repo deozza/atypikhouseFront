@@ -17,6 +17,7 @@ import { ProfilComponent } from './ui/profil/profil.component';
 import { ContactComponent } from './ui/contact/contact.component';
 import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
+import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' }
 
   // { path: 'sitemap', component: sitemap},
   // { path: 'rules', component: rules},
