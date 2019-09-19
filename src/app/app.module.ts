@@ -31,6 +31,9 @@ import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
 import { ProfilComponent } from './ui/profil/profil.component';
 import { ModalComponent } from './ui/modal/modal.component';
+import { ContactComponent } from './ui/contact/contact.component';
+import { FaqComponent } from './ui/faq/faq.component';
+import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { ModalComponent } from './ui/modal/modal.component';
     HostComponent,
     ProfilComponent,
     ModalComponent,
+    ContactComponent,
+    FaqComponent,
+    ConditionsPrivacyComponent,
 
   ],
   imports: [

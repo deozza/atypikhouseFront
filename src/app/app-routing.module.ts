@@ -14,6 +14,10 @@ import { CategoryComponent } from './ui/admin/category/category.component';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
 import { ProfilComponent } from './ui/profil/profil.component';
+import { ContactComponent } from './ui/contact/contact.component';
+import { FaqComponent } from './ui/faq/faq.component';
+import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,6 +32,14 @@ const routes: Routes = [
   { path: 'annonces', component: AnnoncesComponent},
   { path: 'host', component: HostComponent},
   { path: 'profil', component: ProfilComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: 'faq', component: FaqComponent},
+  { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
+
+  // { path: 'sitemap', component: sitemap},
+  // { path: 'rules', component: rules},
+
+
 
 
 
