@@ -30,6 +30,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
 import { ProfilComponent } from './ui/profil/profil.component';
+import { ModalComponent } from './ui/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ProfilComponent } from './ui/profil/profil.component';
     AnnoncesComponent,
     HostComponent,
     ProfilComponent,
+    ModalComponent,
 
   ],
   imports: [

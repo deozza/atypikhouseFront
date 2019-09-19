@@ -1,0 +1,51 @@
+#modal-rgpd{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  /* max-height: 80px; */
+  background-color:rgb(0, 128, 94);
+  background-color:#215F69;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding:20px;
+  transition: bottom ease 1s;
+}
+
+.hidden-modal{
+  transition: bottom ease 1s;
+  bottom:-150px !important;
+}
+#modal-rgpd p{
+  width:80%;
+  max-width:950px;
+  line-height: 24px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+#modal-rgpd p a{
+  color:#FFF62B
+}
+#modal-rgpd button{
+  border:none;
+  color:#fff;
+  position: relative;
+  width:40px;
+  height:40px;
+  display: block;
+  background-color:#fff;
+  color:#000;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: 'Roboto',sans-serif;
+  border-radius:25px;
+  transform: rotate(45deg);
+  margin-left: 20px;
+  cursor: pointer
+}
+
