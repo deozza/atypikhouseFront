@@ -1,76 +1,90 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
-import {MatSelectModule} from '@angular/material/select';
-import { AppRoutingModule } from './app-routing.module';
-import { ApiService } from 'src/app/services/api.service';
-import { AuthService } from 'src/app/services/auth.service';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { HelpComponent } from './help/help.component';
-import { HomeComponent } from './home/home.component';
-import { BookingComponent } from './booking/booking.component';
-import { FilterPipe} from './filter.pipe';
-import { Pipe, PipeTransform } from '@angular/core';
-import { EstateComponent } from './estate/estate.component';
-import { UploadFileComponent } from './upload-file/upload-file.component';
-import { FileUploadModule} from 'ng2-file-upload';
-import { AddEstateComponent } from './add-estate/add-estate.component';
-import { UserComponent } from './user/user.component';
-import { GetUsersComponent } from './get-users/get-users.component';
-import { RequestPasswordComponent } from './request-password/request-password.component';
-import { ActivateUserComponent } from './activate-user/activate-user.component';
-import { ProfilComponent } from './profil/profil.component';
-import { EditProfilComponent } from './edit-profil/edit-profil.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import {FormsModule} from '@angular/forms';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
+
+import { AuthTokenInterceptor } from './token.interceptor';
+import { EstateFormComponent } from './ui/estate-form/estate-form.component';
+import { FooterComponent } from './ui/footer/footer.component';
+import { MenuComponent } from './ui/menu/menu.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { SignUpComponent } from './auth/components/sign-up/sign-up.component';
+import { HomeComponent } from './ui/home/home.component';
+import { AboutComponent } from './ui/about/about.component';
+import { MonthSliderComponent } from './ui/month-slider/month-slider.component';
+import { EstateComponent } from './ui/estate/estate.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ReactiveFormsModule} from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { LineSliderComponent } from './ui/line-slider/line-slider.component';
+import { AdminLoginComponent } from './auth/components/admin-login/admin-login.component';
+import { CrmComponent } from './ui/admin/crm/crm.component';
+import { AvisComponent } from './ui/admin/avis/avis.component';
+import { CategoryComponent } from './ui/admin/category/category.component';
+import { AdminNavComponent } from './ui/admin/admin-nav/admin-nav.component';
+import { FileUploadModule } from 'ng2-file-upload';
+import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
+import { HostComponent } from './ui/host/host.component';
+import { ProfilComponent } from './ui/profil/profil.component';
+import { ModalComponent } from './ui/modal/modal.component';
+import { ContactComponent } from './ui/contact/contact.component';
+import { FaqComponent } from './ui/faq/faq.component';
+import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
+    MenuComponent,
     LoginComponent,
-    RegisterComponent,
-    HelpComponent,
+    SignUpComponent,
     HomeComponent,
-    BookingComponent,
+    AboutComponent,
+    MonthSliderComponent,
     EstateComponent,
-    UploadFileComponent,
-    AddEstateComponent,
-    UserComponent,
-    GetUsersComponent,
-    RequestPasswordComponent,
-    ActivateUserComponent,
+    LineSliderComponent,
+    EstateFormComponent,
+    AdminLoginComponent,
+    CrmComponent,
+    AvisComponent,
+    CategoryComponent,
+    AdminNavComponent,
+    AnnoncesComponent,
+    HostComponent,
     ProfilComponent,
-    EditProfilComponent,
-
+    ModalComponent,
+    ContactComponent,
+    FaqComponent,
+    ConditionsPrivacyComponent,
 
   ],
   imports: [
-    MatInputModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    MatIconModule,
-    MatCardModule,
+    HttpClientModule,
+    FormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
     FileUploadModule,
-    MatSelectModule,
-    ReactiveFormsModule
+    MatIconModule,
+
+
   ],
 
   providers: [
-    ApiService,
-    AuthService,
-    FilterPipe
-  ],
+    {provide: HTTP_INTERCEPTORS,
+    useClass: AuthTokenInterceptor,
+
+
+    multi: true,
+  }
+
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

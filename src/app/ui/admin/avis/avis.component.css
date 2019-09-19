@@ -1,0 +1,206 @@
+/** AVIS **/
+
+#admin-content #admin-avis {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+
+
+#admin-content #admin-avis .adminavis {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+}
+
+#admin-content #admin-avis .newAdminAvis {
+  background-color: #007772;
+  color: fff;
+}
+
+#admin-content #admin-avis .newAdminAvis:after {
+  position: absolute;
+  content: "!";
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  top: 5px;
+  margin-top: -12px;
+  right: -10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px #555;
+
+}
+
+#admin-content #admin-avis .adminavis {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#admin-content #admin-avis .adminavis .useravis {
+  background-color: rgba(255, 255, 255, .2) !important;
+
+}
+
+#admin-content #admin-avis .adminavis .useravis {
+  max-width: 50%;
+  background-color: #ddd;
+  padding: 10px 30px;
+  font-size: 13px;
+  position: relative;
+}
+
+#admin-content #admin-avis .adminavis .useravis:before {
+  content: "“";
+  position: absolute;
+  font-size: 50px;
+  height: auto;
+  width: 25px;
+  height: 25px;
+  font-family: Georgia, serif;
+  left: 5px;
+  top: 5px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+}
+
+#admin-content #admin-avis .adminavis .useravis:after {
+  content: "”";
+  position: absolute;
+  font-size: 50px;
+  height: auto;
+  width: 25px;
+  height: 25px;
+  font-family: Georgia, serif;
+  right: 5px;
+  bottom: 5px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+}
+
+#admin-content #admin-avis .adminavis .avisInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#admin-content #admin-avis .adminavis .avisInfo a {
+  font-weight: 900;
+  display: block;
+  color: #007772;
+  text-decoration: none;
+}
+
+#admin-content #admin-avis .adminavis .avisInfo a:hover {
+  text-decoration: underline;
+}
+
+#admin-content #admin-avis .newAdminAvis .avisInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#admin-content #admin-avis .adminavis .estategrade {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+
+}
+#admin-content #admin-avis .adminavis .estategrade .gradeitemfilled {
+  background-color:orange;
+  height:15px;
+  width:15px;
+  margin:5px;
+  box-sizing: border-box;
+  border:1px solid #ccc;
+  border-radius:15px;
+}
+#admin-content #admin-avis .adminavis .estategrade .gradeitem {
+  background-color:#fff;
+  height:15px;
+  width:15px;
+  margin:5px;
+  border-radius:15px;
+  box-sizing: border-box;
+  border:1px solid #ccc;
+}
+
+#admin-content #admin-avis .adminavis .avisOptions {
+  width:70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+#admin-content #admin-avis .adminavis .avisOptions a{
+ display: block;
+  width:25px;
+  height:25px;
+  border-radius: 5px;
+}
+
+
+
+#admin-content #admin-avis .adminavis .avisOptions .validateAvis {
+  background-image: url(../../../../assets/adminIcons/tick.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:lightseagreen;
+}
+
+
+#admin-content #admin-avis .adminavis .avisOptions .clearAvis {
+  background-image: url(../../../../assets/adminIcons/clear.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:red;
+}
+
+@media only screen and (max-width: 1023px) {
+
+  #admin-content #admin-avis .adminavis {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  #admin-content #admin-avis .adminavis .avisInfo {
+      flex-direction: row;
+      margin:10px auto;
+
+  }
+  #admin-content #admin-avis .adminavis .avisInfo a{
+     margin:0 5px;
+
+  }
+  #admin-content #admin-avis .adminavis .avisOptions {
+     margin-top:20px;
+  }
+  #admin-content #admin-avis .adminavis .useravis {
+      max-width: 80%;
+  }
+
+
+}
+
+/**  FIN AVIS **/

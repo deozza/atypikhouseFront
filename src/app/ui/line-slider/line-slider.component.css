@@ -1,0 +1,226 @@
+section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+h3 {
+    font-family: 'Pacifico', serif;
+    font-size: 35px;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+h3:after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #E8A720;
+    left: 53%;
+    bottom: -5px;
+    margin-left: -75px;
+}
+section .line-slider{
+    width:100%;
+    max-width: 1024px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+}
+
+section .line-slider-container{
+    position: relative;
+    height:100%;
+    width:964px;
+    display: flex
+
+}
+
+section .line-slider-prev,.line-slider-next {
+    width: 30px;
+    height: 70px;
+    background-color: #007270;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    line-height: 70px;
+    text-align: center;
+    font-size: 50px;
+    top:50%;
+    margin-top: -35px;
+        cursor:pointer;
+}
+section .line-slider-next{
+    right:-30px;
+}
+section .line-slider-prev{
+    left:-30px;
+}
+section .line-slides-container{
+    width:964px;
+    position: relative;
+    overflow: hidden;
+}
+
+section .line-slides-page{
+    width:964px;
+    height:300px;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    transition:left ease 1s;
+}
+section .line-slides-page{
+    left:0;
+    transition:left ease 1s;
+
+}
+section .line-slides-page+.line-slides-page{
+    left:964px;
+    transition:left ease 1s;
+}
+
+section .line-slide-item{
+    width:200px;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+}
+section .line-slide-item img{
+display: block;
+    height:300px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+section .line-slide-label{
+    position: absolute;
+}
+section .line-slide-label{
+    display: block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    padding:5px;
+    background-color:rgba(0,114,112,0.9);
+    font-family: 'Roboto',sans-serif;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section .line-slide-label p:first-child{
+    font-weight: 100;
+    font-size: 20px;
+}
+.line-slide-label p+p strong{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+section .line-slide-label p+p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    section .line-slider-container{
+
+        width:calc(100% - 70px);
+    }
+    section .line-slider,.line-slides-container,.line-slides-page{
+        width:100%;
+    }
+    section .line-slides-page{
+        width:100%;
+        height:auto;
+        position: absolute;
+        top:0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex: 1 1 160px;
+    }
+    section .line-slide-item{
+        width:24%;
+        height:300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+
+@media only screen and (min-width: 565px) and (max-width: 769px) {
+    section .line-slider-container{
+
+        width:calc(100% - 70px);
+
+    }
+    section .line-slider,.line-slides-container,.line-slides-page{
+        width:95%;
+    }
+    section .line-slides-container{
+        height:auto;
+    }
+    section .line-slides-page{
+        width:100%;
+        height:auto;
+        position: absolute;
+        top:0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex: 1 1 160px;
+    }
+    section .line-slide-item{
+        width:200px;
+        height:300px;
+        margin: 10px 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    section .line-slider-container,.line-slides-container{
+        height: 640px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 564px) {
+    section .line-slider-container{
+
+        width:calc(100% - 70px);
+    }
+    section .line-slider,.line-slides-container,.line-slides-page{
+        width:100%;
+    }
+    section .line-slider-container,.line-slides-container{
+        height: 640px;
+    }
+
+    section .line-slides-page{
+        width:100%;
+        height:auto;
+        position: absolute;
+        top:0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex: 1 1 160px;
+    }
+    section .line-slide-item{
+        width:200px;
+        height:300px;
+        margin: 10px 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+}

@@ -1,0 +1,561 @@
+#section {
+  height: 100%;
+  width: 100%;
+}
+
+#estate-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+#estate-listing {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#estate-info-card,
+#estate-description-card,
+#estate-specs-card,
+#estate-utilities-card {
+  width: 95%;
+  height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 114, 112, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 114, 112, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px auto 10px;
+}
+
+#estate-info-card .estate-basics {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.estate-category {
+  height: 150px;
+  width: 150px;
+  background-color: #007270;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.estate-category img {
+  display: block;
+  height: 130px;
+  width: 130px;
+  background-color: #007270;
+}
+
+.estate-details .estate-update,
+.estate-details .estate-doc,
+.estate-details .estate-owner {
+  font-size: 12px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 5px;
+  color: #666;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.estate-details .estate-owner p + p {
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#estate-info-card .estate-details {
+  background-color: #fff;
+  height: 100%;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.estate-details h3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #007270;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.estate-details .estate-location {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px;
+  height: auto;
+}
+
+.estate-dates {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #666;
+  width: 100%;
+}
+
+.estate-details .estate-city,
+.estate-details .estate-country,
+.estate-details .estate-postalCode {
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.estate-details .estate-city p:first-child,
+.estate-details .estate-country p:first-child,
+.estate-details .estate-postalCode p:first-child {
+  display: flex;
+  font-weight: 700;
+  color: #007270
+}
+
+.estate-details .estate-keywords {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.estate-details .estate-keyword {
+  font-size: 12px;
+  font-weight: 700;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #007270;
+  color: #007270;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#estate-description-card {
+  flex-direction: column;
+}
+
+#estate-description-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #555;
+  font-weight: 300;
+  margin: 10px auto 0;
+}
+
+#estate-description-card p strong {
+  font-weight: 500;
+}
+
+#estate-specs-card {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#estate-specs-card .specs-item {
+  display: flex;
+  font-size: 18px;
+  width: 48%;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+#estate-specs-card .specs-item p:first-child {
+  margin-right: 10px;
+  background-color: #aaa;
+  padding: 10px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 150px;
+}
+
+#estate-specs-card .specs-item p + p {
+  background-color: #fff;
+  padding: 10px;
+}
+
+#estate-utilities-card {
+  flex-direction: column;
+}
+
+#estate-utilities-card h4 {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  margin: 10px auto 20px;
+  ;
+  text-decoration: underline;
+  color: #007772
+}
+
+#estate-utilities-card ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#estate-utilities-card ul:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  background-color: red;
+  margin-left: -25%;
+}
+
+#estate-utilities-card ul li {
+  padding: 5px 15px;
+  height: 40px;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 30%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  color: #666;
+  border-radius: 5px;
+  position: relative;
+  transition: color ease 0s;
+  display: flex;
+  justify-content: space-between;
+}
+
+#estate-utilities-card ul li:hover {
+  color: #fff;
+  background-color: #007772;
+  transition: color ease 0s;
+}
+
+#estate-utilities-card ul li i {
+  content: "";
+  font-family: 'FontAwesome';
+}
+
+#CTA-reservation,#reservation-overlay-content a:last-child {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007772;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 114, 112, 0.5);
+  margin-bottom: 20px;
+}
+
+/*** IMAGE GALLERY ***/
+#estate-image-gallery {
+  width: 50%;
+  height: 100%;
+  background-color: #007270;
+  display: flex;
+  flex-direction: column;
+  /* height:900px;;*/
+}
+
+#main-estate-image {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 650px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#main-estate-image img {
+  display: block;
+  height: 100%;
+}
+
+#main-estate-image:after {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity ease 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  content: "+";
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+}
+
+#main-estate-image:hover:after {
+  opacity: 0.7;
+  transition: opacity ease 1s;
+}
+
+#estate-image-gallery-controller {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+#estate-image-gallery-controller .estate-image-thumbnail {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#estate-image-gallery-controller .estate-image-thumbnail img {
+  height: 100%;
+}
+
+#estate-image-gallery-controller .estate-image-thumbnail:after {
+  content: "";
+  position: absolute;
+  background: url(../../../assets/images/magnifier.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  transition: opacity ease 1s;
+  color: red;
+}
+
+
+
+#estate-image-gallery-controller .thumbnail-active:after {
+  opacity: 0.7 !important;
+}
+
+#estate-image-gallery-controller .estate-image-thumbnail:hover:after {
+  opacity: 0.7;
+  transition: opacity ease 1s;
+}
+
+
+#reservation-overlay {
+  position: fixed;
+  width: 100Vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 3000;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding:10px;
+  display: flex;justify-content: center;
+  align-content: center;align-items: center;
+  overflow: hidden;
+  right:-100vw;
+  top: 0;
+  transition:right 1s ease;
+}
+
+#close-overlay{
+  position: absolute;
+  height:40px;
+  width:40px;
+  border:1px solid red;
+  text-align: center;border-radius: 20px;
+  right:20px;
+  top:20px;
+  z-index: 3400;
+  cursor: pointer;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 100;
+  color:red;
+  font-size: 40px;
+  transform: rotate(45deg);
+  transition:color ease 0.5s;
+  transition:background-color ease 0.5s;
+}
+#close-overlay:hover{
+ background-color:red;
+  color:#fff;
+  transition:color ease 0.5s;
+  transition:background-color ease 0.5s;
+}
+#reservation-overlay-content{
+  width:100%;
+  height:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+
+}
+#estate-content {
+  overflow: hidden;
+      overflow-x: hidden;
+  overflow-y: hidden
+}
+#reservation-dates{
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto',sans-serif;
+  font-size: 20px;
+}
+#reservation-overlay .reservation-price{
+  width:80%;
+  text-align: center;
+}
+#reservation-overlay .reservation-price-empty{
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+}
+
+#reservation-overlay .reservation-price-amount,#reservation-overlay .reservation-price-total{
+  font-family: 'Roboto',sans-serif;
+  font-size: 35px;
+  margin-top: 10px;
+  color:#007772;
+  text-align: center;
+
+}
+#reservation-overlay .reservation-price-total p:first-child{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#reservation-overlay .reservation-price-amount:after{
+  content:"€";
+  font-family: 'Roboto',sans-serif;
+  font-size: 35px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #estate-info-card {
+      flex-direction: column;
+  }
+
+  #estate-content {
+      flex-direction: column;
+  }
+
+  #estate-image-gallery,
+  #estate-listing {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #estate-info-card {
+      flex-direction: column;
+  }
+
+  #estate-content {
+      flex-direction: column;
+  }
+
+  #estate-image-gallery,
+  #estate-listing {
+      width: 100%;
+  }
+
+  #estate-specs-card {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+
+  #estate-specs-card .specs-item {
+      width: 100%;
+  }
+
+  #estate-utilities-card ul li {
+      padding: 5px 15px;
+      height: 40px;
+      line-height: 30px;
+      box-sizing: border-box;
+      width: 45%;
+      background-color: #fff;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      color: #666;
+      border-radius: 5px;
+      position: relative;
+      transition: color ease 0s;
+      display: flex;
+      justify-content: space-between;
+  }
+}
