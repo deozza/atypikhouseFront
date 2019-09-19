@@ -31,8 +31,6 @@ import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
 import { HostComponent } from './ui/host/host.component';
 import { ProfilComponent } from './ui/profil/profil.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +51,7 @@ import { ProfilComponent } from './ui/profil/profil.component';
     AdminNavComponent,
     AnnoncesComponent,
     HostComponent,
-    ProfilComponent
+    ProfilComponent,
 
   ],
   imports: [
@@ -67,12 +65,16 @@ import { ProfilComponent } from './ui/profil/profil.component';
     FileUploadModule,
     MatIconModule,
 
+
   ],
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
     useClass: AuthTokenInterceptor,
-    multi: true}
+
+
+    multi: true,
+  }
 
     ],
   bootstrap: [AppComponent]
