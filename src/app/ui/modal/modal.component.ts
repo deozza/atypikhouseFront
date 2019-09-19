@@ -18,8 +18,10 @@ export class ModalComponent implements OnInit {
   closeModal() {
     console.log('CLOSE');
     let modal = document.getElementById('modal-rgpd');
-    console.log(modal);
     modal.classList.add('hidden-modal');
+    let cookiedate = new Date();
+    cookiedate.setDate(cookiedate.getDate() + 90);
+    document.cookie = 'AtypikHouse-Cookies-Status=Accepted; Expires=' + cookiedate.toString + ';';
 
   }
 
