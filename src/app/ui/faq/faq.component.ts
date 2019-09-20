@@ -11,13 +11,9 @@ export class FaqComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      $(document).ready(function(){
-        $(".question-answer").click(function(){
-
-
-
-          $(this).toggleClass( "questionOpen");
-
+    $(document).ready(function() {
+        $('.question-answer').click(function() {
+          $(this).toggleClass( 'questionOpen');
         });
     });
   }

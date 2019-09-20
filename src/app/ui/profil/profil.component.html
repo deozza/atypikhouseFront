@@ -1,6 +1,36 @@
-<div class="profil">
-  <h3> Bonjour {{user.username}},
-    vous etes membre {{user.register_date | date: 'MMM yy'}}
-    </h3>
+<section class="profileModel">
+<aside>
+  <ul>
+    <li><a [routerLink]="['/profil']" class="activeProfileLink">Profil</a></li>
+    <li><a [routerLink]="['/messenger']">Messagerie</a></li>
+    <li><a href="">Mes Réservations</a></li>
+    <li><a href="">Notifications</a></li>
+    <li><a href="">Recommander</a></li>
+    <li><a href="">Aide</a></li>
+  </ul>
+</aside>
+<div class="profileContent">
+<div class="profilecontainer">
+  <div class="profileInfo">
+      <div class="profileIcon"></div>
+      <div class="profiledate">Membre depuis le {{user.register_date | date: 'dd/MM/yy'}}</div>
+      <a href="" class="modifierForm">Modifier Mes informations</a>
+  </div>
+  <form action="" class="profileForm">
+      <label for="username" class="requiredInfo"><b>Identifiant</b></label>
+      <input type="text" id="username" placeholder="ex : toto28" name="username"  [(ngModel)]="user.username" required >
+
+
+      <label for="email" class="requiredInfo"><b>E-mail</b></label>
+      <input type="text" id="email" placeholder="ex : saitama@heroassociation.gov" name="email" [(ngModel)]="user.email" required>
+
+      <label for="psw" class="requiredInfo"><b>Mot de passe</b></label>
+      <input type="password" placeholder="Enter Password" id="first" name="first" [(ngModel)]="user.password" required>
+
+
+      <button type="submit" disabled>Modifier</button>
+  </form>
+</div>
 </div>
 
+</section>

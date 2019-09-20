@@ -18,7 +18,7 @@ import { ContactComponent } from './ui/contact/contact.component';
 import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
-
+import { MessengerComponent } from './ui/messenger/messenger.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -33,6 +33,7 @@ const routes: Routes = [
   { path: 'annonces', component: AnnoncesComponent},
   { path: 'host', component: HostComponent},
   { path: 'profil', component: ProfilComponent},
+  { path: 'messenger', component: MessengerComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
