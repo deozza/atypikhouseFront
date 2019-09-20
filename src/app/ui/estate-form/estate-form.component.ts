@@ -26,7 +26,14 @@ export class EstateFormComponent implements OnInit {
   categories: any[];
   environments: any[];
   photo:Blob[] = [];
+  changed = false;
+  titleError: string;
+  estateError: string;
+  descriptionError: string;
+  priceError:  string;
+  roomsError
 
+  
   public uploader: FileUploader = new FileUploader({
     isHTML5: true
   });
@@ -36,6 +43,7 @@ export class EstateFormComponent implements OnInit {
     constructor(private api: DataService, private route: ActivatedRoute, private router: Router, private fb: FormBuilder) { }
 
     ngOnInit() {
+     
       this.estate = new Estate();
       this.getUtilities();
       this.uploadForm = this.fb.group({
@@ -76,6 +84,7 @@ export class EstateFormComponent implements OnInit {
     }
 
      save() {
+       this.changed = true;
       this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
         data => {
@@ -89,36 +98,21 @@ export class EstateFormComponent implements OnInit {
           }
           else {
             this.error = true;
-            // Object.entries(error.error.error.children).forEach(
-            //   ([cle, value]) => {Object.entries(value).forEach(
-            //     ([key, value]) => {console.log(cle, value[0]);
-            //     this.errors.push(cle + ":" + value[0]);
-            //     }
-            //   );
-            // }
-            // );
-            // console.log(this.errors)
+            Object.entries(error.error.error.children).forEach(
+               ([cle, value]) => {
+                 Object.entries(value).forEach(
+                ([key, value]) => {
+                this.errors[cle] = value[0];
+                 }
+                );
+               }
+              );
+            console.log(this.errors)
           }
         }
       );
     }
-    // onFileSelected(file: Blob){
-    //   this.photo.push(file);
-    // }
-
-    // uploadFile() {
-    //   for (let photo of this.photo )
-    //   {this.api.postFile(this.entityUuid, 'image', photo)
-    //   .subscribe(
-    //     data => {
-    //       console.log(data);
-    //     },
-    //     error => {
-    //         console.log( error.status  );
-    //     }
-    //   );
-    // }}
-
+   
     uploadSubmit() {
       for (let i = 0; i < this.uploader.queue.length; i++) {
         const fileItem = this.uploader.queue[i]._file;

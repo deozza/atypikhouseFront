@@ -9,16 +9,19 @@
           <div *ngFor="let category of enumerations.enumerations?.estate_category">
             <label for="category">{{category}}</label> <input type="radio" id="estate_category" name="estate_category"
               [value]="category" [(ngModel)]="estate.estate_category" class="form-control" required>
-
           </div>
-
-
         </div>
         <div class="add-estate-form">
           <h4>Informations</h4>
           <div class="addEstateLine">
-            <div class="addEstateItem"><label for="title">Titre</label><input name="title" id="title" type="text"
-                [(ngModel)]="estate.title" required></div>
+            <div class="addEstateItem"><label for="title">Titre</label>
+              <input name="title" id="title" type="text" [(ngModel)]="estate.title" class="form-control" required #title="ngModel" ng-minlength="25" maxlength="250">
+                <div *ngIf="error" class="error">
+                  <div>
+                  {{ errors.title }}
+                  </div>
+                </div>
+              </div>
             <div class="addEstateLine">
               <label class="active" for="address">Address</label>
               <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
@@ -80,10 +83,7 @@
 
 
     </div>
-    <div *ngIf="error">
-        <p>Merci de vérifier ces champs</p>
-        <ul><li *ngFor="let error of errors"> {{ error }}</li></ul>
-    </div>
+    
 
   </div>
 

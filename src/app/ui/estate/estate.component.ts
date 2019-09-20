@@ -130,7 +130,8 @@ calculate()
 
 
 
-  getClass(utility) { (2)
+  getClass(utility) 
+  { (2)
     switch (utility) {
       case 'chauffage':
         return 'fas fa-fire';
