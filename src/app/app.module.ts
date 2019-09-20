@@ -34,6 +34,7 @@ import { ModalComponent } from './ui/modal/modal.component';
 import { ContactComponent } from './ui/contact/contact.component';
 import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
+import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-p
     ContactComponent,
     FaqComponent,
     ConditionsPrivacyComponent,
+    FourOhFourComponent
 
   ],
   imports: [
