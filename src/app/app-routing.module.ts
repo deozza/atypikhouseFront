@@ -36,7 +36,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
 
-  // { path: 'sitemap', component: sitemap},
+  // { path: 'ê', component: sitemap},
   // { path: 'rules', component: rules},
 
 

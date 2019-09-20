@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ServerModule } from '@angular/platform-server';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
@@ -9,9 +9,16 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
   imports: [
     AppModule,
     ModuleMapLoaderModule,
-    ServerModule,
+    BrowserModule,
+
 
   ],
   bootstrap: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
+  providers: [
+    Title
+  ]
 })
 export class AppServerModule {}

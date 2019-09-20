@@ -10,7 +10,7 @@ header {
   align-content: center;
   align-items: center;
   z-index: 2000;
-  margin-bottom:50px;
+  /* margin-bottom:50px; */
 }
 
 header h1 {

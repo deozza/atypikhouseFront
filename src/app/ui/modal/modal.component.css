@@ -18,7 +18,7 @@
 
 .hidden-modal{
   transition: bottom ease 1s;
-  bottom:-150px !important;
+  bottom:-450px !important;
 }
 #modal-rgpd p{
   width:80%;
