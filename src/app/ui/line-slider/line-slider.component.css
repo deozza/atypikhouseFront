@@ -115,11 +115,11 @@ section .line-slide-label{
 }
 section .line-slide-label p:first-child{
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
 }
 .line-slide-label p+p strong{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 section .line-slide-label p+p {

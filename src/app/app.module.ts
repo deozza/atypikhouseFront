@@ -28,8 +28,15 @@ import { CategoryComponent } from './ui/admin/category/category.component';
 import { AdminNavComponent } from './ui/admin/admin-nav/admin-nav.component';
 import { FileUploadModule } from 'ng2-file-upload';
 import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
-
-
+import { HostComponent } from './ui/host/host.component';
+import { ProfilComponent } from './ui/profil/profil.component';
+import { ModalComponent } from './ui/modal/modal.component';
+import { ContactComponent } from './ui/contact/contact.component';
+import { FaqComponent } from './ui/faq/faq.component';
+import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
+import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -49,10 +56,18 @@ import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
     AvisComponent,
     CategoryComponent,
     AdminNavComponent,
-    AnnoncesComponent
+    AnnoncesComponent,
+    HostComponent,
+    ProfilComponent,
+    ModalComponent,
+    ContactComponent,
+    FaqComponent,
+    ConditionsPrivacyComponent,
+    FourOhFourComponent
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
@@ -61,13 +76,18 @@ import { AnnoncesComponent } from './ui/admin/annonces/annonces.component';
     ReactiveFormsModule,
     FileUploadModule,
     MatIconModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+
 
   ],
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
     useClass: AuthTokenInterceptor,
-    multi: true}
+
+
+    multi: true,
+  }
 
     ],
   bootstrap: [AppComponent]

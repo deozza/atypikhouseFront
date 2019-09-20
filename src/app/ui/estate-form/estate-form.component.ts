@@ -14,7 +14,8 @@ import { ThrowStmt } from '@angular/compiler';
   styleUrls: ['./estate-form.component.css']
 })
 export class EstateFormComponent implements OnInit {
-
+  errors: any[] = [];
+  error= false;
   estate: Estate;
   isPosted = false;
   enumerations:any= [];
@@ -49,7 +50,7 @@ export class EstateFormComponent implements OnInit {
         this.utilities = this.enumerations.enumerations.utilities;
         this.categories = this.enumerations.enumerations.categories;
         this.environments = this.enumerations.enumerations.environment;
-        console.log(this.enumerations);
+
       });
      }
      updateUtil(service: any, event) {
@@ -60,7 +61,7 @@ export class EstateFormComponent implements OnInit {
         let index = this.utilities[service];
         this.estate.utilities.splice(index, 1);
       }
-      console.log(this.estate.utilities);
+
     }
 
     updateEnv(service: any, event) {
@@ -71,12 +72,10 @@ export class EstateFormComponent implements OnInit {
         let index = this.environments[service];
         this.estate.environment.splice(index, 1);
       }
-      console.log(this.estate.environment);
+
     }
 
      save() {
-       console.log(this.estate.cleanEstate());
-      this.isPosted = true;
       this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
         data => {
@@ -87,6 +86,18 @@ export class EstateFormComponent implements OnInit {
             this.entityUuid = error.error.context.uuid;
             console.log( error.status  + ':' +  error.error.context.uuid);
             this.isPosted = true;
+          }
+          else {
+            this.error = true;
+            // Object.entries(error.error.error.children).forEach(
+            //   ([cle, value]) => {Object.entries(value).forEach(
+            //     ([key, value]) => {console.log(cle, value[0]);
+            //     this.errors.push(cle + ":" + value[0]);
+            //     }
+            //   );
+            // }
+            // );
+            // console.log(this.errors)
           }
         }
       );
@@ -109,7 +120,6 @@ export class EstateFormComponent implements OnInit {
     // }}
 
     uploadSubmit() {
-     
       for (let i = 0; i < this.uploader.queue.length; i++) {
         const fileItem = this.uploader.queue[i]._file;
         if (fileItem.size > 10000000) {
@@ -120,18 +130,25 @@ export class EstateFormComponent implements OnInit {
 
       for (let j = 0; j < this.uploader.queue.length; j++) {
         const fileItem = this.uploader.queue[j]._file;
-        console.log(fileItem.name);
         this.photo.push(fileItem);
-        for (let photo of this.photo ) {
-          this.uploadF(photo).subscribe(data => alert(data));
-        }
+
+      }
+
+      for (let photo of this.photo ) {
+        this.uploadF(photo);
       }
       this.uploader.clearQueue();
   }
 
-  uploadF(data: Blob)  {
-    return this.api.postFile(this.entityUuid, 'image', data);
+  uploadF(data: Blob){
+    return this.api.postFile(this.entityUuid, 'image', data).subscribe(
+      data => {
+        console.log(data);
+      },
+      error => {
+        console.log(error);
 
+      });
     }
 
     validate() {

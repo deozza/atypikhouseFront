@@ -29,7 +29,6 @@ export class LineSliderComponent implements OnInit {
 
     this.dataService.getEntities(this.kind, this.pagination.count, this.pagination.page, this.pagination.filters)
     .subscribe(e =>{
-      console.log(e);
       this.updateCurrentPage(e)});
 
 
@@ -52,7 +51,6 @@ export class LineSliderComponent implements OnInit {
   });
 }
 goDetails(estate: Entity) {
-  console.log("ok");
   this.router.navigate(['/estate', estate.uuid]);
 
 }

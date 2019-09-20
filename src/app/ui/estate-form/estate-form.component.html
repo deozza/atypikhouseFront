@@ -1,4 +1,5 @@
 <section>
+
   <div id="add-estate" *ngIf="!isPosted">
     <h3>Créer votre annonce</h3>
     <div class="add-estate-form">
@@ -7,45 +8,49 @@
         <div class="addEstateCategory">
           <div *ngFor="let category of enumerations.enumerations?.estate_category">
             <label for="category">{{category}}</label> <input type="radio" id="estate_category" name="estate_category"
-              [value]="category" [(ngModel)]="estate.estate_category">
+              [value]="category" [(ngModel)]="estate.estate_category" class="form-control" required>
+
           </div>
+
+
         </div>
         <div class="add-estate-form">
           <h4>Informations</h4>
           <div class="addEstateLine">
             <div class="addEstateItem"><label for="title">Titre</label><input name="title" id="title" type="text"
-                [(ngModel)]="estate.title"></div>
+                [(ngModel)]="estate.title" required></div>
             <div class="addEstateLine">
-
-              <textarea name="address" id="address" type="text" [(ngModel)]="estate.address"></textarea>
               <label class="active" for="address">Address</label>
+              <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
+
             </div>
             <div class="addEstateItem"><label for="">Ville</label><input name="city" id="city" type="text"
-                [(ngModel)]="estate.city"></div>
+                [(ngModel)]="estate.city" required></div>
             <div class="addEstateItem"><label for="">Code Postal</label><input name="postal_code" id="postal_code"
-                type="text" [(ngModel)]="estate.postal_code"></div>
+                type="text" [(ngModel)]="estate.postal_code" required></div>
             <div class="addEstateItem"><label for="">Pays</label><input name="country" id="country" type="text"
-                [(ngModel)]="estate.country"></div>
+                [(ngModel)]="estate.country" required></div>
           </div>
           <div class="addEstateDescription">
             <label for="">Description</label> <textarea rows="5" cols="50" name="description" id="description"
-              type="text" [(ngModel)]="estate.description">
+              type="text" [(ngModel)]="estate.description" required>
                     Enter your name
                     </textarea>
           </div>
           <div class="addEstateLine">
             <div class="addEstateItem"><label for="">Surface</label><input name="surface" id="surface" type="number"
-                [(ngModel)]="estate.surface"></div>
+                [(ngModel)]="estate.surface" required></div>
             <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms"
-                type="number" [(ngModel)]="estate.rooms"></div>
+                type="number" [(ngModel)]="estate.rooms" required></div>
             <div class="addEstateLine">
-              <input name="price" id="price" type="number" [(ngModel)]="estate.price">
               <label class="active" for="price">Prix</label>
+              <input name="price" id="price" type="number" [(ngModel)]="estate.price" required>
+
             </div>
             <div class="addEstateItem"><label for="beds">Lits</label><input name="beds" id="beds" type="number"
-                [(ngModel)]="estate.beds"></div>
+                [(ngModel)]="estate.beds" required></div>
             <div class="addEstateItem"><label for="bath_room">Nombre Salle de bain</label><input name="bath_room"
-                id="bath_room" type="number" [(ngModel)]="estate.bath_room"></div>
+                id="bath_room" type="number" [(ngModel)]="estate.bath_room" required></div>
           </div>
         </div>
         <div class="add-estate-form">
@@ -53,7 +58,7 @@
           <div class="addEstateUtilities">
             <div *ngFor="let utility of enumerations.enumerations?.utilities">
               <input type="checkbox" id="{{utility}}" name="utilities" [value]="utility"
-                (change)="updateUtil(utility, $event)">
+                (change)="updateUtil(utility, $event)" required>
               <label for="utility">{{ utility }}</label>
             </div>
           </div>
@@ -63,7 +68,7 @@
           <div class="addEstateEnvironment">
             <div *ngFor="let environment of enumerations.enumerations?.environment">
               <input type="checkbox" id="{{environment}}" name="environment" [value]="environment"
-                (change)="updateEnv(environment, $event)">
+                (change)="updateEnv(environment, $event)" required>
               <label for="environment">{{ environment }}</label>
             </div>
           </div>
@@ -75,8 +80,13 @@
 
 
     </div>
+    <div *ngIf="error">
+        <p>Merci de vérifier ces champs</p>
+        <ul><li *ngFor="let error of errors"> {{ error }}</li></ul>
+    </div>
 
   </div>
+
 
 </section>
 
