@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
@@ -82,11 +83,9 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
-    useClass: AuthTokenInterceptor,
-
-
-    multi: true,
+    useClass: AuthTokenInterceptor, multi: true,
   }
+  
 
     ],
   bootstrap: [AppComponent]

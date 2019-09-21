@@ -74,5 +74,10 @@ h3:after {
   flex-direction: row;
 }
 
+.errorClass{
+  border-color: red !important;
+  color: red !important;
+}
+
 
 
