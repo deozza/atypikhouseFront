@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {Router, NavigationEnd} from '@angular/router'; // import Router and NavigationEnd
+import { Title } from '@angular/platform-browser';
+import {Router, NavigationEnd} from '@angular/router';
+
 
 // declare ga as a function to set and sent the events
  declare let ga: Function;
@@ -14,7 +16,7 @@ export class AppComponent {
   title = 'AtypikHouse';
   ga: Function;
 
-  constructor(public router: Router) {
+  constructor(private router: Router, private titleService: Title) {
 
     // subscribe to router events and send page views to Google Analytics
     this.router.events.subscribe(event => {
@@ -26,10 +28,18 @@ export class AppComponent {
       }
     });
 
+
+
+
+    }
+    public setTitle( newTitle: string) {
+      this.titleService.setTitle( newTitle );
     }
 
 
+
   }
+
 
 
 
