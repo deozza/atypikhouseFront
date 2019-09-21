@@ -95,11 +95,11 @@ border-right: 1px solid #215F69;
 
 }
 
-.profileForm label, .profileForm div label{
+.profileForm label{
   height:35px;
   line-height:35px;
 }
-.profileForm input, .profileForm div input{
+.profileForm input{
   background-color:rgba(227, 227, 227, 0.5);
   height:35px;
   line-height:35px;

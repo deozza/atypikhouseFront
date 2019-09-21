@@ -7,8 +7,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 
 import { Entity } from 'src/app/model/entity.model';
-import { DatePipe, formatDate } from '@angular/common';
-import { locale } from 'moment';
 
 @Component({
   selector: 'app-estate',
@@ -19,7 +17,7 @@ import { locale } from 'moment';
 export class EstateComponent implements OnInit {
 
 
-  constructor(private datePipe: DatePipe, private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
 
   estate:Entity = new Entity;
   booking: Reservation = new Reservation ();
@@ -117,6 +115,7 @@ calculate()
 
 
   saveReservation() {
+    console.log(this.booking);
     this.api.addEntity(this.booking, 'reservation')
     .subscribe(
       (t) => {

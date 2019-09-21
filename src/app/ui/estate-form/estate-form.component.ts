@@ -84,7 +84,6 @@ export class EstateFormComponent implements OnInit {
     }
 
      save() {
-      console.log(this.errors.hasOwnProperty('title'));
        this.changed = true;
       this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
@@ -148,14 +147,6 @@ export class EstateFormComponent implements OnInit {
 
     validate() {
       this.router.navigate(['/estate', this.entityUuid]);
-    }
-
-    getClass(){
-      return 'errorClass';
-    }
-
-    getStatus(str: string) {
-      return this.errors.hasOwnProperty(str);
     }
 
 

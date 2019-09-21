@@ -12,14 +12,6 @@ import * as $ from 'jquery';
 })
 export class ProfilComponent implements OnInit {
 user: User = new User;
-editUser: boolean = false;
-
-newUser: User = new User;
-loading: boolean = false;
-errors: any[] = [];
-error= false;
-
-
   constructor(private route: ActivatedRoute,
     private router: Router,
     private api: UserService) { }
@@ -27,15 +19,12 @@ error= false;
 routingSubscription: any;
 
 ngOnInit() {
-     
+
       this.api.getUserCurrent()
       .subscribe(
         (e) => {
           this.user = e;
           console.log(this.user);
-          this.newUser.email = this.user.email;
-          this.newUser.username = this.user.username;
-          //this.newUser.plainPassword = this.user.plainPassword;
         },
         (error) => console.log(error)
       );
@@ -56,41 +45,6 @@ ngOnInit() {
         });
 
       });
-
-  }
-
-  editUserClick(){
-    this.editUser = true;
-  }
-
-  public PatchUser()
-
-  {
-    console.log(this.newUser.patchableCurrent());
-    this.loading = true;
-    this.api.patchUserCurrent(this.newUser.patchableCurrent()).subscribe(
-      (t) => {
-       this.loading = false;
-     
-       console.log(t);
-     },
-      (error) => {
-       this.loading = false;
-       console.log(error);
-       this.error = true;
-            Object.entries(error.error.error.children).forEach(
-               ([cle, value]) => {
-                 Object.entries(value).forEach(
-                ([key, value]) => {
-                this.errors[cle] = value[0];
-                 }
-                );
-               }
-              );
-            console.log(this.errors)
-     }
-
-    );
 
   }
 
