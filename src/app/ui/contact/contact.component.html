@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<section id="contactSection">
+
+  <div class="container">
+
+      
+      <form id="contactForm">
+          <label for="name"><b>Votre nom complet</b></label>
+          <input type="text" id="name" placeholder="ex : Amy Fall" name="email" [(ngModel)]="model.name" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" placeholder="ex : saitama@heroassociation.gov" name="email" [(ngModel)]="model.email" required>
+
+          <label for="phone"><b>Téléphone</b></label>
+          <input type="text" placeholder="06 xx xx xx xx" id="phone" name="phone" [(ngModel)]="model.phone" required>
+
+          <label for="message"><b>Votre message</b></label>
+          <textarea type="text" placeholder="message" id="message" name="message" [(ngModel)]="model.message" required></textarea>
+
+          <button *ngIf="!loading" type="submit" (click)="send()">Envoyer</button>
+          <button *ngIf="loading" type="submit" disabled>Envoyer</button>
+
+          <label>
+              <input type="checkbox" checked="checked" name="remember" style="width: 20px;">
+          </label>
+      </form>
+  </div>
+
+
+
+</section>

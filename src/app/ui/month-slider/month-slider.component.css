@@ -1,4 +1,4 @@
-h3{font-family: 'Pacifico',serif;font-size: 35px;position: relative;margin:20px auto;text-align: center;}h3:after{content: "";position: absolute;width:150px;height:2px;background-color:#E8A720;left:53%;bottom:-5px;margin-left: -75px;}
+h3{font-family: 'Pacifico',serif;font-size: 35px;position: relative;margin:50px 20px 20px  20px;text-align: center;}h3:after{content: "";position: absolute;width:150px;height:2px;background-color:#E8A720;left:53%;bottom:-5px;margin-left: -75px;}
 #month-slider {
   width: 100%;
   height: auto;
