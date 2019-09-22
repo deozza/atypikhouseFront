@@ -17,13 +17,10 @@ export class ListReservationComponent implements OnInit {
     }
   
     ngOnInit() {
-      console.log(this.getStatus(new Date("2019/09/20")));
       this.pagination = new Pagination();
-     
       this.pagination.count = 30;
       this.api.getEntities('reservation', this.pagination.count, 1).subscribe(
           (r)=> {
-            console.log(r.items);
             this.reservations = r;
             
           },

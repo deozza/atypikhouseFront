@@ -1,12 +1,40 @@
 .reservation{
     background-color:#fff;
-    min-height: 100vh;
+    min-height: 83vh;
     width:100%;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     font-family: 'Roboto',sans-serif;
   }
+
+
+  .reservation .reservationContent{
+    box-sizing: content-box;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    align-content: center;
+    min-height:83vh;
+    width:calc(100% - 200px);
+   }
+   .reservation .reservationContent .profilecontainer{
+     background-color:#fff;
+     box-sizing:border-box;
+     height:auto;
+     display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    align-content: baseline;
+    width:60%;
+    border:1px solid #215F69;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   
+   }
   
 aside{
     background-color:pink;
@@ -42,7 +70,7 @@ aside{
       color:#215F69;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
     }
-  aside ul li a:hover,.profileModel aside ul li .activeProfileLink{
+  aside ul li a:hover, aside ul li .activeProfileLink{
       background-color:#215F69;
       color:#fff;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);

@@ -39,6 +39,7 @@ import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
+import { NotificationComponent } from './ui/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { ListReservationComponent } from './ui/list-reservation/list-reservation
     FourOhFourComponent,
     MessengerComponent,
     ReservationComponent,
-    ListReservationComponent
+    ListReservationComponent,
+    NotificationComponent
     
 
   ],
