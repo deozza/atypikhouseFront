@@ -37,6 +37,8 @@ import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { MessengerComponent } from './ui/messenger/messenger.component';
+import { ReservationComponent } from './ui/reservation/reservation.component';
+import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,10 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
     FaqComponent,
     ConditionsPrivacyComponent,
     FourOhFourComponent,
-    MessengerComponent
+    MessengerComponent,
+    ReservationComponent,
+    ListReservationComponent
+    
 
   ],
   imports: [

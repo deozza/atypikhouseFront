@@ -71,7 +71,6 @@ ngOnInit() {
     this.api.patchUserCurrent(this.newUser.patchableCurrent()).subscribe(
       (t) => {
        this.loading = false;
-     
        console.log(t);
      },
       (error) => {

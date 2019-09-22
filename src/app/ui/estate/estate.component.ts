@@ -5,9 +5,7 @@ import { Reservation } from 'src/app/model/reservation.model';
 import { Estate } from 'src/app/model/estate.model';
 import { DomSanitizer } from '@angular/platform-browser';
 
-
 import { Entity } from 'src/app/model/entity.model';
-import { DatePipe, formatDate } from '@angular/common';
 import { locale } from 'moment';
 
 @Component({
@@ -19,7 +17,7 @@ import { locale } from 'moment';
 export class EstateComponent implements OnInit {
 
 
-  constructor(private datePipe: DatePipe, private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
 
   estate:Entity = new Entity;
   booking: Reservation = new Reservation ();
@@ -98,13 +96,18 @@ calculate()
 {
   var dd= new Date(this.booking.leaving_at).getTime();
   var da= new Date(this.booking.coming_at).getTime();
-  console.log(dd);
+  
    if ( !(dd) || !(da) || da>dd ) {
       this.booking.total_price=0;
       return;
   }
+
+  if ( da = dd ) {
+    this.booking.total_price = this.price;
+    return;
+}
   var days = ( (  dd - da ) / (1000*60*60*24) );
-  console.log(days);
+ 
   var cost = days * this.price;
   if (isNaN(cost))
      cost = 0;
@@ -117,11 +120,12 @@ calculate()
 
 
   saveReservation() {
+    
     this.api.addEntity(this.booking, 'reservation')
     .subscribe(
       (t) => {
        this.router.navigate(['/']);
-       console.log(t);
+      
      },
       (error) => {
        console.log(error);

@@ -1,0 +1,82 @@
+.reservation{
+    background-color:#fff;
+    min-height: 100vh;
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto',sans-serif;
+  }
+  
+aside{
+    background-color:pink;
+    width:200px;
+    
+    }
+   aside ul{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid #215F69;
+    }
+    
+    
+    
+ aside ul li a{
+      display: block;
+      box-sizing: border-box;
+      border:1px solid #215F69;
+      width:150px;
+      height:40px;
+      line-height: 40px;
+      text-align: center;
+      text-decoration:none;
+      color:#000;
+      border-radius: 5px;
+      color:#215F69;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    }
+  aside ul li a:hover,.profileModel aside ul li .activeProfileLink{
+      background-color:#215F69;
+      color:#fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+.reservation{
+    height: 78vh;
+}
+div.item  {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.reservation h3 {
+    margin-top: 50px !important;
+
+}
+
+div.item div {
+    margin: 10px 10px;
+}
+
+.estateTitle {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .estatePrice {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .estateCity {
+    font-weight: 300;
+    font-size: 15px;
+  }
