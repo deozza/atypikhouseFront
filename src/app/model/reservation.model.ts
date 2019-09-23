@@ -10,6 +10,7 @@ export class Reservation {
   leaving_at: any;
   total_price: number;
   more: string;
+ 
 
   public constructor(entity = null) {
 
@@ -19,22 +20,23 @@ export class Reservation {
     this.leaving_at = entity !== null ? entity.leaving_at : new Date();
     this.total_price = entity !== null ? entity.total_price : null;
     this.more = entity !== null ? entity.more : '';
+    
   }
 
-  public sanitizeBooking(): Reservation {
-    let booking = new Reservation();
-    booking.estate = this.estate;
-    booking.nb_people = this.nb_people;
-    booking.coming_at = this.sanitizeDate(this.coming_at);
-    booking.leaving_at = this.sanitizeDate(this.leaving_at);
-    booking.total_price = this.total_price;
-    booking.more = this.more;
-
+  public sanitizeBooking() {
+    let booking = {};
+    booking["estate"] = this.estate.uuid;
+    booking["nb_people"] = this.nb_people;
+    booking["coming_at"] = this.sanitizeDate(this.coming_at);
+    booking["leaving_at"] = this.sanitizeDate(this.leaving_at);
+    booking["total_price"] = this.total_price;
+    booking["more"] = this.more;
+   
     return booking;
   }
 
   private sanitizeDate(date:Date): string{
-    return date.getFullYear()+"-"+date.getMonth()+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+    return new Date(date).getFullYear()+"-"+ new Date(date).getMonth().toString().padStart(2, "0") +"-"+new Date(date).getDate().toString().padStart(2, "0")+"T"+new Date(date).getHours().toString().padStart(2, "0")+":"+new Date(date).getMinutes().toString().padStart(2, "0")+":"+new Date(date).getSeconds().toString().padStart(2, "0") + "+00:00";
   }
  }
 

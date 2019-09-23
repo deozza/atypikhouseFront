@@ -120,7 +120,7 @@ calculate()
 
 
   saveReservation() {
-
+    console.log(this.booking.sanitizeBooking());
     this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
     .subscribe(
       (t) => {
