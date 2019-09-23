@@ -1,6 +1,7 @@
 /** ANNONCES **/
-
-
+#pageAdmin .container{
+  height:auto;
+}
 
 #admin-content #admin-annonces {
   background-color: #fff;
@@ -189,6 +190,9 @@
 
 
 @media only screen and (max-width: 1024px) {
+  #pageAdmin .container{
+    flex-direction: column;
+  }
 
   #admin-content #admin-annonces .adminAnnonce .annonceThumbnail {
       display: none;
