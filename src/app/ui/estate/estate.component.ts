@@ -121,7 +121,7 @@ calculate()
 
   saveReservation() {
 
-    this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
+    this.api.addEntity(this.booking, 'reservation')
     .subscribe(
       (t) => {
        this.router.navigate(['/']);

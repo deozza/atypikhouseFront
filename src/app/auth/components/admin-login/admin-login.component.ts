@@ -13,17 +13,13 @@ export class AdminLoginComponent implements OnInit {
   loading: boolean = false;
   constructor(private auth: AuthService, private router: Router) {}
 
-
   ngOnInit() {
-    function randomIntFromInterval(min, max) {
-      return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-  var val = randomIntFromInterval(1,3);
+      function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
 
-
-  var backgroundImage = document.getElementById("loginSection");
-  backgroundImage.style.backgroundImage = "url('https://source.unsplash.com/random')";
-
+    let backgroundImage = document.getElementById("loginSection");
+    backgroundImage.style.backgroundImage = "url('https://source.unsplash.com/random')";
   }
 
   public login() {

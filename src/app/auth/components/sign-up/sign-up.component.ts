@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/model/user.model';
-import { DataService } from 'src/app/data/services/data.service';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/data/components/user/services/user.service';
 
@@ -12,11 +11,9 @@ import { UserService } from 'src/app/data/components/user/services/user.service'
 export class SignUpComponent implements OnInit {
   newUser: User = new User();
   loading: boolean = false;
-  errors: any[] = [];
-  error= false;
+  errors = [];
 
   constructor(private userService: UserService, private router: Router) { }
-
 
   ngOnInit() {
 
@@ -28,35 +25,36 @@ export class SignUpComponent implements OnInit {
     backgroundImage.style.backgroundImage = "url('../../../assets/images/bg/BG-0"+val+".jpg')";
     }
 
-  public signUp()
-
-  {
-    console.log(this.newUser);
+  public signUp() {
     this.loading = true;
     this.userService.postUser(this.newUser.postableUser()).subscribe(
       (t) => {
        this.loading = false;
        this.router.navigate(['/']);
-       console.log(t);
      },
       (error) => {
        this.loading = false;
-       console.log(error);
-       this.error = true;
-            Object.entries(error.error.error.children).forEach(
-               ([cle, value]) => {
-                 Object.entries(value).forEach(
-                ([key, value]) => {
-                this.errors[cle] = value;
-                 }
-                );
-               }
-              );
-            console.log(this.errors)
+       this.handleError(error);
+
      }
-
     );
-
   }
 
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
+  }
 }

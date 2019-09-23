@@ -17,33 +17,16 @@ export class AppComponent {
   ga: Function;
 
   constructor(private router: Router, private titleService: Title) {
-
     // subscribe to router events and send page views to Google Analytics
     this.router.events.subscribe(event => {
-
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
         ga('send', 'pageview');
-        console.log('NAVIGATION');
       }
     });
-
-
-
 
     }
     public setTitle( newTitle: string) {
       this.titleService.setTitle( newTitle );
     }
-
-
-
   }
-
-
-
-
-
-
-
-
