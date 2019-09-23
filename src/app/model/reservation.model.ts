@@ -6,14 +6,14 @@ export class Reservation {
 
   estate: Estate;
   nb_people: number;
-  coming_at: Date;
-  leaving_at: Date;
+  coming_at: any;
+  leaving_at: any;
   total_price: number;
   more: string;
 
   public constructor(entity = null) {
 
-    this.estate = entity !== null ? new Estate(entity.reservation) : new Estate();   
+    this.estate = entity !== null ? new Estate(entity.reservation) : new Estate();
     this.nb_people = entity !== null ? entity.nb_people : null;
     this.coming_at = entity !== null ? entity.coming_at : new Date();
     this.leaving_at = entity !== null ? entity.leaving_at : new Date();
@@ -21,7 +21,20 @@ export class Reservation {
     this.more = entity !== null ? entity.more : '';
   }
 
-  
+  public sanitizeBooking(): Reservation {
+    let booking = new Reservation();
+    booking.estate = this.estate;
+    booking.nb_people = this.nb_people;
+    booking.coming_at = this.sanitizeDate(this.coming_at);
+    booking.leaving_at = this.sanitizeDate(this.leaving_at);
+    booking.total_price = this.total_price;
+    booking.more = this.more;
 
+    return booking;
+  }
+
+  private sanitizeDate(date:Date): string{
+    return date.getFullYear()+"-"+date.getMonth()+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+  }
  }
 

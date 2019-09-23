@@ -96,7 +96,7 @@ calculate()
 {
   var dd= new Date(this.booking.leaving_at).getTime();
   var da= new Date(this.booking.coming_at).getTime();
-  
+
    if ( !(dd) || !(da) || da>dd ) {
       this.booking.total_price=0;
       return;
@@ -107,7 +107,7 @@ calculate()
     return;
 }
   var days = ( (  dd - da ) / (1000*60*60*24) );
- 
+
   var cost = days * this.price;
   if (isNaN(cost))
      cost = 0;
@@ -120,12 +120,12 @@ calculate()
 
 
   saveReservation() {
-    
-    this.api.addEntity(this.booking, 'reservation')
+
+    this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
     .subscribe(
       (t) => {
        this.router.navigate(['/']);
-      
+
      },
       (error) => {
        console.log(error);
@@ -135,7 +135,7 @@ calculate()
 
 
 
-  getClass(utility) 
+  getClass(utility)
   { (2)
     switch (utility) {
       case 'chauffage':
