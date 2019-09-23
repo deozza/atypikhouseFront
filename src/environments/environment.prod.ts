@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://api.atypike.house/api'
+  apiUrl: 'https://api.atypik.house/api'
 };
