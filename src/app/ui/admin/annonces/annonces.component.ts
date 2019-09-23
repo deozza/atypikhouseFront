@@ -45,13 +45,16 @@ close(){
     $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
     $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
     $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="confirm"
+    this.message="confirm";
+    console.log("test");
+
   };
   clearEstate(){
     $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
     $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
     $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
     this.message="erase"
+
   };
 
 

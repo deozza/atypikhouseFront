@@ -47,7 +47,7 @@ export class SignUpComponent implements OnInit {
                ([cle, value]) => {
                  Object.entries(value).forEach(
                 ([key, value]) => {
-                this.errors[cle] = value[0];
+                this.errors[cle] = value;
                  }
                 );
                }
