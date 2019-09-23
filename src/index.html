@@ -6,6 +6,11 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- iOS meta tags and icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="AtypikHouse-app">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
   <link rel="icon" type="image/x-icon" href="./assets/images/favicons/favicon-32.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;display=swap" rel="stylesheet">
@@ -33,6 +38,33 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');ga('create', 'G-0TNN6B9NBN', 'auto');// add your tracking ID here.
 ga('send', 'pageview');
+</script>
+
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+  showInstallPromotion();
+  btnAdd.addEventListener('click', (e) => {
+  // Hide our user interface that shows our A2HS button
+  btnAdd.style.display = 'none';
+  // Show the prompt
+  deferredPrompt.prompt();
+  // Waiting for the user
+  deferredPrompt.userChoice
+    .then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      deferredPrompt = null;
+    });
+});
+});
 </script>
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1976d2">
