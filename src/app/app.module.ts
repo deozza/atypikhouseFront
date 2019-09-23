@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
@@ -36,6 +37,9 @@ import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { MessengerComponent } from './ui/messenger/messenger.component';
+import { ReservationComponent } from './ui/reservation/reservation.component';
+import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
+import { NotificationComponent } from './ui/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,11 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
     FaqComponent,
     ConditionsPrivacyComponent,
     FourOhFourComponent,
-    MessengerComponent
+    MessengerComponent,
+    ReservationComponent,
+    ListReservationComponent,
+    NotificationComponent
+    
 
   ],
   imports: [
@@ -82,11 +90,9 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
-    useClass: AuthTokenInterceptor,
-
-
-    multi: true,
+    useClass: AuthTokenInterceptor, multi: true,
   }
+  
 
     ],
   bootstrap: [AppComponent]

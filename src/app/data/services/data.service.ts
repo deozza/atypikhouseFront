@@ -71,6 +71,10 @@ export class DataService {
 
   }
 
+  public addEmbedded(value: any, uuid: string, property: string): Observable<any> {
+    return this.http.post<any>(API_URL + '/entity/' + uuid + '/embedded/' + property , value);
+  }
+
 
 
 

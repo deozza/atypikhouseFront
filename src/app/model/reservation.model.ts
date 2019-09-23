@@ -13,7 +13,7 @@ export class Reservation {
 
   public constructor(entity = null) {
 
-    this.estate = entity !== null ? new Estate(entity.reservation) : new Estate();
+    this.estate = entity !== null ? new Estate(entity.reservation) : new Estate();   
     this.nb_people = entity !== null ? entity.nb_people : null;
     this.coming_at = entity !== null ? entity.coming_at : new Date();
     this.leaving_at = entity !== null ? entity.leaving_at : new Date();
@@ -21,6 +21,7 @@ export class Reservation {
     this.more = entity !== null ? entity.more : '';
   }
 
+  
 
  }
 

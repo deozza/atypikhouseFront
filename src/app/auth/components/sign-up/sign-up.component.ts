@@ -12,6 +12,8 @@ import { UserService } from 'src/app/data/components/user/services/user.service'
 export class SignUpComponent implements OnInit {
   newUser: User = new User();
   loading: boolean = false;
+  errors: any[] = [];
+  error= false;
 
   constructor(private userService: UserService, private router: Router) { }
 
@@ -40,6 +42,17 @@ export class SignUpComponent implements OnInit {
       (error) => {
        this.loading = false;
        console.log(error);
+       this.error = true;
+            Object.entries(error.error.error.children).forEach(
+               ([cle, value]) => {
+                 Object.entries(value).forEach(
+                ([key, value]) => {
+                this.errors[cle] = value[0];
+                 }
+                );
+               }
+              );
+            console.log(this.errors)
      }
 
     );
