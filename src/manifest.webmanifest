@@ -1,7 +1,7 @@
 {
   "name": "atypikhouse-app",
   "short_name": "atypikhouse-app",
-  "theme_color": "#1976d2",
+  "theme_color": "#06726F",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
