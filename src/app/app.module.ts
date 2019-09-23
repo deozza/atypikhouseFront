@@ -41,6 +41,8 @@ import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
 import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
+import { UserAnnoncesComponent } from './ui/user-annonces/user-annonces.component';
+
 
 @NgModule({
   declarations: [
@@ -73,6 +75,7 @@ import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-est
     ListReservationComponent,
     NotificationComponent,
     ClearEstateFormComponent,
+    UserAnnoncesComponent,
 
   ],
   imports: [

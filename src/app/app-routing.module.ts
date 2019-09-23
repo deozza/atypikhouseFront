@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: 'crm', component: CrmComponent},
   { path: 'avis', component: AvisComponent},
   { path: 'categories', component: CategoryComponent},
-  { path: 'annonces', component: AnnoncesComponent},
+  { path: 'crm-annonces', component: AnnoncesComponent},
   { path: 'host', component: HostComponent},
   { path: 'profil', component: ProfilComponent},
   { path: 'reservations', component: ListReservationComponent},
