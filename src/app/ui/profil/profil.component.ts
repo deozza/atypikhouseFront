@@ -64,7 +64,6 @@ ngOnInit() {
   }
 
   public PatchUser()
-
   {
     console.log(this.newUser.patchableCurrent());
     this.loading = true;

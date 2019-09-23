@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
-import { ThrowStmt } from '@angular/compiler';
+
 
 
 @Component({

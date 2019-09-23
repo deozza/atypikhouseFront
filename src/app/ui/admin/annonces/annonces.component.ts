@@ -58,7 +58,7 @@ export class AnnoncesComponent implements OnInit {
   }
 
   validate(estate: Entity) {
-    this.dataService.validateEntity(estate.uuid, estate).subscribe(
+    this.dataService.validateEntity(estate.uuid).subscribe(
       (t) => {this.router.navigate(['/annonces']);
      },
       (error) => {
