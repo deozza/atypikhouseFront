@@ -40,6 +40,7 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
+import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
 
 @NgModule({
   declarations: [
@@ -70,8 +71,8 @@ import { NotificationComponent } from './ui/notification/notification.component'
     MessengerComponent,
     ReservationComponent,
     ListReservationComponent,
-    NotificationComponent
-    
+    NotificationComponent,
+    ClearEstateFormComponent,
 
   ],
   imports: [
@@ -92,7 +93,7 @@ import { NotificationComponent } from './ui/notification/notification.component'
     {provide: HTTP_INTERCEPTORS,
     useClass: AuthTokenInterceptor, multi: true,
   }
-  
+
 
     ],
   bootstrap: [AppComponent]

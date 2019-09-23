@@ -21,6 +21,7 @@ import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
+import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -40,9 +41,11 @@ const routes: Routes = [
   { path: 'notification', component: NotificationComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
+  { path: 'clearEstateForm', component : ClearEstateFormComponent },
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
   { path: 'not-found', component: FourOhFourComponent },
-  { path: '**', redirectTo: 'not-found' }
+  { path: '**', redirectTo: 'not-found' },
+
 
   // { path: 'sitemap', component: sitemap},
   // { path: 'rules', component: rules},

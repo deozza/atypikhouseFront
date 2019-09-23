@@ -13,7 +13,7 @@ import { Estate } from 'src/app/model/estate.model';
   styleUrls: ['./annonces.component.css']
 })
 export class AnnoncesComponent implements OnInit {
-  $: any;
+  // $: any;
   pagination: Pagination;
   message: string;
   estates:List<Entity>;
@@ -33,29 +33,18 @@ export class AnnoncesComponent implements OnInit {
         (error) => console.log(error)
     );
 
+
+
+
   }
-close(){
-      $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
 
-}
 
-  validateEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="confirm";
-    console.log("test");
-
+  validateEstate(i){
+/** PUSH VALIDATION STATE */
+/** TOGGLE CLASS WHEN PUSHED */
   };
-  clearEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="erase"
 
-  };
+
 
 
   delete(estate: Entity) {
