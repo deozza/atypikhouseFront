@@ -62,7 +62,7 @@ border-spacing: 0;
 #admin-content {
   background-color: #fff;
   height: 100%;
-  width: auto;
+ 
   overflow-y: scroll;
   display: flex;
   justify-content: flex-start;

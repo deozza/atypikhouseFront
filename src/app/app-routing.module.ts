@@ -21,6 +21,7 @@ import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
+import { AnnonceComponent } from './ui/annonce/annonce.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -32,12 +33,13 @@ const routes: Routes = [
   { path: 'crm', component: CrmComponent},
   { path: 'avis', component: AvisComponent},
   { path: 'categories', component: CategoryComponent},
-  { path: 'annonces', component: AnnoncesComponent},
+  { path: 'admin-annonces', component: AnnoncesComponent},
   { path: 'host', component: HostComponent},
   { path: 'profil', component: ProfilComponent},
   { path: 'reservations', component: ListReservationComponent},
   { path: 'messenger', component: MessengerComponent},
   { path: 'notification', component: NotificationComponent},
+  { path: 'annonces', component: AnnonceComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},

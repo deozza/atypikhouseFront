@@ -40,6 +40,7 @@ import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
+import { AnnonceComponent } from './ui/annonce/annonce.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { NotificationComponent } from './ui/notification/notification.component'
     MessengerComponent,
     ReservationComponent,
     ListReservationComponent,
-    NotificationComponent
+    NotificationComponent,
+    AnnonceComponent,
     
 
   ],
