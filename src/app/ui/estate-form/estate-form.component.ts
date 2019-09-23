@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
-import { ThrowStmt } from '@angular/compiler';
+
 
 
 @Component({
@@ -27,11 +27,8 @@ export class EstateFormComponent implements OnInit {
   environments: any[];
   photo:Blob[] = [];
   changed = false;
-  titleError: string;
-  estateError: string;
-  descriptionError: string;
-  priceError:  string;
-  roomsError
+  isSaved= false;
+
 
   
   public uploader: FileUploader = new FileUploader({
@@ -62,7 +59,6 @@ export class EstateFormComponent implements OnInit {
       });
      }
      updateUtil(service: any, event) {
-      console.log(service, event, "Selected");
       if (event.target.checked) {
         this.estate.utilities.push(service);
       } else if (!event.target.checked) {
@@ -73,7 +69,6 @@ export class EstateFormComponent implements OnInit {
     }
 
     updateEnv(service: any, event) {
-      console.log(service, event, "Selected");
       if (event.target.checked) {
         this.estate.environment.push(service);
       } else if (!event.target.checked) {
@@ -84,9 +79,8 @@ export class EstateFormComponent implements OnInit {
     }
 
      save() {
-      console.log(this.errors.hasOwnProperty('title'));
-       this.changed = true;
-      this.api.addEntity(this.estate.cleanEstate(), 'estate')
+        this.changed = true;
+        this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
         data => {
           console.log(data);
@@ -94,7 +88,6 @@ export class EstateFormComponent implements OnInit {
         error => {
           if (error.status == 409) {
             this.entityUuid = error.error.context.uuid;
-            console.log( error.status  + ':' +  error.error.context.uuid);
             this.isPosted = true;
           }
           else {
@@ -147,7 +140,7 @@ export class EstateFormComponent implements OnInit {
     }
 
     validate() {
-      this.router.navigate(['/estate', this.entityUuid]);
+    this.isSaved = true;
     }
 
     getClass(){

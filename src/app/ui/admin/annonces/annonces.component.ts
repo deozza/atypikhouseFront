@@ -24,7 +24,7 @@ export class AnnoncesComponent implements OnInit {
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
 
-    this.pagination.count = 30;
+    this.pagination.count = 3;
     this.dataService.getEntities('estate', this.pagination.count, 1).subscribe(
         (e)=> {this.estates = e;
           console.log(this.estates)
@@ -58,7 +58,7 @@ export class AnnoncesComponent implements OnInit {
   }
 
   validate(estate: Entity) {
-    this.dataService.validateEntity(estate.uuid, estate).subscribe(
+    this.dataService.validateEntity(estate.uuid).subscribe(
       (t) => {this.router.navigate(['/annonces']);
      },
       (error) => {
