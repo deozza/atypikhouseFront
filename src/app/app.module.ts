@@ -72,8 +72,10 @@ import { AnnonceComponent } from './ui/annonce/annonce.component';
     MessengerComponent,
     ReservationComponent,
     ListReservationComponent,
-    NotificationComponent
-    
+    NotificationComponent,
+    AnnonceComponent,
+    ClearEstateFormComponent,
+
 
   ],
   imports: [

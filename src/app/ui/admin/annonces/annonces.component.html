@@ -6,13 +6,29 @@
                 <h3>Annonces</h3>
                 <div *ngFor="let item of estates.items; let i = index;" class="adminAnnonce">
 
-  <div class="container">
-<app-admin-nav></app-admin-nav>
-<div id="admin-content" >
-<div id="admin-annonces"><h3>Annonces</h3>
-  <div *ngFor="let estate of estates.items"  class="adminAnnonce" ><div id="admin-annonces-overlay" class="admin-overlay-closed"><p>You're about to <strong>
-    {{message}}</strong><br> <strong>this estate</strong><br>are you sure ?</p><div class="estateOptions" ><a (click)="close()">No</a><a (click)="validate(estate)">Yes</a></div><p class="close-overlay" (click)="close()">+</p></div><div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div><p class="estateTitle">{{ estate.properties?.title}}</p><p class="estateCountry">{{ estate.properties.country}}</p><p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden" [value]="estate.uuid"><div class="estateOptions"><a (click)="validateEstate()"  class="validateEstate"></a><a  class="seeEstate"></a><a (click)="clearEstate()" class="clearEstate"></a></div></div>
-</div>
-</div>
-</div>
+                    <div class="container">
+                        <app-admin-nav></app-admin-nav>
+                        <div id="admin-content">
+                            <div id="admin-annonces">
+                                <h3>Annonces</h3>
+                                <div *ngFor="let estate of estates.items" class="adminAnnonce">
+                                    <div id="admin-annonces-overlay" class="admin-overlay-closed">
+                                        <p>You're about to <strong>
+                                                {{message}}</strong><br> <strong>this estate</strong><br>are you sure ?</p>
+                                        <div class="estateOptions"><a (click)="close()">No</a><a (click)="validate(estate)">Yes</a></div>
+                                        <p class="close-overlay" (click)="close()">+</p>
+                                    </div>
+                                    <div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div>
+                                    <p class="estateTitle">{{ estate.properties?.title}}</p>
+                                    <p class="estateCountry">{{ estate.properties.country}}</p>
+                                    <p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden" [value]="estate.uuid">
+                                    <div class="estateOptions"><a (click)="validateEstate()" class="validateEstate"></a><a class="seeEstate"></a><a (click)="clearEstate()" class="clearEstate"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
