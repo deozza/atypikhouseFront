@@ -110,7 +110,6 @@ export class EstateFormComponent implements OnInit {
                 );
                }
               );
-            console.log(this.errors)
           }
         }
       );

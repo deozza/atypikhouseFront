@@ -30,45 +30,18 @@ constructor(private dataService: DataService, private router: Router) { }
 
 ngOnInit() {
   
-    this.pagination.filters = {'validationState' : 'published'};
-  
+ 
 
-  this.dataService.getEntities(this.kind, this.pagination.count, this.pagination.page, this.pagination.filters)
-  .subscribe(e =>{
-    this.updateCurrentPage(e)});
-
-
-
-
-  //test
-  this.estates = new List<Entity>() ;
-  this.pagination = new Pagination();
-  this.pagination.filters = {'validationState':'published'};
-  this.pagination.count = 30;
-  this.dataService.getEntities('estate').subscribe(
-      (e)=> {this.estates = e;
-        console.log(this.estates);
-      },
-      (error) => console.log(error)
-  );
-}
-
-
-private updateCurrentPage(l: List<Entity>){
-  this.estates = l;
-  this.pagination.page = l.current_page_number;
-  this.pagination.count = l.num_items_per_page;
-  this.pagination.total = l.total_count;
-  this.pagination.nb_pages = Math.ceil(this.pagination.total / this.pagination.count);
-
-}
-
-public changeCurrentPage(goToPage:number){
-this.pagination.changingPage = true;
-this.dataService.getEntities(this.kind, this.pagination.count, goToPage, this.pagination.filters).subscribe(l => {
-  this.updateCurrentPage(l);
-  this.pagination.changingPage = false;
-});
+this.estates = new List<Entity>() ;
+this.pagination = new Pagination();
+this.pagination.filters = {'equal.validationState':'published'};
+this.pagination.count = 30;
+this.dataService.getEntities('estate', this.pagination.count, this.pagination.filters).subscribe(
+    (e)=> {this.estates = e;
+      console.log(this.estates);
+    },
+    (error) => console.log(error)
+);
 }
 
 

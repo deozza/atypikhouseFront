@@ -33,7 +33,6 @@ export class MessengerComponent implements OnInit {
       this.api.getEntities('conversation', this.pagination.count, 1).subscribe(
           (r)=> {
             this.conversations = r;
-            console.log(this.conversations);
 
           },
           (error) => console.log(error)

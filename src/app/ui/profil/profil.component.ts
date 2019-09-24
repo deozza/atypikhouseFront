@@ -64,7 +64,6 @@ ngOnInit() {
 
   public PatchUser()
   {
-    console.log(this.newUser.patchableCurrent());
     this.loading = true;
     this.api.patchUserCurrent(this.newUser.patchableCurrent()).subscribe(
       (t) => {
@@ -84,7 +83,6 @@ ngOnInit() {
                 );
                }
               );
-            console.log(this.errors)
      }
 
     );

@@ -32,7 +32,6 @@ export class SignUpComponent implements OnInit {
   public signUp()
 
   {
-    console.log(this.newUser);
     this.loading = true;
     this.userService.postUser(this.newUser.postableUser()).subscribe(
       (t) => {
@@ -53,7 +52,6 @@ export class SignUpComponent implements OnInit {
                 );
                }
               );
-            console.log(this.errors)
      }
 
     );

@@ -44,7 +44,6 @@ export class EstateComponent implements OnInit {
               (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
             }
           }}
-          console.log(this.imagePaths);
         },
         (error) => console.log(error)
     );
@@ -121,11 +120,9 @@ calculate()
 
 
   saveReservation() {
-    console.log(this.booking.sanitizeBooking());
     this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
     .subscribe(
       (t) => {
-       console.log(t);
        this.entityUuid = t.uuid;
         this.router.navigate(['/payment',  this.entityUuid]);
      },

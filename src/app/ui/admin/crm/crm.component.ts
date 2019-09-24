@@ -23,7 +23,6 @@ notifications:List<Entity>;
     this.pagination.count = 30;
     this.api.getEntities('notification', this.pagination.count, 1, this.pagination.filters).subscribe(
         (n)=> {
-          console.log(n)
           this.notifications = n;
         },
         (error) => console.log(error)

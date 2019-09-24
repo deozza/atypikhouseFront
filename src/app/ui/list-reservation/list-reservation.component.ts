@@ -22,7 +22,6 @@ export class ListReservationComponent implements OnInit {
       this.pagination.count = 30;
       this.api.getEntities('reservation', this.pagination.count, 1).subscribe(
           (r)=> {
-            console.log(r);
             this.reservations = r;
             
           },

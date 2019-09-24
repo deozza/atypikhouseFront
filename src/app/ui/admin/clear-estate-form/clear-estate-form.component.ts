@@ -33,7 +33,6 @@ export class ClearEstateFormComponent implements OnInit {
       this.api.getEntity(params.uuid)
       .subscribe(
         (e)=> {this.estate = e ;
-          console.log(this.estate);
           this.notif.notif_title = this.estate.properties.title;
           if(this.estate.properties.image){
           for(let image of this.estate.properties.image) {

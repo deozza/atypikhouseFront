@@ -20,23 +20,14 @@ export class AnnoncesComponent implements OnInit {
   constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit() {
-
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
-    this.pagination.filters = {'validationState':'estate_of_the_month'};
+    this.pagination.filters = {'equal.validationState' : 'published'};
     this.pagination.count = 30;
-    this.dataService.getAll('estate').subscribe(
-        (e)=> {this.estates = e;
-          console.log(this.estates)
-
-
-        },
+    this.dataService.getEntities('estate', this.pagination.count, this.pagination.filters).subscribe(
+        (e)=> {this.estates = e;},
         (error) => console.log(error)
     );
-
-
-
-
   }
 
 
