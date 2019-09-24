@@ -216,7 +216,7 @@
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div {
   display: block;
   height: 30px;
   margin-left: 15px;
@@ -231,16 +231,16 @@
   transition: box-shadow ease 0.5s;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:first-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div:first-child {
   background-color: lightseagreen;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:nth-child(2) {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div:nth-child(2) {
   background-color: orange;
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:last-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div:last-child {
   background-color: orangered;
   margin-right: 15px;
 }
