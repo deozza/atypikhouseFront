@@ -1,0 +1,33 @@
+.payment {
+    height: 83vh;
+}
+
+#add-estate {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+  #add-estate .add-estate-form {
+    width: 95%;
+    height: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 114, 112, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0, 114, 112, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 10px auto 10px;
+  }

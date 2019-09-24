@@ -46,6 +46,7 @@ import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-est
 import { UserAnnoncesComponent } from './ui/user-annonces/user-annonces.component';
 import { AnnonceComponent } from './ui/annonce/annonce.component';
 
+import { PaypalComponent } from './ui/paypal/paypal.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { AnnonceComponent } from './ui/annonce/annonce.component';
     ListReservationComponent,
     NotificationComponent,
     AnnonceComponent,
-    ClearEstateFormComponent,
+    ClearEstateFormComponent,    
+    PaypalComponent,
     UserAnnoncesComponent,
 
 

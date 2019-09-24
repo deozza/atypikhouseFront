@@ -18,11 +18,12 @@ export class EstateComponent implements OnInit {
 
 
   constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
-
+  errors: any[] = [];
   estate:Entity = new Entity;
   booking: Reservation = new Reservation ();
   imagePaths:any[] = [];
   routingSubscription: any;
+  entityUuid = '';
   price: number;
   src: any;
 
@@ -102,7 +103,7 @@ calculate()
       return;
   }
 
-  if ( da = dd ) {
+  if ( da == dd ) {
     this.booking.total_price = this.price;
     return;
 }
@@ -124,12 +125,17 @@ calculate()
     this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
     .subscribe(
       (t) => {
-       this.router.navigate(['/']);
-
+       console.log(t);
+       this.entityUuid = t.uuid;
+        this.router.navigate(['/payment',  this.entityUuid]);
      },
-      (error) => {
-       console.log(error);
-     }
+     error => {
+      
+        console.log(error);
+        
+
+      }     
+   
     );
   }
 
