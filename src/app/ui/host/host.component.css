@@ -2,7 +2,7 @@
  {
    min-height: 100vh;
    width:100%;
-   background-color:beige;
+   background-color:#fff;
    box-sizing: border-box;
 
 
@@ -10,6 +10,7 @@
  .host p{
   font-family: 'Roboto',sans-serif;
   line-height: 22px;
+  font-size: 18px;
  }
  .host .host-content{
    width:100%;
@@ -17,15 +18,74 @@
    padding:20px;
  }
  #headerHost{
-   background: url('https://source.unsplash.com/random');
    background: url('https://images.unsplash.com/photo-1568966458805-bb9a8195ca54');
-   height:200px;
+   height:150px;
    background-size:cover;
    background-position: center;
    background-repeat: no-repeat;
  }
- .hebergementInsolite{
-   height:400px;
-   width:400px;
-   background:url('https://images.unsplash.com/photo-1568812861383-7d7e430959e9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max')
+ .hostSegment{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   align-content: center;
+   align-items: center;
+   margin:20px;
  }
+ .hebergementInsolite{
+   height:350px;
+   width:400px;
+   background:url('https://images.unsplash.com/photo-1568812861383-7d7e430959e9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-bottom: 10px;
+ }
+ .host-content h3:first-child{
+   margin-bottom: 20px;
+ }
+ .hostSegment p{
+  width:calc(100% - 450px);
+}
+.reasonsWhy{
+  width:80%;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  margin:20px auto;
+}
+.hostButton {
+  margin:0 auto;
+  width:100%;
+}
+.hostButton a{
+  display:block;
+  margin:0 auto;
+  width:300px;
+  height:50px;
+  box-sizing: border-box;
+  background-color:#215F69;
+  text-decoration: none;
+  color:#fff;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+  font-family: 'Roboto',sans-serif;
+  border-radius: 5px;
+  border:1px solid #215F69;
+}
+.hostButton a:hover{
+  background-color:#E8A720;
+  border:1px solid #215F69;
+}
+p strong{
+  color:#215F69;
+  font-weight: 800;
+}
+@media only screen and (max-width: 1023px) {
+.hostSegment{
+  flex-direction: column;
+}
+.hostSegment p{
+  width:100%;
+}
+}
