@@ -44,6 +44,7 @@ import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
 import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
+import { UserAnnoncesComponent } from './ui/user-annonces/user-annonces.component';
 import { AnnonceComponent } from './ui/annonce/annonce.component';
 
 import { PaypalComponent } from './ui/paypal/paypal.component';
@@ -82,8 +83,8 @@ import { SearchComponent } from './ui/search/search.component';
     AnnonceComponent,
     ClearEstateFormComponent,    
     PaypalComponent,
-    FilterPipe,
     SearchComponent,
+    FilterPipe,
 
   ],
   imports: [
