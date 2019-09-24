@@ -1,7 +1,6 @@
 /** ANNONCES **/
-#pageAdmin .container{
-  height:auto;
-  min-height: 100vh;
+.posted {
+  background-color: #007772;
 }
 
 
@@ -10,11 +9,10 @@
   box-sizing: border-box;
   padding: 20px;
   height: auto;
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: space-around;
   position: relative;
 
 
@@ -153,23 +151,18 @@
 
 #admin-content #admin-annonces .adminAnnonce {
   border: 1px solid #ccc;
+  padding: 5px;
   box-sizing: border-box;
-  padding: 5px 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 20px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-}
-#admin-content #admin-annonces .adminAnnonceValidated {
-
-  background-color:lightseagreen;
-  color:#fff;
 }
 
 #admin-content #admin-annonces .newAdminNotification {
@@ -221,7 +214,7 @@
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions div {
+#admin-content #admin-annonces .adminAnnonce .estateOptions a {
   display: block;
   height: 30px;
   margin-left: 15px;
@@ -229,24 +222,23 @@
   border-radius: 5px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   transition: box-shadow ease 0.5s;
-  cursor: pointer;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions div:hover {
+#admin-content #admin-annonces .adminAnnonce .estateOptions a:hover {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
   transition: box-shadow ease 0.5s;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions div:first-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions a:first-child {
   background-color: lightseagreen;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions div:nth-child(2) {
+#admin-content #admin-annonces .adminAnnonce .estateOptions a:nth-child(2) {
   background-color: orange;
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions div:last-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions a:last-child {
   background-color: orangered;
   margin-right: 15px;
 }

@@ -3,24 +3,25 @@
     <div class="container">
         <app-admin-nav></app-admin-nav>
         <div id="admin-content">
-          <div id="admin-annonces">
-              <h3>Annonces</h3>
-              <div *ngFor="let item of estates.items; let i = index;" class="adminAnnonce">
-                  <div class="annonceThumbnail">
-                      <img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div>
-                  <p class="estateTitle">{{ item.properties?.title}}</p>
-                  <p class="estateCountry">{{ item.properties.country}}</p>
-                  <p class="estateCity">{{ item.properties.city}}</p>
-                  <input class="estateId" type="hidden" [value]="item.uuid">
-                  <div class="estateOptions">
-                      <div (click)="validateEstate()" class="validateEstate"></div>
-                      <div class="seeEstate"></div>
-                      <div [routerLink]="['/clearEstateForm']"  class="clearEstate"></div>
-                  </div>
-              </div>
-          </div>
+                <div id="admin-annonces">
+                        <h3>Annonces</h3>
+                        <div *ngFor="let estate of estates.items" class="adminAnnonce" >
+                            <div id="admin-annonces-overlay" class="admin-overlay-closed">
+                                <p>You're about to <strong>
+                                        {{message}}</strong><br> <strong>this estate</strong><br>are you sure ?</p>
+                                <div class="estateOptions"><a (click)="validate(estate)">Yes</a><a (click)="close()">No</a>
+                                </div>
+                                <p class="close-overlay" (click)="close()">+</p>
+                            </div>
+                            <div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div>
+                            <p class="estateTitle">{{ estate.properties?.title}}</p>
+                            <p class="estateCountry">{{ estate.properties.country}}</p>
+                            <p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden"
+                                [value]="estate.uuid">
+                            <div class="estateOptions"><a *ngIf="getStatus(estate.validation_state)" (click)="validateEstate()" class="validateEstate"></a><a
+                                (click)="goDetails(estate)" class="seeEstate"></a><a (click)="clearEstate()" class="clearEstate"></a></div>
+                        </div>
+                    </div>
         </div>
-
     </div>
 </section>
-
