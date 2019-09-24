@@ -1,404 +1,244 @@
-
-.pageAdmin{
-    background-color:#fff;
-    min-height: 100vh;
-    width:100%;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Roboto',sans-serif;
-  }
-  
-  
-  .pageAdmin aside{
-  background-color:pink;
-  width:200px;
-  
-  }
-  
-  .pageAdmin aside ul{
-  width:100%;
-  height:100%;
+.profileModel{
   background-color:#fff;
+  min-height: 100vh;
+  width:100%;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-family: 'Roboto',sans-serif;
+}
+
+
+.profileModel aside{
+width:200px;
+}
+
+.profileModel aside ul{
+width:100%;
+height:100%;
+background-color:#fff;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+box-sizing: border-box;
+border-right: 1px solid #215F69;
+}
+
+
+
+.profileModel aside ul li a{
+  display: block;
+  box-sizing: border-box;
+  border:1px solid #215F69;
+  width:150px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration:none;
+  color:#000;
+  border-radius: 5px;
+  color:#215F69;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+.profileModel aside ul li a:hover,.profileModel aside ul li .activeProfileLink{
+  background-color:#215F69;
+  color:#fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profileModel .profileContent{
+ box-sizing: border-box;
+ padding:20px;
+ display: flex;
+ flex-direction: column;
+ justify-content:baseline;
+ align-items: center;
+ align-content: center;
+ min-height:100vh;
+ width:calc(100% - 200px);
+}
+.profileModel .profileContent .profilecontainer{
+  background-color:#fff;
+  box-sizing:border-box;
+  height:auto;
+  display: flex;
+ flex-direction:column;
+ justify-content: baseline;
+ align-items:baseline;
+ align-content: baseline;
+ width:100%;
+ border:1px solid #215F69;
+ min-height:100vh;
+
+}
+
+.adminAnnonce {
+  margin: 5px auto;
+  position: relative !important;
+  border: 1px solid #ccc;
+  padding:5px 20px ;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.adminAnnonce {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
+  transition: box-shadow ease 0.5s;
+  box-sizing: border-box;
+}
+
+
+.adminAnnonce:hover {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow ease 0.5s;
+}
+
+
+.adminAnnonce .validationState {
+  font-weight : 800;
+  color:#007772;
+  font-size: 18px;
+  padding:5px;
+  box-sizing: border-box;
+  border:1px solid #007772;
+  border-radius: 5px 10px;
+}
+
+
+ .adminAnnonce .estateOptions {
+  background-color: #fff;
+  height: 45px;
+  width: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border-right: 1px solid #215F69;
-  }
-  
-  
-  
-  .pageAdmin aside ul li a{
-    display: block;
-    box-sizing: border-box;
-    border:1px solid #215F69;
-    width:150px;
-    height:40px;
-    line-height: 40px;
-    text-align: center;
-    text-decoration:none;
-    color:#000;
-    border-radius: 5px;
-    color:#215F69;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
-  }
-  .pageAdmin aside ul li a:hover,.pageAdmin aside ul li .activeProfileLink{
-    background-color:#215F69;
-    color:#fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .pageAdmin #admin-content #admin-annonces {
-   box-sizing: content-box;
-   padding:20px;
-   display: flex;
-   flex-direction: column;
-   justify-content:baseline;
-   align-items: center;
-   align-content: center;
-   min-height:100vh;
-   width:calc(100% - 200px);
-  }
-  
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 0;
 
-/** ANNONCES **/
+}
 
+ .adminAnnonce .estateOptions div {
+  display: block;
+  height: 30px;
+  margin-left: 15px;
+  width: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
+  transition: box-shadow ease 0.5s;
+  cursor: pointer;
+}
 
+.adminAnnonce .estateOptions div:hover {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+  transition: box-shadow ease 0.5s;
+}
 
-#admin-content #admin-annonces {
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 20px;
-    height: auto;
-    width:calc(100% - 200px);
-    display: flex;
+.adminAnnonce .estateOptions div:first-child {
+  background-color: lightseagreen;
+}
+
+ .adminAnnonce .estateOptions div:nth-child(2) {
+  background-color: orange;
+
+}
+
+ .adminAnnonce .estateOptions div:last-child {
+  background-color: orangered;
+  margin-right: 15px;
+}
+
+ .adminAnnonce .validateEstate {
+  background-image: url(../../../assets/adminIcons/tick.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+ .adminAnnonce .seeEstate {
+  background-image: url(../../../assets/adminIcons/display.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ .adminAnnonce .clearEstate {
+  background-image: url(../../../assets/adminIcons/clear.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.adminAnnonce .annonceThumbnail {
+  display: block;
+  height: 45px;
+  width: 45px;
+  max-width:45px;
+  background-color: #007772;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.adminAnnonce .annonceThumbnail img {
+  display: block;
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 1023px) {
+  .profileModel{
     flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-  
-  
   }
-  
-  /** OVERLAY **/
-  
-  #admin-annonces {
-    filter: blur(0px);
-    transition: filter ease 0.5s;
-  }
-  
-  #admin-annonces-overlay {
-    opacity: 1;
-  
-    filter: blur(0px);
-    position: absolute;
-    width: 500px;
-    /*    height: 250px;*/
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 1);
-    box-sizing: border-box;
-    border: 1px solid #007772;
-    border-radius: 20px;
-    z-index: 4000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 40%;
-    margin-top: -125px;
-    margin-left: -250px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transition: opacity ease 1s;
-  }
-  
-  .admin-overlay-closed {
-    left: -100% !important;
-    opacity: 0 !important;
-  }
-  
-  .admin-overlay-open {
-    left: 50% !important;
-    opacity: 1 !important;
-  }
-  
-  #admin-annonces-overlay p:first-child {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-  }
-  
-  #admin-annonces-overlay .estateOptions {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    font-size: 20xpx;
-  }
-  
-  #admin-annonces-overlay .estateOptions a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    text-decoration: none;
-    color: #fff;
-    line-height: 30px;
-    /*    border: 1px solid #fff;*/
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-annonces-overlay .estateOptions a:first-child {
-    background-color: orangered;
-  }
-  
-  #admin-annonces-overlay .estateOptions a:hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-annonces-overlay .estateOptions a:last-child {
-    background-color: lightseagreen;
-  }
-  
-  .close-overlay,
-  .admin-overlay-open + #admin-annonces {
-    cursor: pointer;
-  }
-  
-  .close-overlay {
-    font-size: 30px;
-    text-align: center;
-    line-height: 25px;
-    margin: 0;
-    padding: 0;
-    height: 30px;
-    width: 30px;
-    background-color: #fff;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    box-sizing: border-box;
-    border: 1px solid red;
-    border-radius: 15px;
-    transform: rotate(45deg);
-    color: red;
-    cursor: pointer;
-    transition: color ease 0.5s;
-    transition: background-color ease 0.5s;
-  }
-  
-  .close-overlay:hover {
-    background-color: red;
-    color: #fff;
-    transition: color ease 0.5s;
-    transition: background-color ease 0.5s;
-  }
-  
-  /** END OVERLAY **/
-  #admin-content #admin-annonces .adminAnnonce {
-    margin: 5px auto;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce {
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-  }
-  
-  #admin-content #admin-annonces .newAdminNotification {
-    background-color: #007772;
-    color: fff;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce:hover {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-content #admin-annonces .newAdminNotification:after {
-    position: absolute;
-    content: "!";
-  
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    color: #fff;
-    background-color: red;
-    top: 5px;
-    margin-top: -12px;
-    right: -10px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 4px #555;
-  
-  }
-  
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions {
-    background-color: #fff;
-    height: 45px;
-    width: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 0 15px;
-    margin: 0;
-  
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions a {
-    display: block;
-    height: 30px;
-    margin-left: 15px;
-    width: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions a:hover {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
-    transition: box-shadow ease 0.5s;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions a:first-child {
-    background-color: lightseagreen;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions a:nth-child(2) {
-    background-color: orange;
-  
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateOptions a:last-child {
-    background-color: orangered;
-    margin-right: 15px;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .validateEstate {
-    background-image: url(../../../assets/adminIcons/tick.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .seeEstate {
-    background-image: url(../../../assets/adminIcons/display.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .clearEstate {
-    background-image: url(../../../assets/adminIcons/clear.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .annonceThumbnail {
-    display: block;
-    height: 45px;
-    width: 45px;
-    background-color: #007772;
-    position: relative;
-    overflow: hidden;
-  
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .annonceThumbnail img {
-    display: block;
-    height: 50px;
-    width: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateTitle {
-    font-weight: 700;
-    font-size: 16px;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateCountry {
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
-  #admin-content #admin-annonces .adminAnnonce .estateCity {
-    font-weight: 300;
-    font-size: 15px;
-  }
-  
-  
-  @media only screen and (max-width: 1024px) {
-  
-    #admin-content #admin-annonces .adminAnnonce .annonceThumbnail {
-        display: none;
-    }
-  
-    #admin-content #admin-annonces .adminAnnonce .estateOptions a {
-        margin: 0 10px 0 0;
-    }
-  
-    #admin-content #admin-annonces .adminAnnonce .estateOptions a:last-child {
-        margin: 0;
-    }
-  
-    #admin-annonces-overlay {
-        width: 80%;
-        margin-left: -40%;
-        top: 50%;
-    }
-  
-    #admin-annonces-overlay .estateOptions {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 0;
-    }
-  
-    #admin-annonces-overlay .estateOptions a {
-        margin-top: 10px;
-    }
+  .profileModel aside{
+   width:100%;
   }
 
-  #admin-annonces {
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 20px;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  
-  }
+  .profileModel aside ul{
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 20px 0;
+   border-right:none;
+   border-bottom:1px solid #007772;
+    }
+    .profileModel aside li{
+      margin: 10px;
+    }
+
+    .profileModel .profileContent{
+
+      width:100%;
+     }
+
+     .profileModel .profileContent .profilecontainer{
+
+      width:100%;
+      margin-top: 20px;
+     }
+    .adminAnnonce {
+      flex-direction: column;
+      padding:10px 0;
+    }
+    .adminAnnonce>*{
+     margin-top:10px;
+    }
+
+
+
+}

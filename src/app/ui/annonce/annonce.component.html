@@ -1,29 +1,72 @@
-<section class="pageAdmin">
-        <aside>
-            <ul>
-                <li><a [routerLink]="['/profil']">Profil</a></li>
-                <li><a [routerLink]="['/messenger']">Messagerie</a></li>
-                <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
-                <li><a [routerLink]="['/notification']" >Notifications</a></li>
-                <li><a [routerLink]="['/annonces']" class="activeProfileLink">Mes annonces</a></li>
-               
-            </ul>
-        </aside>
-        <div class="notificationContent">
-    
-            <div class="notificationcontainer">
-    
-                <div class="container">
-                        <div id="admin-content" >
-                            <div id="admin-annonces" style="width:calc(100% - 200px);">
-                            <h3>Annonces</h3><div class="adminAnnonce newAdminNotification"><div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-02.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-03.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="bts-computer-wallpaper.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="bts_loveyourself_answer.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="../../../assets/images/bg/" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-02.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div><div class="adminAnnonce"><div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-03.jpg" alt=""></div><p class="estateTitle">Titre Annonce Kind of...</p><p class="estateCountry">Germany</p><p class="estateCity">Berlin</p><div class="estateOptions"><a href="" class="seeEstate"></a><a href="" class="clearEstate"></a></div></div></div>    
-                    </div>
-    
-                </div>
+<section class="profileModel">
+    <aside>
+      <ul>
+        <li><a [routerLink]="['/profil']">Profil</a></li>
+        <li><a [routerLink]="['/messenger']"  >Messagerie</a></li>
+        <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
+        <li><a [routerLink]="['/notification']">Notifications</a></li>
+        <li><a [routerLink]="['/annonces']" class="activeProfileLink">Mes annonces</a></li>
+      </ul>
+    </aside>
+    <div class="profileContent">
+
+      <div class="profilecontainer">
+          <h3>Annonces</h3>
+          <div class="adminAnnonce">
+            <div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div>
+            <p class="estateTitle">Titre Annonce Kind of...</p>
+            <p class="estateCountry">Germany</p>
+            <p class="estateCity">Berlin</p>
+            <p class="validationState">Validée</p>
+
+            <div class="estateOptions">
+                <div class="seeEstate"></div>
+                <div [routerLink]="['/clearEstateForm']"  class="clearEstate"></div>
+
             </div>
-        </div>
-    
-    
-    
+
+          </div>
+          <div class="adminAnnonce">
+              <div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div>
+              <p class="estateTitle">Titre Annonce Kind of...</p>
+              <p class="estateCountry">Germany</p>
+              <p class="estateCity">Berlin</p>
+              <p class="validationState">Validée</p>
+
+              <div class="estateOptions">
+                  <div class="seeEstate"></div>
+                  <div [routerLink]="['/clearEstateForm']"  class="clearEstate"></div>
+
+              </div>
+
+            </div>
+            <div class="adminAnnonce">
+                <div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div>
+                <p class="estateTitle">Titre Annonce Kind of...</p>
+                <p class="estateCountry">Germany</p>
+                <p class="estateCity">Berlin</p>
+                <p class="validationState">Validée</p>
+
+                <div class="estateOptions">
+                    <div class="seeEstate"></div>
+                    <div [routerLink]="['/clearEstateForm']"  class="clearEstate"></div>
+
+                </div>
+
+              </div>
+      </div>
+
+    </div>
+
     </section>
-    
+
+
+
+
+
+
+
+
+
+
+
