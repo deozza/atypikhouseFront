@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
+import { FilterPipe }from './filter.pipe';
 
 import { AuthTokenInterceptor } from './token.interceptor';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
@@ -46,6 +47,7 @@ import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-est
 import { AnnonceComponent } from './ui/annonce/annonce.component';
 
 import { PaypalComponent } from './ui/paypal/paypal.component';
+import { SearchComponent } from './ui/search/search.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +82,8 @@ import { PaypalComponent } from './ui/paypal/paypal.component';
     AnnonceComponent,
     ClearEstateFormComponent,    
     PaypalComponent,
-
+    FilterPipe,
+    SearchComponent,
 
   ],
   imports: [
@@ -92,7 +95,7 @@ import { PaypalComponent } from './ui/paypal/paypal.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FileUploadModule,
-    MatIconModule,
+    MatIconModule,   
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
 

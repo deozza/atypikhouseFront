@@ -14,9 +14,10 @@ Non-connecté-->
       <a [routerLink]="['/host']">Host</a>
     <ng-container *ngIf="!isConnected">
       <a [routerLink]="['/sign-up']" class="active-link">Sign-up</a>
-      <a [routerLink]="['/login']">Login</a>
+      <a >Login</a>
     </ng-container>
-      <a href="">Recherche</a>
+      <a [routerLink]="['/search']">Recherche</a>
+     
     <!--Si connecté -->
   <div [hidden]="!isConnected" id="profile-item"></div>
   </nav>
@@ -57,7 +58,7 @@ Non-connecté-->
       <!--Si Anoonce -->
       <!-- <a href="">Mes Annonces</a>-->
       <li><a href="">Recommander</a></li>
-      <li><a href="">Recherche</a></li>
+      <li><a [routerLink]="['/search']">Recherche</a></li>
       <li><a href="">Log-out</a></li>
     </ng-container>
   </ul>
