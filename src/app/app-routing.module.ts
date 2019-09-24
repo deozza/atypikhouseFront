@@ -24,6 +24,7 @@ import { NotificationComponent } from './ui/notification/notification.component'
 import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
 import { AnnonceComponent } from './ui/annonce/annonce.component';
 import { ConnectedGuard } from './auth/guard/connected.guard';
+import { PaypalComponent } from './ui/paypal/paypal.component';
 
 const routes: Routes = [
   { path: '',  component: HomeComponent},
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'clearEstateForm', canActivate:[ConnectedGuard], component : ClearEstateFormComponent },
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
+  { path: 'payment/:uuid', component: PaypalComponent},
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' },
 

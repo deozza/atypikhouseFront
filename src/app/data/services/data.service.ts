@@ -33,7 +33,7 @@ export class DataService {
     if (filters !== {}) {
           // tslint:disable-next-line: forin
           for (const key in filters) {
-        url += '&filterBy' + key + '=' + filters[key] ;
+        url += '&filterBy['+key+']=' + filters[key] ;
       }
     }
     return this.http.get<List<Entity>>(url);
@@ -76,7 +76,9 @@ export class DataService {
   }
 
 
-
+  public getAll(kind: string): Observable<List<Entity> >{
+    return this.http.get<List<Entity>>(API_URL + '/entities/' + kind);
+    }
 
 
 

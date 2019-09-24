@@ -10,8 +10,8 @@
     </aside>
     <div class="reservationContent">
         <h3>Réservations</h3>
-        <div class="item" *ngFor="let item of reservations?.items">
-            <div class="estateTitle" *ngIf="!getStatus(item.properties.leaving_at)">
+        <div class="item" *ngFor="let item of reservations?.items" >
+            <div class="estateTitle" *ngIf="!getStatus(item.properties.leaving_at)" (click)="goDetails(item)">
                 {{item.last_update | date: 'MMM d, y'}}
             </div>
             <div class="estateCity" *ngIf="!getStatus(item.properties.leaving_at)">
