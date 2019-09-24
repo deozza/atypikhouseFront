@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   pagination_slide: Pagination = new Pagination();
   ngOnInit() {
     this.pagination_slide.count= 4;
-    console.log("Yoooooo");
     $( document ).ready(function() {
       let i;
 

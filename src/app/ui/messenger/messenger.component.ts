@@ -16,7 +16,7 @@ export class MessengerComponent implements OnInit {
   pagination: Pagination;
   conversations:List<Entity>;
     constructor(private api: DataService) {
-  
+
     }
 
   ngOnInit() {
@@ -25,7 +25,6 @@ export class MessengerComponent implements OnInit {
         e.preventDefault();
         $('.profileConversation').removeClass('activeConversation');
         $(this).toggleClass('activeConversation');
-        console.log("CLICKED CONVO");
       });
   });
 
@@ -35,7 +34,7 @@ export class MessengerComponent implements OnInit {
           (r)=> {
             this.conversations = r;
             console.log(this.conversations);
-            
+
           },
           (error) => console.log(error)
       );

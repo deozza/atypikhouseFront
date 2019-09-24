@@ -27,7 +27,7 @@ error= false;
 routingSubscription: any;
 
 ngOnInit() {
-     
+
       this.api.getUserCurrent()
       .subscribe(
         (e) => {
@@ -48,7 +48,6 @@ ngOnInit() {
           $('.profileForm input').removeAttr('disabled'); //Enable
           $('.profileForm button').removeAttr('disabled');
 
-          console.log("CLOCKED YOUR ASS");
           $('.profileForm button').css({'opacity': '1','cursor':'pointer'});
           $('.profileForm input').css({'background-color': 'rgba(227, 227, 227, 0)','transition':'opacity ease 1s'});
 

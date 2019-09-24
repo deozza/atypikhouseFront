@@ -16,7 +16,6 @@ export class ModalComponent implements OnInit {
 
   }
   closeModal() {
-    console.log('CLOSE');
     let modal = document.getElementById('modal-rgpd');
     modal.classList.add('hidden-modal');
     let cookiedate = new Date();
