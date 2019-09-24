@@ -28,7 +28,7 @@ export class AnnoncesComponent implements OnInit {
     this.dataService.getAll('estate').subscribe(
         (e)=> {this.estates = e;
           console.log(this.estates)
-         
+
 
         },
         (error) => console.log(error)
@@ -39,26 +39,6 @@ export class AnnoncesComponent implements OnInit {
 
   }
 
-  close(){
-    $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-
-}
-
-
-  validateEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="confirm"
-  };
-  clearEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="erase"
-  };
 
 
   validate(estate: Entity) {
@@ -82,7 +62,7 @@ export class AnnoncesComponent implements OnInit {
   }
 
   getStatus(exp){
-   if (exp.includes("posted")) 
+   if (exp.includes("posted"))
    {
      return true
    }

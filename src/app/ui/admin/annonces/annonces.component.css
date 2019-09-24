@@ -1,6 +1,7 @@
 /** ANNONCES **/
-.posted {
-  background-color: #007772;
+#pageAdmin .container{
+  height:auto;
+  min-height: 100vh;
 }
 
 
@@ -9,10 +10,11 @@
   box-sizing: border-box;
   padding: 20px;
   height: auto;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: baseline;
   position: relative;
 
 
@@ -151,18 +153,23 @@
 
 #admin-content #admin-annonces .adminAnnonce {
   border: 1px solid #ccc;
-  padding: 5px;
   box-sizing: border-box;
+  padding: 5px 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 20px;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+}
+#admin-content #admin-annonces .adminAnnonceValidated {
+
+  background-color:lightseagreen;
+  color:#fff;
 }
 
 #admin-content #admin-annonces .newAdminNotification {
@@ -214,7 +221,7 @@
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div {
   display: block;
   height: 30px;
   margin-left: 15px;
@@ -222,23 +229,24 @@
   border-radius: 5px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   transition: box-shadow ease 0.5s;
+  cursor: pointer;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:hover {
+#admin-content #admin-annonces .adminAnnonce .estateOptions div:hover {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
   transition: box-shadow ease 0.5s;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:first-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions .validateEstate {
   background-color: lightseagreen;
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:nth-child(2) {
+#admin-content #admin-annonces .adminAnnonce .estateOptions .seeEstate {
   background-color: orange;
 
 }
 
-#admin-content #admin-annonces .adminAnnonce .estateOptions a:last-child {
+#admin-content #admin-annonces .adminAnnonce .estateOptions .clearEstate {
   background-color: orangered;
   margin-right: 15px;
 }
@@ -329,4 +337,3 @@
       margin-top: 10px;
   }
 }
-
