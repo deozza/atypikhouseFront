@@ -70,13 +70,15 @@ header a {
   cursor: pointer;
   position: relative;
 }
-#profile-links {
+.profile-links-visible {
   position: absolute;
   height: 300px;
   width: 150px;
   background-color: #fff;
   display: flex;
-  justify-content: space-around;
+  box-sizing:border-box;
+  padding-top: 10px;
+  justify-content: space-between;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -84,28 +86,45 @@ header a {
   transition: right 1s ease 0s;
   transition: opacity 1s ease 0s;
 }
-#profile-links a {
+.profile-links-visible a {
   text-align: center;
   display: block;
   width: 100%;
   color: #000;
 }
-#profile-links a:hover {
+.profile-links-visible a:hover {
   text-decoration: underline;
 }
-#profile-links a:last-child {
+.profile-links-visible a:last-child button {
   text-align: center;
   display: block;
   width: 100%;
   color: #CB4840;
-  text-decoration: underline;
+  text-decoration:none;
+  border:none;
+  box-sizing:border-box;
+  padding:10px;
+  background-color:#CB4840;
+  color:#fff;
+}
+.hiddenbody{
+  overflow: hidden !important;
+
+}
+
+.profile-links-visible a:last-child:hover button {
+text-decoration: none;
+color:#000;
 }
 .profile-links-visible {
   display: flex;
   opacity: 1;
   right: 0;
   top: 50px;
+  border:1px solid #007470;
+  box-sizing: border-box;
 }
+
 .profile-links-hidden {
   opacity: 0;
   right: -150px;

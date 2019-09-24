@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { AuthService } from 'src/app/auth/services/auth.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-menu',
@@ -19,11 +20,26 @@ export class MenuComponent implements OnInit {
     const profileItem = document.getElementById('profile-item');
     const profileMenu = document.getElementById('profile-links');
 
+    $( window ).resize(function() {
+      if($('#burger').hasClass( 'burger-close' )) {
+        toggleMenu();
+      }else{
+
+      }
+    });
+
     function toggleMenu() {
         burger.classList.toggle('burger');
         burger.classList.toggle('burger-close');
         mobilenav.classList.toggle('mobile-nav-visible');
         mobilenav.classList.toggle('mobile-nav-hidden');
+
+        if($('#burger').hasClass( 'burger-close' )) {
+          $('body').css('overflow', 'hidden' )
+        }else{
+          $('body').css('overflow', 'visible' )
+
+        }
     }
 
     function toggleProfileMenu() {
@@ -33,6 +49,7 @@ export class MenuComponent implements OnInit {
 
     profileItem.onclick = toggleProfileMenu;
     burger.onclick = toggleMenu;
+
   }
 
   logout() {
