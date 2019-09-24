@@ -4,7 +4,7 @@
         <app-admin-nav></app-admin-nav>
         <div id="admin-content">
                 <div id="admin-annonces">
-                        <h3>Annonces</h3>
+                        <h3 style="margin-top: 50px;">Annonces</h3>
                         <div *ngFor="let estate of estates.items" class="adminAnnonce" >
 
                             <div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div>
@@ -13,7 +13,7 @@
                             <p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden"
                                 [value]="estate.uuid">
                             <div class="estateOptions">
-                              <div *ngIf="getStatus(estate.validation_state)" (click)="validateEstate()" class="validateEstate"></div>
+                              <div *ngIf="getStatus(estate.validation_state)" (click)="validateEstate(estate)" class="validateEstate"></div>
                               <div (click)="goDetails(estate)" class="seeEstate"></div>
                               <div [routerLink]="['/clearEstateForm']" class="clearEstate"></div></div>
                         </div>

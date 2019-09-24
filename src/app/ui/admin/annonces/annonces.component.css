@@ -337,3 +337,26 @@
       margin-top: 10px;
   }
 }
+
+
+
+#pageAdmin .line-slider-prev,.line-slider-next {
+  width: 30px;
+  height: 70px;
+ 
+  color: #007270;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  line-height: 70px;
+  text-align: center;
+  font-size: 50px;
+ bottom:0%;
+  margin-top: -35px;
+      cursor:pointer;
+}
+#pageAdmin .line-slider-next{
+  right:30px;
+}
+#pageAdmin .line-slider-prev{
+  left:30px;
+}
