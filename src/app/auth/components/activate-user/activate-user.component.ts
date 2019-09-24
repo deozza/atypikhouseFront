@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+import { Token } from 'src/app/model/token.model';
 
 @Component({
   selector: 'app-activate-user',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivateUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router,private  auth: AuthService) { }
+
+  routingSubscription: any;
+  
 
   ngOnInit() {
+    this.routingSubscription =
+    this.route.params.subscribe(params => {
+    if (params.token) {
+      this.auth.activateUser(params.token)
+      .subscribe(
+        (e)=> {console.log(e);
+          
+        },
+        (error) => console.log(error)
+    );
+    }
+  });
+
   }
 
 }

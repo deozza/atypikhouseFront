@@ -71,4 +71,8 @@ export class AuthService {
         return throwError(error);
     }
 
+    public activateUser(token: Token){
+        return this.http.post<Token>(API_URL + '/user/activate', token)
+    }
+
 }

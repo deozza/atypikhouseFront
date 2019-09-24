@@ -12,9 +12,11 @@ export class User{
   register_date:string;
   plainPassword:string;
   password: Password;
+  token: string;
 
 
   public constructor(entity = null){
+    this.token              = entity !== null ? entity.token              : "";
     this.uuid              = entity !== null ? entity.uuid              : "";
     this.email             = entity !== null ? entity.email             : "";
     this.username          = entity !== null ? entity.username          : "";
@@ -39,6 +41,7 @@ export class User{
     delete user.last_failed_login;
     delete user.register_date;
     delete user.plainPassword;
+    delete user.token;
 
     return user;
 
@@ -53,6 +56,8 @@ export class User{
     delete user.last_login;
     delete user.last_failed_login;
     delete user.register_date;
+    delete user.token;
+
 
     return user;
 
@@ -66,9 +71,29 @@ export class User{
     delete user.last_failed_login;
     delete user.register_date;
     delete user.password;
+    delete user.token;
+
+
+    return user;
+
+  }
+
+  public activateUser() :User{
+    let user = new User(this);
+    delete user.uuid;
+    delete user.plainPassword;
+    delete user.last_login;
+    delete user.last_failed_login;
+    delete user.register_date;
+    delete user.password;
+    delete user.newPassword;
+    delete user.email;
+    delete user.active;
+    delete user.roles;
 
     return user;
 
   }
 
 }
+
