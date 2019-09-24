@@ -1,4 +1,4 @@
-<p>search works!</p>
+
 <input [(ngModel)]="searchText" placeholder="search text goes here">
 <ul>
   <li *ngFor="let c of estates?.items | filter : searchText">
@@ -10,13 +10,15 @@
         <h3>Nos recommandations</h3>
         <div class="line-slider">
             <div class="line-slider-container">
-                
+                <div *ngIf="!pagination.changingPage" class="line-slides-container">
                   <div *ngFor="let c of estates?.items | filter : searchText" class="line-slides-page">
                     <div  class="line-slide-item"> <a (click)="goDetails(item)"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></a>
                       <div class="line-slide-label"><p>{{c.properties?.city}}</p><p><strong>{{ c.properties.city}},</strong> {{ c.properties.country}}</p></div>
                     </div>
                   </div>
-               
+                </div>
+                <p *ngIf="pagination.page > 1" class="line-slider-prev" (click)="changeCurrentPage(pagination.page-1)">&lt;</p>
+                <p *ngIf="pagination.page > pagination.nb_pages"  class="line-slider-next" (click)="changeCurrentPage(pagination.page+1)">&gt;</p>
             </div>
         </div>
     </section>

@@ -85,7 +85,7 @@ import { SearchComponent } from './ui/search/search.component';
     PaypalComponent,
     UserAnnoncesComponent,
     SearchComponent,
-
+    FilterPipe,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
