@@ -8,7 +8,8 @@
         <h4>Type de bien</h4>
         <div class="addEstateCategory">
           <div *ngFor="let category of enumerations.enumerations?.estate_category">
-            <label for="category">{{category}}</label> <input type="radio" id="estate_category" name="estate_category"
+            <label for="category">{{category}}</label>
+             <input type="radio" id="estate_category" name="estate_category"
               [value]="category" [(ngModel)]="estate.estate_category" required>
           </div>
         </div>

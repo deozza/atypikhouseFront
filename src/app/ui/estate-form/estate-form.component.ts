@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
+import * as $ from 'jquery';
 
 
 
@@ -30,7 +31,7 @@ export class EstateFormComponent implements OnInit {
   isSaved= false;
 
 
-  
+
   public uploader: FileUploader = new FileUploader({
     isHTML5: true
   });
@@ -40,7 +41,15 @@ export class EstateFormComponent implements OnInit {
     constructor(private api: DataService, private route: ActivatedRoute, private router: Router, private fb: FormBuilder) { }
 
     ngOnInit() {
-     
+
+      // $(document).ready(function() {
+      //   $(".addEstateCategory div label input[type='radio']").click(function(){
+
+      //     $(".addEstateCategory div label:after input:checked").toggleClass("checkedInputRadioCategory");
+
+      //   });
+      // });
+
       this.estate = new Estate();
       this.getUtilities();
       this.uploadForm = this.fb.group({
@@ -106,7 +115,7 @@ export class EstateFormComponent implements OnInit {
         }
       );
     }
-   
+
     uploadSubmit() {
       for (let i = 0; i < this.uploader.queue.length; i++) {
         const fileItem = this.uploader.queue[i]._file;
