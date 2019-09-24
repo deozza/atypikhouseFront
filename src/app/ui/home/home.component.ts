@@ -22,11 +22,11 @@ export class HomeComponent implements OnInit {
       for (i = 0; i < h3Items.length; i++) {
         let content = h3Items[i].textContent;
 
-        if( content == "nature_vibes"){
-          h3Items[i].textContent = "Pour un retour à la nature";
+        if( content == 'nature_vibes'){
+          h3Items[i].textContent = 'Pour un retour à la nature';
         }
-        else if(content == "beach_vibes")
-        h3Items[i].textContent = "En bord de mer";
+        else if(content == 'beach_vibes')
+        h3Items[i].textContent = 'En bord de mer';
       }
 
   });
