@@ -27,7 +27,6 @@ export class MenuComponent implements OnInit {
 
       }
     });
-
     function toggleMenu() {
         burger.classList.toggle('burger');
         burger.classList.toggle('burger-close');

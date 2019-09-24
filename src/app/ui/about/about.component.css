@@ -1,0 +1,12 @@
+p{
+  font-family: 'Roboto',sans-serif;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+p strong,p em{
+  color:lightseagreen
+}
+
+p strong{
+font-weight: 900;}

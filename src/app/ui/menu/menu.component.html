@@ -8,16 +8,15 @@
 
   </h1>
   <nav  id="main-nav">
-    <a href="">Réserver</a>
+    <a [routerLink]="['/search']">Recherche</a>
     <!--
 Non-connecté-->
-      <a [routerLink]="['/host']">Host</a>
+      <a [routerLink]="['/host']">Héberger</a>
     <ng-container *ngIf="!isConnected">
-      <a [routerLink]="['/sign-up']" class="active-link">Sign-up</a>
+      <a [routerLink]="['/sign-up']" >Sign-up</a>
       <a [routerLink]="['/login']">Login</a>
     </ng-container>
-      <a [routerLink]="['/search']">Recherche</a>
-     
+
     <!--Si connecté -->
   <div [hidden]="!isConnected" id="profile-item"></div>
   </nav>
