@@ -83,8 +83,7 @@ import { SearchComponent } from './ui/search/search.component';
     AnnonceComponent,
     ClearEstateFormComponent,    
     PaypalComponent,
-    SearchComponent,
-    FilterPipe,
+    UserAnnoncesComponent,
 
   ],
   imports: [
