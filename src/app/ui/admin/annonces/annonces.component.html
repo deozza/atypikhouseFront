@@ -13,9 +13,9 @@
                             <p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden"
                                 [value]="estate.uuid">
                             <div class="estateOptions">
-                              <div *ngIf="getStatus(estate.validation_state)" (click)="validateEstate(estate)" class="validateEstate"></div>
+                              <div  (click)="validateEstate(estate)" class="validateEstate"></div>
                               <div (click)="goDetails(estate)" class="seeEstate"></div>
-                              <div [routerLink]="['/clearEstateForm']" class="clearEstate"></div></div>
+                              <div (click)="deleteFrom(estate)" class="clearEstate"></div></div>
                         </div>
                     </div>
         </div>

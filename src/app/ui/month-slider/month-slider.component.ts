@@ -25,24 +25,27 @@ export class MonthSliderComponent implements OnInit {
     this.pagination.count = 3;
     this.dataService.getEntities('estate', this.pagination.count, 1, this.pagination.filters).subscribe(
         (e)=> {this.estateOfTheMonth = e;
-
-        /*this.estate_1 = this.estateOfTheMonth.items[0];
+                console.log(e);
+        this.estate_1 = this.estateOfTheMonth.items[0];
         this.estate_2 = this.estateOfTheMonth.items[1];
-        this.estate_3 = this.estateOfTheMonth.items[1]*/
+        this.estate_3 = this.estateOfTheMonth.items[2]
       },
         (error) => console.log(error)
     );
 
     var bullets = document.getElementsByClassName('bullet-slider');
-    var bullet01 = bullets[0],
-        bullet02 = bullets[1]
+    var bullet01 = bullets[0],      
+        bullet02 = bullets[1],
+        bullet03 = bullets[2]
 
     var slides = document.getElementsByClassName('month-slide');
     var slide01 = slides[0],
-        slide02 = slides[1]
+        slide02 = slides[1],
+        slide03 = slides[2]
 
     bullet01.addEventListener("click",switch01);
     bullet02.addEventListener("click",switch02);
+    bullet03.addEventListener("click",switch03);
 
     function switch01(){
         removeActiveClass();
@@ -54,6 +57,12 @@ export class MonthSliderComponent implements OnInit {
         slide02.classList.add('active-slide');
         bullet02.classList.add('bullet-slide-active');
     }
+
+    function switch03(){
+      removeActiveClass();
+      slide03.classList.add('active-slide');
+      bullet03.classList.add('bullet-slide-active');
+  }
 
     function removeActiveClass(){
         for (var i = 0; i < slides.length; i++) {

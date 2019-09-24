@@ -41,10 +41,11 @@ export class AnnoncesComponent implements OnInit {
 
 
 
-  validate(estate: Entity) {
+  validateEstate(estate: Entity) {
     this.dataService.validateEntity(estate.uuid).subscribe(
       (t) => {
-        this.router.navigate(['/crm']);
+        alert("l'annonce est bien validée");
+        this.router.navigate(['/admin-annonces']);
       },
       (error) => {
         if(error.status == 409) {
@@ -56,7 +57,9 @@ export class AnnoncesComponent implements OnInit {
 
     );
   }
-
+  deleteFrom(estate: Estate){
+    this.router.navigate(['/clearEstateForm', estate.uuid ])
+  }
   goDetails(estate: Estate){
   this.router.navigate(['/estate', estate.uuid ])
   }

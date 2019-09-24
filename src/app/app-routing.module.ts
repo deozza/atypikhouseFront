@@ -49,7 +49,7 @@ const routes: Routes = [
   { path: 'annonces', canActivate:[ConnectedGuard], component: AnnonceComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
-  { path: 'clearEstateForm', canActivate:[ConnectedGuard], component : ClearEstateFormComponent },
+  { path: 'clearEstateForm/:uuid', canActivate:[ConnectedGuard], component : ClearEstateFormComponent },
   { path: 'conditions-privacy', component: ConditionsPrivacyComponent},
   { path: 'payment/:uuid', component: PaypalComponent},
   { path: 'not-found', component: FourOhFourComponent },
