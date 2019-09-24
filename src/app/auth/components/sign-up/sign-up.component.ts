@@ -12,6 +12,7 @@ import { UserService } from 'src/app/data/components/user/services/user.service'
 export class SignUpComponent implements OnInit {
   newUser: User = new User();
   loading: boolean = false;
+  isSaved: boolean = false;
   errors: any[] = [];
   error= false;
 
@@ -35,9 +36,9 @@ export class SignUpComponent implements OnInit {
     this.loading = true;
     this.userService.postUser(this.newUser.postableUser()).subscribe(
       (t) => {
+        this.isSaved = true;
        this.loading = false;
-       this.router.navigate(['/']);
-       console.log(t);
+     
      },
       (error) => {
        this.loading = false;
