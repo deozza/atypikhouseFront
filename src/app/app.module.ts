@@ -49,7 +49,7 @@ import { AnnonceComponent } from './ui/annonce/annonce.component';
 
 import { PaypalComponent } from './ui/paypal/paypal.component';
 import { SearchComponent } from './ui/search/search.component';
-import { ActivateUserComponent } from './ui/activate-user/activate-user.component';
+import { ActivateUserComponent } from './auth/components/activate-user/activate-user.component';
 
 @NgModule({
   declarations: [
