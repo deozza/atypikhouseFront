@@ -1,12 +1,27 @@
 <section>
   <h3>Trouvez votre AtypikHouse</h3>
 <input class="searchAtypikHouse" [(ngModel)]="searchText" placeholder="Dans quelle Ville souhaitez-vous trouver votre AtypikHouse ?">
-<ul>
+<!-- <ul>
   <li *ngFor="let c of estates?.items | filter : searchText">
     {{c.properties.city}}
   </li>
-</ul>
+</ul> -->
+<h4>Nos derniers Listings</h4>
+<div class="ResultList">
+<div *ngFor="let c of estates?.items | filter : searchText" >
+    <div  class="Result-item">
+    <a (click)="goDetails(item)">
+      <img src="../../../assets/images/bg/BG-01.jpg" alt="">
+    </a>
+      <div class="Result-item-label"><p>{{c.properties?.city}}</p>
+        <p><strong>{{ c.properties.city}},</strong> {{ c.properties.country}}</p>
+      <a href="" class="ctaResult">J&rsquo;y vais ></a>
+      </div>
+    </div>
+  </div>
+</div>
 <!--
+
 <section>
         <h3>Nos recommandations</h3>
         <div class="line-slider">
