@@ -23,11 +23,12 @@ export class AnnoncesComponent implements OnInit {
 
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
-
-    this.pagination.count = 3;
-    this.dataService.getEntities('estate', this.pagination.count, 1).subscribe(
+    this.pagination.filters = {'validationState':'estate_of_the_month'};
+    this.pagination.count = 30;
+    this.dataService.getAll('estate').subscribe(
         (e)=> {this.estates = e;
           console.log(this.estates)
+         
 
         },
         (error) => console.log(error)
@@ -38,36 +39,53 @@ export class AnnoncesComponent implements OnInit {
 
   }
 
+  close(){
+    $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
 
-  validateEstate(i){
-/** PUSH VALIDATION STATE */
-/** TOGGLE CLASS WHEN PUSHED */
+}
+
+
+  validateEstate(){
+    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
+    this.message="confirm"
+  };
+  clearEstate(){
+    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
+    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
+    this.message="erase"
   };
 
 
-
-
-  delete(estate: Entity) {
-    this.dataService.deleteEntity(estate.uuid).subscribe(
-      (t) => {this.router.navigate(['/annonces']);
-     },
+  validate(estate: Entity) {
+    this.dataService.validateEntity(estate.uuid).subscribe(
+      (t) => {
+        this.router.navigate(['/crm']);
+      },
       (error) => {
+        if(error.status == 409) {
+          this.router.navigate(['/crm']);
+        }
+        else
        console.log(error);
      }
+
     );
   }
 
-  validate(estate: Entity) {
-    this.dataService.validateEntity(estate.uuid).subscribe(
-      (t) => {this.router.navigate(['/annonces']);
-     },
-      (error) => {
-       console.log(error);
-     }
+  goDetails(estate: Estate){
+  this.router.navigate(['/estate', estate.uuid ])
+  }
 
-    );
-
-
+  getStatus(exp){
+   if (exp.includes("posted")) 
+   {
+     return true
+   }
   }
 
 }
