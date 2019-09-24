@@ -36,6 +36,8 @@ import { ContactComponent } from './ui/contact/contact.component';
 import { FaqComponent } from './ui/faq/faq.component';
 import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-privacy.component';
 import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { MessengerComponent } from './ui/messenger/messenger.component';
 import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
@@ -91,6 +93,7 @@ import { AnnonceComponent } from './ui/annonce/annonce.component';
     ReactiveFormsModule,
     FileUploadModule,
     MatIconModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
 
   ],
