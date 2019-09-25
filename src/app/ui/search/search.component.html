@@ -1,11 +1,6 @@
 <section>
   <h3>Trouvez votre AtypikHouse</h3>
 <input class="searchAtypikHouse" [(ngModel)]="searchText" placeholder="Dans quelle Ville souhaitez-vous trouver votre AtypikHouse ?">
-<!-- <ul>
-  <li *ngFor="let c of estates?.items | filter : searchText">
-    {{c.properties.city}}
-  </li>
-</ul> -->
 <h4>Nos derniers Listings</h4>
 <div class="ResultList">
 <div *ngFor="let c of estates?.items | filter : searchText" >
@@ -21,4 +16,4 @@
   </div>
 </div>
 
-  </section>
+</section>
