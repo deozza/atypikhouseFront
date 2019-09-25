@@ -407,7 +407,7 @@
   font-family: 'FontAwesome';
 }
 
-#CTA-reservation,#reservation-overlay-content a:last-child {
+#CTAPAY,#CTA-reservation,#reservation-overlay-content a:last-child {
   display: block;
   text-decoration: none;
   color: #fff;
@@ -421,6 +421,14 @@
   cursor:pointer;
 }
 
+#FormErrors{
+  background-color: rgba(203, 71, 64, 0.557);
+  color:#fff;
+  box-sizing: border-box;
+  width:80%;
+  line-height: 22px;
+  margin:20px;
+}
 /*** IMAGE GALLERY ***/
 #estate-image-gallery {
   width: 50%;
