@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   credentials: Credentials = new Credentials();
   loading: boolean = false;
+  errors = [];
   constructor(private auth: AuthService, private router: Router) {}
 
   ngOnInit() {
@@ -33,8 +34,26 @@ export class LoginComponent implements OnInit {
       },
       (error) => {
         this.loading = false;
-        console.log(error);
+        this.handleError(error);
       }
     );
+  }
+
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
   }
 }

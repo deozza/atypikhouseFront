@@ -127,10 +127,7 @@ calculate()
         this.router.navigate(['/payment',  this.entityUuid]);
      },
      error => {
-      
-        console.log(error);
-        
-
+      this.handleError(error);
       }     
    
     );
@@ -150,6 +147,23 @@ calculate()
     }
   }
 
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
+  }
 
 
 

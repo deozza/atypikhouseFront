@@ -19,6 +19,15 @@ section {
   font-weight: 300;
 }
 
+.container #FormErrors{
+  background-color: rgba(203, 71, 64, 0.557);
+  color:#fff;
+  box-sizing: border-box;
+  width:80%;
+  line-height: 22px;
+  margin:20px;
+}
+
 h3 {
   font-family: 'Pacifico', serif;
   font-size: 35px;

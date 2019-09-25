@@ -4,7 +4,11 @@
       <div id="reservation-overlay">
 
           <div id="reservation-overlay-content">
-
+                <div id="FormErrors">
+                        <ng-container *ngIf="this.errors !== undefined" >
+                            <p *ngFor="let message of this.errors">{{message}}</p>
+                        </ng-container>
+                    </div>
 
               <form>
 

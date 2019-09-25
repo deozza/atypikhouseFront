@@ -101,6 +101,15 @@ section h4{
   margin-top: 20px;
   cursor: pointer;
 }
+
+.container #FormErrors{
+  background-color: rgba(203, 71, 64, 0.557);
+  color:#fff;
+  box-sizing: border-box;
+  width:80%;
+  line-height: 22px;
+  margin:20px;
+}
 @media only screen and (max-width: 1024px) {
   section h4{
     width:100%;

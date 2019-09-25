@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://127.0.0.1:8000/api' //'https://api.atypik.house/api'
+  apiUrl: 'https://api.atypik.house/api' // 'https://murmuring-refuge-10283.herokuapp.com/api'
 
 };

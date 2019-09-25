@@ -5,6 +5,11 @@
       <div class="container-title">
           <h2>Connexion Admin</h2>
       </div>
+      <div id="FormErrors">
+        <ng-container *ngIf="this.errors !== undefined" >
+            <p *ngFor="let message of this.errors">{{message}}</p>
+        </ng-container>
+    </div>
       <form action="" id="loginForm">
           <label for="email"><b>Email</b></label>
           <input type="text" id="email" placeholder="ex : saitama@heroassociation.gov" name="email" [(ngModel)]="credentials.login" required>

@@ -12,7 +12,7 @@ export class SignUpComponent implements OnInit {
   newUser: User = new User();
   loading: boolean = false;
   errors = [];
-
+  isSaved = false;
   constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {

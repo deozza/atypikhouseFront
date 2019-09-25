@@ -22,6 +22,7 @@ export class ClearEstateFormComponent implements OnInit {
   notif :Notification = new Notification ();
   imagePaths:any[] = [];
   routingSubscription: any;
+  errors = [];
  
   src: any;
   ngOnInit() {
@@ -49,6 +50,24 @@ export class ClearEstateFormComponent implements OnInit {
   });
   }
 
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
+  }
+
   sendNotif(){
     this.api.deleteEntity(this.EntityUuid).subscribe(
       (data) => {
@@ -56,11 +75,11 @@ export class ClearEstateFormComponent implements OnInit {
           (data) => {
             this.router.navigate(['/admin-annonces'])
           },
-          (error) => console.log(error)
+          (error) =>  this.handleError(error)
         )
       ;
       },
-      (error) => console.log(error)
+      (error) => this.handleError(error)
     )
   ;
     

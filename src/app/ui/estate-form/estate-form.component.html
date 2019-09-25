@@ -4,6 +4,11 @@
   <div id="add-estate" *ngIf="!isPosted">
     <h3>Créer votre annonce</h3>
     <div class="add-estate-form">
+        <div id="FormErrors">
+            <ng-container *ngIf="this.errors !== undefined" >
+                <p *ngFor="let message of this.errors">{{message}}</p>
+            </ng-container>
+        </div>
       <form class="col s12">
         <h4>Type de bien</h4>
         <div class="addEstateCategory">
