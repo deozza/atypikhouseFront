@@ -33,7 +33,7 @@
                   <label for="total_price">Montant total</label>
                       <input type="number" name="total_price" id="total_price" [(ngModel)]="booking.total_price">
               </div>
-              <a (click)="saveReservation()" id="CTAPAY">Je Confirme</a>
+              <a (click)="saveReservation()" id="CTAPAY" alt="Je confirme" title="Je confirme">Je Confirme</a>
               <div id="FormErrors">
                     <ng-container *ngIf="this.errors !== undefined" >
                         <p *ngFor="let message of this.errors">{{message}}</p>
@@ -151,7 +151,7 @@
 
              </ul>
          </div>
-          <a (click)="goToReservation()" id="CTA-reservation">JE RESERVE</a>
+          <a (click)="goToReservation()" id="CTA-reservation" alt="Je réserve" title="Je réserve">JE RESERVE</a>
 
       </div>
   </div>

@@ -5,17 +5,17 @@
             <div *ngIf="!pagination.changingPage" class="line-slides-container">
               <div  class="line-slides-page">
                 <div  *ngFor="let item of entities?.items" class="line-slide-item">
-                  <a (click)="goDetails(item)">
+                  <a (click)="goDetails(item)"  alt="Voir Annonce" title="Voir Annonce">
                   <img src="../../../assets/images/bg/BG-01.jpg" alt=""></a>
                   <div class="line-slide-label"><p>{{item.properties?.city}}</p><p><strong>{{ item.properties.city}},</strong> {{ item.properties.country}}</p>
-                  <a (click)="goDetails(item)">En savoir plus</a></div>
+                  <a (click)="goDetails(item)" alt="En savoir plus" title="En savoir plus">En savoir plus</a></div>
                 </div>
               </div>
 
 
             </div>
-            <p *ngIf="pagination.page > 1" class="line-slider-prev" (click)="changeCurrentPage(pagination.page-1)">&lt;</p>
-            <p *ngIf="pagination.page > pagination.nb_pages"  class="line-slider-next" (click)="changeCurrentPage(pagination.page+1)">&gt;</p>
+            <p *ngIf="pagination.page > 1" class="line-slider-prev" (click)="changeCurrentPage(pagination.page-1)" alt="previous page" title="Previous Page">&lt;</p>
+            <p *ngIf="pagination.page > pagination.nb_pages"  class="line-slider-next" (click)="changeCurrentPage(pagination.page+1)" alt="Next page" title="Next Page">&gt;</p>
         </div>
     </div>
 </section>

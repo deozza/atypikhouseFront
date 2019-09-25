@@ -1,17 +1,17 @@
 <section>
-  
+
   <h3>Trouvez votre AtypikHouse</h3>
 <input class="searchAtypikHouse" [(ngModel)]="searchText" placeholder="Dans quelle Ville souhaitez-vous trouver votre AtypikHouse ?">
 <h4>Nos derniers Listings</h4>
 <div class="ResultList">
 <div *ngFor="let c of estates?.items | filter : searchText" >
     <div  class="Result-item">
-    <a (click)="goDetails(c)">
+    <a (click)="goDetails(c)" alt="Voir l'annonce" title="Voir l'annonce">
       <img  [src]="getImagePath(sanitize(c.properties.image))" alt="" style="height: 100%; width: 100%;">
     </a>
       <div class="Result-item-label"><p>{{c.properties?.city}}</p>
         <p><strong>{{ c.properties.city}},</strong> {{ c.properties.country}}</p>
-      <a (click)="goDetails(c)" class="ctaResult">J&rsquo;y vais ></a>
+      <a (click)="goDetails(c)" class="ctaResult"  alt="Voir l'annonce" title="Voir l'annonce"></a>>J&rsquo;y vais ></a>
       </div>
     </div>
   </div>

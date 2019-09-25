@@ -2,14 +2,14 @@
 
 
         <section class="payment">
-          <a (click)="backClicked()" class="ctaRetour">&lt; Retour</a>
+          <a (click)="backClicked()" class="ctaRetour"  alt="Page précédente" title="Page précédente">&lt; Retour</a>
             <div id="add-estate">
                 <h3>Effectuez votre paiement</h3>
                 <div class="add-estate-form">
                     <form class="col s12">
                         <input type="number" [(ngModel)]="finalAmount" name="finalAmoun" style="padding-bottom: 10px;">
                         <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
-                        <div id="paypal-checkout-btn"></div>
+                        <div id="paypal-checkout-btn"  alt="Checkout Paypal" title="Procéder au Paiement"></div>
                     </form>
                 </div>
             </div>

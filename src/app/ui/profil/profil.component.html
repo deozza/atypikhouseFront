@@ -1,19 +1,19 @@
 <section class="profileModel">
   <aside>
-    <ul>
-      <li><a [routerLink]="['/profil']" class="activeProfileLink">Profil</a></li>
-      <li><a [routerLink]="['/messenger']">Messagerie</a></li>
-      <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
-      <li><a [routerLink]="['/notification']">Notifications</a></li>
-      <li><a [routerLink]="['/annonces']">Mes annonces</a></li>
-    </ul>
+      <ul>
+          <li><a [routerLink]="['/profil']" class="activeProfileLink" alt="Profil" title="Profil">Profil</a></li>
+          <li><a [routerLink]="['/messenger']"   alt="Messagerie" title="Messagerie">Messagerie</a></li>
+          <li><a [routerLink]="['/reservations']"  alt="Mes réservations" title="Mes réservations">Mes Réservations</a></li>
+          <li><a [routerLink]="['/notification']" alt="Notifications" title="Notifications">Notifications</a></li>
+          <li><a [routerLink]="['/annonces']" alt="Mes annonces" title="Mes annonces">Mes annonces</a></li>
+        </ul>
   </aside>
   <div class="profileContent">
     <div class="profilecontainer">
       <div class="profileInfo">
         <div class="profileIcon"></div>
         <div class="profiledate">Membre depuis le {{user.register_date | date: 'dd/MM/yy'}}</div>
-        <a href="" (click)="editUserClick()" class="modifierForm">Modifier Mes informations</a>
+        <a href="" (click)="editUserClick()" class="modifierForm" alt="Modifier Mes informations" title="Modifier mes Informations">Modifier Mes informations</a>
       </div>
       <form action="" class="profileForm">
         <label for="username" class="requiredInfo"><b>Identifiant</b></label>
@@ -35,7 +35,7 @@
             [(ngModel)]="newUser.newPassword.second" required><br/>
         </div>
 
-        <button type="submit" disabled (click)="PatchUser()">Modifier</button>
+        <button type="submit" disabled (click)="PatchUser()" alt="Valider les modifications" title="Valider les modifications">Modifier</button>
       </form>
     </div>
   </div>

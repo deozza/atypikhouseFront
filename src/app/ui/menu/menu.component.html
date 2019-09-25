@@ -2,19 +2,19 @@
 
   <h1>
 
-    <a href=""><img id="logo-Atypik" src="../../../assets/images/LOGO.svg" alt="AtypikHouse"
+    <a routerLink]="['/']" alt="Pade d'accueil" title="Page d'accueil"><img id="logo-Atypik" src="../../../assets/images/LOGO.svg" alt="AtypikHouse"
         title="Logo Atypik House"><img id="logo-Atypik-mobile" src="../../../assets/images/LOGO-Mobile.svg"
         alt="AtypikHouse" title="Logo Atypik House"></a>
 
   </h1>
   <nav  id="main-nav">
-    <a [routerLink]="['/search']">Rechercher</a>
+    <a [routerLink]="['/search']" alt="Rechercher" title="Recherche">Rechercher</a>
     <!--
 Non-connecté-->
-      <a [routerLink]="['/host']">Héberger</a>
+      <a [routerLink]="['/host']" alt="Héberger" title="Héberger">Héberger</a>
     <ng-container *ngIf="!isConnected">
-      <a [routerLink]="['/sign-up']" >Sign-up</a>
-      <a [routerLink]="['/login']">Login</a>
+      <a [routerLink]="['/sign-up']" alt="S'inscrire" title="S'inscrire">Sign-up</a>
+      <a [routerLink]="['/login']" alt="Se connecter" title="Se connecter">Login</a>
     </ng-container>
 
     <!--Si connecté -->
@@ -23,15 +23,15 @@ Non-connecté-->
   <div id="burger" class="burger"></div>
 
   <nav id="profile-links"  class="profile-links-hidden">
-    <a [routerLink]="['/profil']">Profil</a>
-    <a [routerLink]="['/messenger']">Messagerie</a>
-    <a [routerLink]="['/reservations']">Mes Réservations</a>
-    <a [routerLink]="['/notification']">Notifications</a>
+    <a [routerLink]="['/profil']" alt="Profil" title="Profil">Profil</a>
+    <a [routerLink]="['/messenger']" alt="Messagerie" title="Messagerie">Messagerie</a>
+    <a [routerLink]="['/reservations']" alt="Mes réservations" title="Mes réservations">Mes Réservations</a>
+    <a [routerLink]="['/notification']" alt="Notifications" title="Notifications">Notifications</a>
     <!-- Aucune Annonce -->
-    <a [routerLink]="['/host']">Héberger</a>
+    <a [routerLink]="['/host']" alt="Héberger" title="Héberger">Héberger</a>
     <!--Si Anoonce -->
     <!-- <a href="">Mes Annonces</a>-->
-   <a><button (click)="logout()">Log-out</button></a>
+   <a><button (click)="logout()" alt="Se déconnecter" title="Déconnection">Log-out</button></a>
   </nav>
 </header>
 
@@ -40,25 +40,25 @@ Non-connecté-->
     <!--Non-connecté-->
 
     <ng-container *ngIf="!isConnected">
-        <li><a [routerLink]="['/host']">Héberger</a>
+        <li><a [routerLink]="['/host']" alt="Héberger" title="Héberger">Héberger</a>
         </li>
-          <li><a [routerLink]="['/sign-up']" class="active-link">Sign-up</a></li>
-            <li><a [routerLink]="['/login']">Login</a></li>
+          <li><a [routerLink]="['/sign-up']" class="active-link" alt="Inscription" title="Inscription">Sign-up</a></li>
+            <li><a [routerLink]="['/login']"  alt="Connection" title="Connection">Login</a></li>
     </ng-container>
     <!--connecté-->
     <ng-container *ngIf="isConnected">
-      <li><a [routerLink]="['/profil']">Profil</a></li>
-      <li><a  [routerLink]="['/messenger']">Messagerie</a></li>
-      <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
-      <li><a [routerLink]="['/notification']">Notifications</a></li>
+      <li><a [routerLink]="['/profil']" alt="Profilr" title="Profil">Profil</a></li>
+      <li><a  [routerLink]="['/messenger']" alt="Messagerie" title="Messagerie">Messagerie</a></li>
+      <li><a [routerLink]="['/reservations']" alt="Mes réservations" title="Mes réservations">Mes Réservations</a></li>
+      <li><a [routerLink]="['/notification']" alt="Notifications" title="Notifications">Notifications</a></li>
       <!-- Aucune Annonce -->
-      <li><a [routerLink]="['/host']">Héberger</a>
+      <li><a [routerLink]="['/host']" alt="Héberger" title="Héberger">Héberger</a>
       </li>
       <!--Si Anoonce -->
       <!-- <a href="">Mes Annonces</a>-->
 
       <li><a [routerLink]="['/search']">Rechercher</a></li>
-      <li><a href="">Log-out</a></li>
+      <li><a (click)="logout()"  alt="Se déconnecter" title="Déconnection">Log-out</a></li>
     </ng-container>
   </ul>
 </nav>
