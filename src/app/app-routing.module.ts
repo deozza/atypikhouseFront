@@ -27,6 +27,7 @@ import { ConnectedGuard } from './auth/guard/connected.guard';
 import { PaypalComponent } from './ui/paypal/paypal.component';
 import { SearchComponent } from './ui/search/search.component';
 import { ActivateUserComponent } from './auth/components/activate-user/activate-user.component';
+import { ErrorComponent } from './auth/components/error/error.component';
 
 const routes: Routes = [
   
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'activation/:token', component: ActivateUserComponent},
+  { path: 'error', component: ErrorComponent},
   { path: 'search', component: SearchComponent},
   { path: 'estate/:uuid', component: EstateComponent},
   { path: 'estate_form', canActivate:[ConnectedGuard],  component: EstateFormComponent},

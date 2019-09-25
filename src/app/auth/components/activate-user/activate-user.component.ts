@@ -22,9 +22,12 @@ export class ActivateUserComponent implements OnInit {
       this.auth.activateUser(params.token)
       .subscribe(
         (e)=> {console.log(e);
-          
+          this.router.navigate(['/login'])
         },
-        (error) => console.log(error)
+        (error) => {
+          this.router.navigate(['/error']);
+          console.log(error);
+        }
     );
     }
   });

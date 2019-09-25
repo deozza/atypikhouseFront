@@ -50,6 +50,7 @@ import { AnnonceComponent } from './ui/annonce/annonce.component';
 import { PaypalComponent } from './ui/paypal/paypal.component';
 import { SearchComponent } from './ui/search/search.component';
 import { ActivateUserComponent } from './auth/components/activate-user/activate-user.component';
+import { ErrorComponent } from './auth/components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +86,7 @@ import { ActivateUserComponent } from './auth/components/activate-user/activate-
     PaypalComponent,
     UserAnnoncesComponent,
     SearchComponent,
+    ErrorComponent,
     FilterPipe,
     ActivateUserComponent,
   ],
