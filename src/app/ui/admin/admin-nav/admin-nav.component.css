@@ -15,11 +15,20 @@
   min-width: 300px;
   max-width: 300px;
   position:absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
@@ -28,13 +37,15 @@
   width: 70%;
   text-align: center;
   border: 1px solid #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
  #admin-nav ul li a{
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: #FFF;
   font-family: 'Roboto', sans-serif;
@@ -42,7 +53,11 @@
   padding: 10px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background-color ease 1s;
+  -o-transition: background-color ease 1s;
   transition: background-color ease 1s;
+  -webkit-transition: color ease 0.5s;
+  -o-transition: color ease 0.5s;
   transition: color ease 0.5s;
 
 }
@@ -50,7 +65,8 @@
 
 #admin-nav ul li a:hover,#pageAdmin #admin-nav ul li .active-admin-nav {
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: #FFF;
   font-family: 'Roboto', sans-serif;
@@ -59,7 +75,11 @@
   width: 100%;
   color: #007772;
   background-color: rgba(255, 255, 255, 1);
+  -webkit-transition: background-color ease 1s;
+  -o-transition: background-color ease 1s;
   transition: background-color ease 1s;
+  -webkit-transition: color ease 0.5s;
+  -o-transition: color ease 0.5s;
   transition: color ease 0.5s;
 
 
@@ -73,19 +93,24 @@
 @media only screen and (max-width: 1024px) {
 
    .container{
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
   }
 #admin-content{
       width:auto;
       height:auto;
       padding:10px;
-      box-sizing: 20px;
+      -webkit-box-sizing: 20px;
+              box-sizing: 20px;
   }
    #admin-nav{
       width:auto;
       height:auto;
       padding:10px;
-      box-sizing: 20px;
+      -webkit-box-sizing: 20px;
+              box-sizing: 20px;
   }
    #admin-nav ul{
       width:100%;
@@ -93,15 +118,22 @@
 
       min-width: none;
       max-width: none;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 
   }
    #admin-nav li{
       width:auto;
       margin: 10px;
-      flex: 0 25%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 25%;
+              flex: 0 25%;
 
 
   }

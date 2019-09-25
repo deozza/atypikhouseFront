@@ -1,40 +1,60 @@
 section{
-    width:100%;
-    min-height:100vh;
-    box-sizing: border-box;
-    padding-top:30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-content: center;
-    align-items: center;
-    font-family: 'Roboto',sans-serif;
+  width:100%;
+  min-height:100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top:30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto',sans-serif;
 }
 h4{
-  font-family: 'Roboto',sans-serif;
-  font-weight: 900;
-  font-size: 20px;
-  margin:30px 0 0;
-  background-color:#007792;
-  color:#fff;
-  box-sizing: border-box;
-  padding:10px 30px;
+font-family: 'Roboto',sans-serif;
+font-weight: 900;
+font-size: 20px;
+margin:30px 0 0;
+background-color:#007792;
+color:#fff;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+padding:10px 30px;
 }
 .searchAtypikHouse{
-  display:block;
-  width:80%;
-  height:40px;
-  text-align: center;
-  font-size: 25px;
+display:block;
+width:80%;
+height:40px;
+text-align: center;
+font-size: 25px;
 }
 .ResultList{
-  margin-top:20px;
-  width:100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+margin-top:20px;
+width:100%;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 .ResultList .Result-item{
 width:300px;
@@ -46,51 +66,61 @@ cursor: pointer;
 
 }
 .ResultList .Result-item a:first-child {
-  display:block;
-  overflow: hidden;
-  background-color:lavender;
-  height:200px;
-  width:100%;
+display:block;
+overflow: hidden;
+background-color:lavender;
+height:200px;
+width:100%;
 
- }
+}
 .ResultList .Result-item a img{
- height:auto;
- width:100%;
+height:auto;
+width:100%;
 
 }
 
 .ResultList .Result-item-label{
-  box-sizing: border-box;
-  padding:10px;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+padding:10px;
 }
 .ResultList .Result-item-label{
-  box-sizing: border-box;
-  padding:10px;
-  line-height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+padding:10px;
+line-height: 25px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .ResultList .Result-item-label p:first-child{
-  font-weight: 900;
-  font-size: 22px;
+font-weight: 900;
+font-size: 22px;
 }
 
 .ResultList .ctaResult{
-  padding:2px 15px;
-  border-radius: 5px;
-  background-color:#fff;
-  color:orangered;
-  text-decoration: none;
-  text-align: center;
-  width:auto;
-  margin-top:20px;
+padding:2px 15px;
+border-radius: 5px;
+background-color:#fff;
+color:orangered;
+text-decoration: none;
+text-align: center;
+width:auto;
+margin-top:20px;
 }
 
 .ResultList .ctaResult:hover{
-  background-color:orangered;
-  color:#fff;
+background-color:orangered;
+color:#fff;
 }
 

@@ -26,7 +26,8 @@
                 ng-minlength="25" maxlength="250">
 
             </div>
-            <div class="addEstateLine">
+
+            <div class="addEstateItem">
               <label class="active" for="address">Addresse</label>
               <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
 
@@ -52,7 +53,7 @@
             <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms"
                 type="number" [(ngModel)]="estate.rooms" [className]="getStatus('rooms') ? 'errorClass' : ''" required>
             </div>
-            <div class="addEstateLine">
+            <div class="addEstateItem">
               <label class="active" for="price">Prix</label>
               <input name="price" id="price" type="number" [(ngModel)]="estate.price" required>
 
@@ -82,9 +83,9 @@
               <label for="environment">{{ environment }}</label>
             </div>
           </div>
-          <a (click)="save()">enregister mon bien</a>
         </div>
 
+        <a class="SAVEMYESTATECTA" (click)="save()">Enregister mon bien</a>
 
       </form>
 
@@ -92,7 +93,7 @@
     </div>
   </div>
 
-    <div class="add-estate-form" *ngIf="isPosted">
+    <div class="add-estate-form" *ngIf="!isPosted">
       <h4>Ajouter des images</h4>
       <form class="col s12" [formGroup]="uploadForm" (ngSubmit)="uploadSubmit()">
         <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader"
@@ -120,7 +121,7 @@
                 <strong>{{ item?.file?.name }}</strong>
               </th>
               <th class="text-center" width="10%">
-                <mat-icon (click)="item.remove()">delete</mat-icon>
+                <mat-icon (click)="item.remove()" style="cursor:pointer">delete</mat-icon>
               </th>
             </tr>
           </tbody>
@@ -130,20 +131,20 @@
       </form>
 
       <div class="input-field col s6">
-        <a (click)="validate()">Valider</a>
+        <a (click)="validate()" class="SAVEMYESTATECTA">Valider</a>
       </div>
 
     </div>
+        <div class="add-estate-form" *ngIf="isSaved">
+          <h4>Votre annonce est en cours de validation, merci.</h4>
+          <div class="text-section">
+            <div class="text-section-content">
+              <a [routerLink]="['/']">Accueil</a>
+            </div>
 
-    <div class="add-estate-form" *ngIf="isSaved">
-      <h4>Votre annonce est en cours de validation, merci.</h4>
-      <div class="text-section">
-        <div class="text-section-content">
-          <a [routerLink]="['/']">Accueil</a>
+          </div>
         </div>
 
-      </div>
-    </div>
 
 
 

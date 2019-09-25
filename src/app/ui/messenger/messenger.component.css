@@ -3,8 +3,13 @@
   min-height: 100vh;
   width:100%;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: 'Roboto',sans-serif;
 }
 
@@ -18,12 +23,22 @@ width:200px;
 width:100%;
 height:100%;
 background-color:#fff;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-content: center;
-align-items: center;
-box-sizing: border-box;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+-ms-flex-line-pack: center;
+    align-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
 border-right: 1px solid #215F69;
 }
 
@@ -31,7 +46,8 @@ border-right: 1px solid #215F69;
 
 .profileModel aside ul li a{
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border:1px solid #215F69;
   width:150px;
   height:40px;
@@ -41,34 +57,58 @@ border-right: 1px solid #215F69;
   color:#000;
   border-radius: 5px;
   color:#215F69;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
 }
 .profileModel aside ul li a:hover,.profileModel aside ul li .activeProfileLink{
   background-color:#215F69;
   color:#fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .profileModel .profileContent{
- box-sizing: content-box;
+ -webkit-box-sizing: content-box;
+         box-sizing: content-box;
  padding:20px;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- flex-direction: column;
- justify-content:baseline;
- align-items: center;
- align-content: center;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ -webkit-box-pack:baseline;
+     -ms-flex-pack:baseline;
+         justify-content:baseline;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -ms-flex-line-pack: center;
+     align-content: center;
  min-height:100vh;
  width:calc(100% - 200px);
 }
 .profileModel .profileContent .profilecontainer{
   background-color:#fff;
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   height:auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
- flex-direction:row;
- justify-content: baseline;
- align-items: center;
- align-content: baseline;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:normal;
+     -ms-flex-direction:row;
+         flex-direction:row;
+ -webkit-box-pack: baseline;
+     -ms-flex-pack: baseline;
+         justify-content: baseline;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -ms-flex-line-pack: baseline;
+     align-content: baseline;
  width:100%;
  border:1px solid #215F69;
  min-height:100vh;
@@ -80,9 +120,16 @@ border-right: 1px solid #215F69;
   height:100%;
   max-height: 100vh;
   overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: baseline;
-  flex-direction: column;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-right: 1px solid #215F69;
 }
 
@@ -90,7 +137,8 @@ border-right: 1px solid #215F69;
 .profileModel .profileContent .profilecontainer .profileConversations .profileConversation a{
   display:block;
   text-decoration: none;
- box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
  color:#000;
  padding:10px;
  background-color:#fff;
@@ -122,28 +170,38 @@ border-right: 1px solid #215F69;
   overflow:scroll;
   background-color:rgb(244, 244, 244);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
 }
 .profileModel .profileContent .profilecontainer .profileMessages .sentMessage,.profileModel .profileContent .profilecontainer .profileMessages .receivedMessage{
   width:45%;
   margin:20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding:10px;
   border-radius: 10px;
   position:relative;
 }
 .profileModel .profileContent .profilecontainer .profileMessages .sentMessage{
   background-color:rgb(47, 154, 171);
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border-bottom-right-radius: 0px;
 
 }
 
 .profileModel .profileContent .profilecontainer .profileMessages .receivedMessage{
   background-color:rgb(191, 191, 191);
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border-bottom-left-radius: 0px;
 
 }
@@ -179,18 +237,27 @@ border-left: 20px solid transparent;
   height:50px;
   position: absolute;
   bottom:0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .profileModel .profileContent .profilecontainer .profileMessages  .inputMessage input{
   display: block;
   border:none;
   width:80%;
   height:50px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding:5px 10px;
 }
 .profileModel .profileContent .profilecontainer .profileMessages  .inputMessage input[type="submit"]{
@@ -202,15 +269,22 @@ border-left: 20px solid transparent;
 @media only screen and (max-width: 1023px) {
 
   .profileModel{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .profileModel aside{
     width:100%;
   }
   .profileModel aside ul{
     width:100%;
-    flex-wrap: wrap;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     border-bottom: 1px solid #215F69;
     border-right:none;
   }
@@ -220,7 +294,8 @@ border-left: 20px solid transparent;
     margin-right: 10px;
   }
   .profileModel .profileContent{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width:100%;
     height:100vh;
     padding:10px;
