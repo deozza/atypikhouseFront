@@ -6,7 +6,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -22,7 +22,7 @@
   display: flex;
   -webkit-box-pack:justify;
       -ms-flex-pack:justify;
-          justify-content:space-between;
+          justify-content:center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -160,6 +160,10 @@
   width:auto;
   height:20px;
   line-height: 20px;
+}
+
+#contactForm button{
+  margin-top:20px;
 }
 @media only screen and (max-width: 1023px) {
   #contactSection .container{
