@@ -28,9 +28,6 @@ properties:Properties = new Properties;
 constructor(private dataService: DataService, private router: Router) { }
 
 ngOnInit() {
-  
- 
-
 this.estates = new List<Entity>() ;
 this.pagination = new Pagination();
 this.pagination.filters = {'equal.validationState' : 'published'};
@@ -48,11 +45,6 @@ goDetails(estate: Estate){
 this.router.navigate(['/estate', estate.uuid ])
 }
 
-getStatus(exp){
- if (exp.includes("posted")) 
- {
-   return true
- }
-}
+
 
 }
