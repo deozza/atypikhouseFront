@@ -29,6 +29,7 @@ import { SearchComponent } from './ui/search/search.component';
 import { ActivateUserComponent } from './auth/components/activate-user/activate-user.component';
 
 const routes: Routes = [
+  
   { path: '',  component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'sign-up', component: SignUpComponent},
