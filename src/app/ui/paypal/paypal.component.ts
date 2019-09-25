@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Reservation } from 'src/app/model/reservation.model';
 import { Estate } from 'src/app/model/estate.model';
 import { Entity } from 'src/app/model/entity.model';
+import {Location} from '@angular/common';
 
 declare let paypal: any;
 @Component({
@@ -13,8 +14,14 @@ declare let paypal: any;
 })
 export class PaypalComponent implements AfterViewChecked, OnInit {
 
-  constructor(private api: DataService, private route: ActivatedRoute, private router: Router) { }
-  booking:Entity = new Entity; 
+
+
+  constructor(private api: DataService, private route: ActivatedRoute, private router: Router,private _location: Location) { }
+  backClicked() {
+    this._location.back();
+  }
+
+  booking:Entity = new Entity;
   imagePaths:any[] = [];
   routingSubscription: any;
   price: number;
@@ -38,10 +45,10 @@ export class PaypalComponent implements AfterViewChecked, OnInit {
   });
 
   }
-  
 
-  
-  
+
+
+
 
   paypalConfig = {
     env: 'sandbox',
@@ -63,9 +70,9 @@ export class PaypalComponent implements AfterViewChecked, OnInit {
       return actions.payment.execute().then((payment) => {
         //Do something when payment is successful.
         this.router.navigate(['/reservations'])
-        
+
       },
-      (error) => 
+      (error) =>
       {
         console.log(error);
         this.router.navigate(['/payment',  this.booking.uuid]);
@@ -74,7 +81,7 @@ export class PaypalComponent implements AfterViewChecked, OnInit {
   };
 
   ngAfterViewChecked(): void {
-    
+
     if (!this.addScript) {
       this.addPaypalScript().then(() => {
         paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
@@ -82,12 +89,12 @@ export class PaypalComponent implements AfterViewChecked, OnInit {
       })
     }
   }
-  
+
   addPaypalScript() {
-   
+
     this.addScript = true;
     return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');    
+      let scripttagElement = document.createElement('script');
       scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
       scripttagElement.onload = resolve;
       document.body.appendChild(scripttagElement);
