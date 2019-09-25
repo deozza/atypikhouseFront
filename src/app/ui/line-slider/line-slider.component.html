@@ -7,7 +7,8 @@
                 <div  *ngFor="let item of entities?.items" class="line-slide-item">
                   <a (click)="goDetails(item)">
                   <img src="../../../assets/images/bg/BG-01.jpg" alt=""></a>
-                  <div class="line-slide-label"><p>{{item.properties?.city}}</p><p><strong>{{ item.properties.city}},</strong> {{ item.properties.country}}</p></div>
+                  <div class="line-slide-label"><p>{{item.properties?.city}}</p><p><strong>{{ item.properties.city}},</strong> {{ item.properties.country}}</p>
+                  <a (click)="goDetails(item)">En savoir plus</a></div>
                 </div>
               </div>
 

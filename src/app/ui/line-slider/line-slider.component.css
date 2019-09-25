@@ -112,6 +112,22 @@ section .line-slide-item{
   overflow: hidden;
   position: relative;
 }
+.line-slide-item a:last-child{
+  font-size:13px;
+  box-sizing:border-box;
+  border:1px solid #fff;
+  padding: 5px 10px;
+  text-align: center;
+  margin:5px 0 5px 70px;
+  cursor:pointer;
+  transition:background-color ease 1s;
+
+}
+.line-slide-item a:last-child:hover{
+  background-color:#fff;
+  color:lightseagreen;
+  transition:background-color ease 1s;
+}
 section .line-slide-item img{
 display: block;
   height:300px;
@@ -125,10 +141,11 @@ section .line-slide-label{
 section .line-slide-label{
   display: block;
   position:absolute;
+  box-sizing: border-box;
   bottom:0;
   width:100%;
-  height:50px;
-  padding:5px;
+  height:80px;
+  padding:10px 5px 10px 10px;
   background-color:rgba(0,114,112,0.9);
   font-family: 'Roboto',sans-serif;
   color:#fff;
