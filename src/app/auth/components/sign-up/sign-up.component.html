@@ -9,7 +9,7 @@
 
         <div class="container-title" *ngIf="!isSaved">
             <h2>S&rsquo;inscrire</h2>
-            <a href="">ou se connecter</a>
+            <a [routerLink]="['/login']" alt="Se connecter" title="Connexion">ou se connecter</a>
         </div>
         <form id="signupForm" *ngIf="!isSaved">
             <label for="username"><b>Identifiant</b></label>
@@ -30,7 +30,7 @@
                 <h2 style="text-align: center;">Merci pour votre inscription, vous allez recevoir un email de comfirmation.</h2>
                 <div class="text-section">
                   <div class="text-section-content">
-                    <a [routerLink]="['/']">Accueil</a>
+                    <a [routerLink]="['/']" alt="Retour en Page D'Accueil" title="Home Atypik House">Accueil</a>
                   </div>
 
                 </div>
