@@ -22,9 +22,8 @@ export class AnnoncesComponent implements OnInit {
   ngOnInit() {
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
-    this.pagination.filters = {'equal.validationState' : 'posted'};
     this.pagination.count = 30;
-    this.dataService.getEntities('estate', this.pagination.count,1, this.pagination.filters).subscribe(
+    this.dataService.getAll('estate').subscribe(
         (e)=> {this.estates = e;},
         (error) => console.log(error)
     );
@@ -36,7 +35,7 @@ export class AnnoncesComponent implements OnInit {
     this.dataService.validateEntity(estate.uuid).subscribe(
       (t) => {
         alert("l'annonce est bien validée");
-        this.router.navigate(['/admin-annonces']);
+        this.router.navigate(['/crm']);
       },
       (error) => {
         if(error.status == 409) {
