@@ -52,6 +52,10 @@ export class DataService {
   public validateEntity(uuid: string): Observable<Entity> {
     return this.http.patch<Entity>(API_URL + '/validate/' + uuid, '');
   }
+
+  public retrogradeEntity(uuid: string): Observable<Entity> {
+    return this.http.patch<Entity>(API_URL + '/retrograde/' + uuid, '');
+  }
   public deleteEntity(uuid: string): Observable<Entity> {
     return this.http.delete<Entity>(API_URL + '/entity/' + uuid);
   }

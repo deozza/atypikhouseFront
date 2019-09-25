@@ -24,11 +24,27 @@ export class AnnoncesComponent implements OnInit {
     this.pagination = new Pagination();
     this.pagination.count = 30;
     this.dataService.getAll('estate').subscribe(
-        (e)=> {this.estates = e;},
+        (e)=> {this.estates = e; console.log(e);},
         (error) => console.log(error)
     );
   }
 
+  retrogradeEstate(estate: Entity) {
+    this.dataService.retrogradeEntity(estate.uuid).subscribe(
+      (t) => {
+        alert("l'annonce est bien validée");
+        this.router.navigate(['/crm']);
+      },
+      (error) => {
+        if(error.status == 409) {
+          this.router.navigate(['/crm']);
+        }
+        else
+       console.log(error);
+     }
+
+    );
+  }
 
 
   validateEstate(estate: Entity) {
