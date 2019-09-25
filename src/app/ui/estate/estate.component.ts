@@ -37,13 +37,13 @@ export class EstateComponent implements OnInit {
         (e)=> {this.estate = e ;
           this.price = this.estate.properties.price;
           this.booking.estate.uuid = params.uuid;
-          if(this.estate.properties.image){
+          /*if(this.estate.properties.image){
           for(let image of this.estate.properties.image) {
             if(image){
               this.imagePaths.push('data:image/jpg;base64,' +
               (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
             }
-          }}
+          }}*/
         },
         (error) => console.log(error)
     );

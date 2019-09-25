@@ -5,7 +5,7 @@
 <div class="ResultList">
 <div *ngFor="let c of estates?.items | filter : searchText" >
     <div  class="Result-item">
-    <a (click)="goDetails(item)">
+    <a (click)="goDetails(c)">
       <img src="../../../assets/images/bg/BG-01.jpg" alt="">
     </a>
       <div class="Result-item-label"><p>{{c.properties?.city}}</p>
@@ -15,5 +15,4 @@
     </div>
   </div>
 </div>
-
 </section>
