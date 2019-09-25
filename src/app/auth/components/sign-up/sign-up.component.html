@@ -2,9 +2,12 @@
 
 <section id="signupSection">
     <div class="container">
-      <ng-container *ngIf="this.errors !== undefined">
-        <p *ngFor="let message of this.errors">{{message}}</p>
-      </ng-container>
+      <div id="FormErrors">
+          <ng-container *ngIf="this.errors !== undefined" >
+              <p *ngFor="let message of this.errors">{{message}}</p>
+            </ng-container>
+      </div>
+
         <div class="container-title" *ngIf="!isSaved">
             <h2>S&rsquo;inscrire</h2>
             <a href="">ou se connecter</a>
@@ -30,9 +33,9 @@
                   <div class="text-section-content">
                     <a [routerLink]="['/']">Accueil</a>
                   </div>
-          
+
                 </div>
         </div>
     </div>
-    
+
 </section>
