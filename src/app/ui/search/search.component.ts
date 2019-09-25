@@ -19,8 +19,7 @@ export class SearchComponent implements OnInit {
 
 $: any;
 private kind: string = 'estate';
-
-
+searchText: string;
 entities: List<Entity>;
 pagination: Pagination= new Pagination;
 message: string;

@@ -14,8 +14,7 @@ declare let paypal: any;
 export class PaypalComponent implements AfterViewChecked, OnInit {
 
   constructor(private api: DataService, private route: ActivatedRoute, private router: Router) { }
-  booking:Entity = new Entity;
- 
+  booking:Entity = new Entity; 
   imagePaths:any[] = [];
   routingSubscription: any;
   price: number;
