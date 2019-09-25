@@ -7,6 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 import { Entity } from 'src/app/model/entity.model';
 import { locale } from 'moment';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 @Component({
   selector: 'app-estate',
@@ -17,9 +18,10 @@ import { locale } from 'moment';
 export class EstateComponent implements OnInit {
 
 
-  constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router, public auth: AuthService,) { }
   errors: any[] = [];
   estate:Entity = new Entity;
+  public isConnected:boolean;
   booking: Reservation = new Reservation ();
   imagePaths:any[] = [];
   routingSubscription: any;
@@ -29,6 +31,7 @@ export class EstateComponent implements OnInit {
 
 
   ngOnInit() {
+    this.isConnected = this.auth.hasToken();
     this.routingSubscription =
     this.route.params.subscribe(params => {
     if (params.uuid) {
@@ -69,20 +72,29 @@ for (var i = 0; i < thumbnails.length; i++) {
                 }
             });
  }
-var ctaReservation = document.getElementById('CTA-reservation');
 var overlay = document.getElementById('reservation-overlay');
 var closeOverlay = document.getElementById('close-overlay');
-ctaReservation.addEventListener("click",function(e){
-    e.preventDefault();
-    overlay.style.right = '0';
-    document.querySelectorAll("html")[0].style.overflow= "hidden"
 
-})
+
 
 closeOverlay.addEventListener("click",function(){
     overlay.style.right = "-100vw";
      document.querySelectorAll("html")[0].style.overflow= "auto";
 })
+}
+
+
+goToReservation(){
+  if(this.isConnected) {
+    var overlay = document.getElementById('reservation-overlay');
+    overlay.style.right = '0';
+    document.querySelectorAll("html")[0].style.overflow= "hidden"
+  }
+else {
+  this.router.navigate(['/login'])
+}
+  
+  
 }
 
 public getImagePath() {

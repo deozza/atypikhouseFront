@@ -33,7 +33,8 @@ export class AnnoncesComponent implements OnInit {
     this.dataService.retrogradeEntity(estate.uuid).subscribe(
       (t) => {
         alert("l'annonce est bien validée");
-        this.router.navigate(['/crm']);
+        this.router.navigate(['/admin-annonces']);
+        window.location.reload();
       },
       (error) => {
         if(error.status == 409) {
@@ -56,7 +57,9 @@ export class AnnoncesComponent implements OnInit {
       },
       (error) => {
         if(error.status == 409) {
-          this.router.navigate(['/crm']);
+          
+          this.router.navigate(['/admin-annonces']);
+          window.location.reload();
         }
         else
        console.log(error);

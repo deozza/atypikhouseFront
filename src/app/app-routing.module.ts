@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: '',  component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'sign-up', component: SignUpComponent},
-  { path: 'activation/:token', component: ActivateUserComponent},
+  { path: 'activation', component: ActivateUserComponent},
   { path: 'error', component: ErrorComponent},
   { path: 'search', component: SearchComponent},
   { path: 'estate/:uuid', component: EstateComponent},

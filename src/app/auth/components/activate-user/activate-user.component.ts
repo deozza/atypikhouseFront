@@ -17,10 +17,11 @@ export class ActivateUserComponent implements OnInit {
   
 
   ngOnInit() {
+
+    
     this.routingSubscription =
-    this.route.params.subscribe(params => {
-    if (params.token) {
-      this.token.token = params.token;
+    this.route.queryParams.subscribe(params => {
+      this.token.token = params['token'];
       this.auth.activateUser(this.token.activateUser())
       .subscribe(
         (e)=> {console.log(e);
@@ -31,7 +32,7 @@ export class ActivateUserComponent implements OnInit {
           console.log(error);
         }
     );
-    }
+    
   });
 
   }
