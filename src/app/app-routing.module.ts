@@ -30,7 +30,7 @@ import { ActivateUserComponent } from './auth/components/activate-user/activate-
 import { ErrorComponent } from './auth/components/error/error.component';
 
 const routes: Routes = [
-  
+
   { path: '',  component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'sign-up', component: SignUpComponent},
