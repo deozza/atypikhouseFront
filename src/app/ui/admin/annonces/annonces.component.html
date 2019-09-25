@@ -12,6 +12,7 @@
                     <p class="estateCity">{{ estate.properties.city}}</p><input class="estateId" type="hidden"
                         [value]="estate.uuid">
                     <div class="estateOptions">
+                        <div (click)="starEstate(estate)" class="starEstate"></div>
                         <div (click)="validateEstate(estate)" class="validateEstate"></div>
                         <div (click)="goDetails(estate)" class="seeEstate"></div>
                         <div (click)="deleteFrom(estate)" class="clearEstate"></div>

@@ -237,6 +237,9 @@
   transition: box-shadow ease 0.5s;
 }
 
+#admin-content #admin-annonces .adminAnnonce .estateOptions .starEstate {
+  background-color: gold;
+}
 #admin-content #admin-annonces .adminAnnonce .estateOptions .validateEstate {
   background-color: lightseagreen;
 }
@@ -267,6 +270,12 @@
 
 #admin-content #admin-annonces .adminAnnonce .clearEstate {
   background-image: url(../../../../assets/adminIcons/clear.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#admin-content #admin-annonces .adminAnnonce .starEstate {
+  background-image: url(../../../../assets/adminIcons/star.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -343,7 +352,7 @@
 #pageAdmin .line-slider-prev,.line-slider-next {
   width: 30px;
   height: 70px;
- 
+
   color: #007270;
   font-family: 'Roboto', sans-serif;
   position: absolute;
