@@ -41,7 +41,6 @@ import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MessengerComponent } from './ui/messenger/messenger.component';
-import { ReservationComponent } from './ui/reservation/reservation.component';
 import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
 import { NotificationComponent } from './ui/notification/notification.component';
 import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
@@ -79,7 +78,6 @@ import { ActivateUserComponent } from './auth/components/activate-user/activate-
     ConditionsPrivacyComponent,
     FourOhFourComponent,
     MessengerComponent,
-    ReservationComponent,
     ListReservationComponent,
     NotificationComponent,
     AnnonceComponent,

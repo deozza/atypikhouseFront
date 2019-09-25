@@ -11,15 +11,15 @@
     <div class="reservationContent">
         <h3>Réservations</h3>
         <div class="item" *ngFor="let item of reservations?.items" >
-            <div class="estateTitle" *ngIf="!getStatus(item.properties.leaving_at)" (click)="goDetails(item)">
+            <div class="estateTitle" *ngIf="!getStatus(item.properties.leaving_at)">
                 {{item.last_update | date: 'MMM d, y'}}
             </div>
-            <div class="estateCity" *ngIf="!getStatus(item.properties.leaving_at)">
+            <div class="estateTitle" *ngIf="!getStatus(item.properties.leaving_at)">
                 {{item.properties.estate.properties.city}}
             </div>
-            <div class="estateCity" *ngIf="!getStatus(item.properties.leaving_at)">
-                {{item.properties?.coming_at.date | date: 'dd - MM - yy'}} au
-                {{item.properties?.leaving_at.date | date: 'dd - MM - yy'}}
+            <div  *ngIf="!getStatus(item.properties.leaving_at)">
+                <p>{{item.properties?.coming_at | date: 'dd - MM - yy'}} au
+                {{item.properties?.leaving_at | date: 'dd - MM - yy'}}</p>
             </div>
 
         </div>
