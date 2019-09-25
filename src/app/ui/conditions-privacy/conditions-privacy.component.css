@@ -4,10 +4,23 @@
 
 .condition ol li, p {
   list-style: upper-alpha;
-  font-size: 30px;
+  font-size: 13px;
 }
 
 .condition .second li {
   list-style: disc;
-  font-size: 30px;
+  font-size: 13px;
+}
+
+section{
+  font-family: 'Roboto',sans-serif;
+  font-size:13px !important;
+  box-sizing: border-box;
+  padding:50px;
+  line-height: 22px;
+}
+
+.TITLECGV{
+  color:lightseagreen;
+  font-weight: 800;
 }
