@@ -12,7 +12,7 @@
       <form class="col s12">
         <h4>Type de bien</h4>
         <div class="addEstateCategory">
-          <div *ngFor="let category of enumerations.enumerations?.estate_category">
+          <div *ngFor="let category of enumerations.enumerations?.estate_category" class="estateContainerCat">
             <label for="category">{{category}}</label>
              <input type="radio" id="estate_category" name="estate_category"
               [value]="category" [(ngModel)]="estate.estate_category" required>
@@ -24,20 +24,12 @@
             <div class="addEstateItem"><label for="title">Titre</label>
               <input name="title" id="title" type="text" [(ngModel)]="estate.title" required #title="ngModel"
                 ng-minlength="25" maxlength="250">
-              <!--<div *ngIf="error" class="error">
-                  <div>
-                  {{ errors.title }}
-                  </div>
-                </div>-->
+
             </div>
             <div class="addEstateLine">
-              <label class="active" for="address">Address</label>
+              <label class="active" for="address">Addresse</label>
               <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
-              <!--<div *ngIf="error" class="error">
-                  <div>
-                  {{ errors.address}}
-                  </div>
-                </div>-->
+
             </div>
             <div class="addEstateItem"><label for="">Ville</label><input name="city" id="city" type="text"
                 [(ngModel)]="estate.city" [className]="getStatus('city') ? 'errorClass' : ''" required></div>
