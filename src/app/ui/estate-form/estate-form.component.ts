@@ -89,15 +89,18 @@ export class EstateFormComponent implements OnInit {
 
      save() {
         this.changed = true;
+        
         this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
         data => {
+          this.isPosted=true;
           console.log(data);
         },
         error => {
           if (error.status == 409) {
             this.entityUuid = error.error.context.uuid;
             this.isPosted = true;
+            console.log(this.isPosted);
           }
           else {
             this.error = true;
