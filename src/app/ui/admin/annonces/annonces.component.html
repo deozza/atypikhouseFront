@@ -13,6 +13,7 @@
                         [value]="estate.uuid">
                     <div class="estateOptions">
                         <div *ngIf="!getStar(estate.validation_state)" (click)="validateEstate(estate)" class="starEstate"></div>
+                        <div *ngIf="!getStar(estate.validation_state)" (click)="validateEstate(estate)" class="UnstarEstate"></div>
                         <div (click)="validateEstate(estate)" class="validateEstate"></div>
                         <div (click)="goDetails(estate)" class="seeEstate"></div>
                         <div (click)="deleteFrom(estate)" class="clearEstate"></div>

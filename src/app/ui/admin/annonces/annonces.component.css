@@ -240,6 +240,10 @@
 #admin-content #admin-annonces .adminAnnonce .estateOptions .starEstate {
   background-color: gold;
 }
+
+#admin-content #admin-annonces .adminAnnonce .estateOptions .UnstarEstate {
+  background-color: lightslategray;
+}
 #admin-content #admin-annonces .adminAnnonce .estateOptions .validateEstate {
   background-color: lightseagreen;
 }
@@ -280,6 +284,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+#admin-content #admin-annonces .adminAnnonce .UnstarEstate {
+  background-image: url(../../../../assets/adminIcons/unstar.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 #admin-content #admin-annonces .adminAnnonce .annonceThumbnail {
   display: block;
