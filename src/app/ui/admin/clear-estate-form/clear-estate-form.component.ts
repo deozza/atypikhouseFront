@@ -41,14 +41,13 @@ export class ClearEstateFormComponent implements OnInit {
       .subscribe(
         (e)=> {this.estate = e ;
           this.notif.notif_title = this.estate.properties.title;
-          if(this.estate.properties.image){
+         /* if(this.estate.properties.image){
           for(let image of this.estate.properties.image) {
             if(image){
               this.imagePaths.push('data:image/jpg;base64,' +
               (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
             }
-          }}
-          console.log(this.imagePaths);
+          }}*/
         },
         (error) => console.log(error)
     );

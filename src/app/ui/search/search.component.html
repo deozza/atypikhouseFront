@@ -1,4 +1,5 @@
 <section>
+  
   <h3>Trouvez votre AtypikHouse</h3>
 <input class="searchAtypikHouse" [(ngModel)]="searchText" placeholder="Dans quelle Ville souhaitez-vous trouver votre AtypikHouse ?">
 <h4>Nos derniers Listings</h4>
@@ -6,7 +7,7 @@
 <div *ngFor="let c of estates?.items | filter : searchText" >
     <div  class="Result-item">
     <a (click)="goDetails(c)">
-      <img src="../../../assets/images/bg/BG-01.jpg" alt="">
+      <img  [src]="getImagePath(sanitize(c.properties.image))" alt="" style="height: 100%; width: 100%;">
     </a>
       <div class="Result-item-label"><p>{{c.properties?.city}}</p>
         <p><strong>{{ c.properties.city}},</strong> {{ c.properties.country}}</p>
