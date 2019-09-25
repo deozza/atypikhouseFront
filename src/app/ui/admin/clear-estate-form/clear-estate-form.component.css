@@ -19,6 +19,21 @@ section{
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Roboto',sans-serif;
+  position:relative;
+}
+
+.ctaRetour{
+  position:absolute;
+  font-family: 'Robboto',sans-serif;
+  color:orangered;
+  font-size: 15px;
+  top:20px;
+  left:20px;
+  font-weight: 800;
+  cursor:pointer;
+}
+.ctaRetour:hover{
+  text-decoration:underline;
 }
 section h4{
   -webkit-box-sizing: border-box;

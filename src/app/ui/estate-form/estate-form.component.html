@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <a class="SAVEMYESTATECTA" (click)="save()">Enregister mon bien</a>
+        <a class="SAVEMYESTATECTA" (click)="save()" alt="Enregistrer mon bien" title="Enregistrer mon bien">Enregister mon bien</a>
 
       </form>
 
@@ -99,7 +99,7 @@
           multiple /><br />
         <br>
         <div class="drop-zone">
-          <div ng2FileDrop [uploader]="uploader" class="drop-zone">
+          <div ng2FileDrop [uploader]="uploader" class="drop-zone" alt="upload a photo" title="upload">
 
           </div>
         </div>
@@ -120,7 +120,7 @@
                 <strong>{{ item?.file?.name }}</strong>
               </th>
               <th class="text-center" width="10%">
-                <mat-icon (click)="item.remove()" style="cursor:pointer">delete</mat-icon>
+                <mat-icon (click)="item.remove()" style="cursor:pointer" alt="delete photo" title="delete photo">delete</mat-icon>
               </th>
             </tr>
           </tbody>
@@ -130,7 +130,7 @@
       </form>
 
       <div class="input-field col s6">
-        <a (click)="validate()" class="SAVEMYESTATECTA">Valider</a>
+        <a (click)="validate()" class="SAVEMYESTATECTA" alt="Valider" title="Valider">Valider</a>
       </div>
 
     </div>
@@ -138,7 +138,7 @@
           <h4>Votre annonce est en cours de validation, merci.</h4>
           <div class="text-section">
             <div class="text-section-content">
-              <a [routerLink]="['/']">Accueil</a>
+              <a [routerLink]="['/']" alt="Page d'accueil" title="Page d'accueil">Accueil</a>
             </div>
 
           </div>

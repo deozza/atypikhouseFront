@@ -15,8 +15,8 @@
 
     <div class="hostButton">
 
-        <a *ngIf="isConnected" [routerLink]="['/estate_form']">Je crée une annonce</a>
-        <a *ngIf="!isConnected" [routerLink]="['/login']">Connectez-vous pour créer votre annonce</a>
+        <a *ngIf="isConnected" [routerLink]="['/estate_form']" alt="Créez votre annonce" title="Je crée une annonce">Je crée une annonce</a>
+        <a *ngIf="!isConnected" [routerLink]="['/login']" alt="Connectez-vous" title="Connexion">Connectez-vous pour créer votre annonce</a>
     </div>
   </div>
 

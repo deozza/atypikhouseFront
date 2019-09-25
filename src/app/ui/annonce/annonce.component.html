@@ -1,11 +1,11 @@
 <section class="profileModel">
     <aside>
       <ul>
-        <li><a [routerLink]="['/profil']">Profil</a></li>
-        <li><a [routerLink]="['/messenger']"  >Messagerie</a></li>
-        <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
-        <li><a [routerLink]="['/notification']">Notifications</a></li>
-        <li><a [routerLink]="['/annonces']" class="activeProfileLink">Mes annonces</a></li>
+        <li><a [routerLink]="['/profil']" alt="Profil" title="Profil Utilisateur">Profil</a></li>
+        <li><a [routerLink]="['/messenger']" alt="Messagerie" title="Messagerie" >Messagerie</a></li>
+        <li><a [routerLink]="['/reservations']" alt="Mes réservations" title="Mes réservations">Mes Réservations</a></li>
+        <li><a [routerLink]="['/notification']" alt="Notifications" title="Notifications">Notifications</a></li>
+        <li><a [routerLink]="['/annonces']" class="activeProfileLink" alt="Mes annonces" title="Mes annonces">Mes annonces</a></li>
       </ul>
     </aside>
     <div class="profileContent">
@@ -20,16 +20,16 @@
             <p *ngIf="getStatus(estate.validation_state)" style="width: 5vw;" class="validationState">Validée</p>
 
             <div class="estateOptions" style="width: 10vw;">
-                <div (click)="goDetails(estate)" class="seeEstate"></div>
-                <div (click)="deleteFrom(estate)"  class="clearEstate"></div>
+                <div (click)="goDetails(estate)" class="seeEstate" alt="voir annonce" title="voir annonce"></div>
+                <div (click)="deleteFrom(estate)"  class="clearEstate" alt="supprimer annonce" title="supprimer annonce"></div>
 
             </div>
 
           </div>
-         
+
       </div>
 
-      
+
 
     </div>
 
