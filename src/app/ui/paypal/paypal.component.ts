@@ -48,7 +48,7 @@ export class PaypalComponent implements AfterViewChecked, OnInit {
     env: 'sandbox',
     client: {
       sandbox: 'AY43dXkMg6GwnNhcqc2pUqBP2a7UKZEuPkMhIOufOGViySd7ClIYfCXIWVXfUaKNhjpjDKnLLNcyY_i4',
-      production: '<your-production-key here>'
+      production: 'AcV9HsoPXhdBwWr5bvO0r7tx3liOjS-omVcNeBmHHiClm8ozsHHxK90gqoZsgsdqipGtBGYfXhpD_avI'
     },
     commit: true,
     payment: (data, actions) => {

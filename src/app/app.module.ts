@@ -9,6 +9,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
 import { FilterPipe }from './filter.pipe';
 
+
 import { AuthTokenInterceptor } from './token.interceptor';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
 import { FooterComponent } from './ui/footer/footer.component';
@@ -98,7 +99,8 @@ import { ActivateUserComponent } from './auth/components/activate-user/activate-
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FileUploadModule,
-    MatIconModule,   
+    MatIconModule,
+   
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
 
