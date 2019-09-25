@@ -24,21 +24,17 @@ export class LoginComponent implements OnInit {
     backgroundImage.style.backgroundImage = "url('../../../assets/images/bg/BG-0"+val+".jpg')";
   }
 
-
-
   public login() {
     this.loading = true;
     this.auth.postToken(this.credentials).subscribe(
-   (t) => {
-    this.loading = false;
-    window.location.assign('/');
-  },
-   (error) => {
-    this.loading = false;
-    console.log(error);
+      (t) => {
+        this.loading = false;
+        window.location.assign('/');
+      },
+      (error) => {
+        this.loading = false;
+        console.log(error);
+      }
+    );
   }
-
- );
-  }
-
 }

@@ -2,6 +2,9 @@
 
 <section id="signupSection">
     <div class="container">
+      <ng-container *ngIf="this.errors !== undefined">
+        <p *ngFor="let message of this.errors">{{message}}</p>
+      </ng-container>
         <div class="container-title" *ngIf="!isSaved">
             <h2>S&rsquo;inscrire</h2>
             <a href="">ou se connecter</a>
@@ -9,9 +12,9 @@
         <form id="signupForm" *ngIf="!isSaved">
             <label for="username"><b>Identifiant</b></label>
             <input type="text" id="username" placeholder="ex : toto28" name="username"  [(ngModel)]="newUser.username" required>
-            <label for="psw"><b>Mot de passe</b></label>
+            <label for="first"><b>Mot de passe</b></label>
             <input type="password" placeholder="Enter Password" id="first" name="first" [(ngModel)]="newUser.password.first" required>
-            <label for="psw"><b>Resaisir le mot de passe</b></label>
+            <label for="second"><b>Resaisir le mot de passe</b></label>
             <input type="password" placeholder="Enter Password" id="second" name="second" [(ngModel)]="newUser.password.second" required>
             <label for="email"><b>Email</b></label>
             <input type="text" id="email" placeholder="ex : saitama@heroassociation.gov" name="email" [(ngModel)]="newUser.email" required>
