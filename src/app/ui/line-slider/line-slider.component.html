@@ -3,8 +3,10 @@
     <div class="line-slider">
         <div class="line-slider-container">
             <div *ngIf="!pagination.changingPage" class="line-slides-container">
-              <div *ngFor="let item of entities?.items" class="line-slides-page">
-                <div  class="line-slide-item"> <a (click)="goDetails(item)"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></a>
+              <div  class="line-slides-page">
+                <div  *ngFor="let item of entities?.items" class="line-slide-item">
+                  <a (click)="goDetails(item)">
+                  <img src="../../../assets/images/bg/BG-01.jpg" alt=""></a>
                   <div class="line-slide-label"><p>{{item.properties?.city}}</p><p><strong>{{ item.properties.city}},</strong> {{ item.properties.country}}</p></div>
                 </div>
               </div>
