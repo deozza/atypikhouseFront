@@ -32,10 +32,8 @@ ngOnInit() {
       .subscribe(
         (e) => {
           this.user = e;
-          console.log(this.user);
           this.newUser.email = this.user.email;
           this.newUser.username = this.user.username;
-          //this.newUser.plainPassword = this.user.plainPassword;
         },
         (error) => console.log(error)
       );

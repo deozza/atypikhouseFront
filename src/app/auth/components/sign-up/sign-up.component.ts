@@ -43,6 +43,9 @@ export class SignUpComponent implements OnInit {
 
   private handleError(error){
     this.errors = [];
+    if(error.status === 500) {
+      this.errors.push("Erreur sur le serveur");
+    }
     if(error.status === 400) {
       if(error.error.error.children === undefined){
         this.errors.push(error.error.error);

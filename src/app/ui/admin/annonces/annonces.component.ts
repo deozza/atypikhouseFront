@@ -62,4 +62,11 @@ export class AnnoncesComponent implements OnInit {
    }
   }
 
+  getStar(exp){
+    if (exp.includes("published"))
+    {
+      return true
+    }
+   }
+
 }

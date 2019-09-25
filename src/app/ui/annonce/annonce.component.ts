@@ -5,6 +5,8 @@ import { Pagination } from 'src/app/model/pagination.model';
 import { DataService } from 'src/app/data/services/data.service';
 import { Router } from '@angular/router';
 import { Estate } from 'src/app/model/estate.model';
+import { User } from 'src/app/model/user.model';
+import { UserService } from 'src/app/data/components/user/services/user.service';
 
 @Component({
   selector: 'app-annonce',
@@ -13,19 +15,30 @@ import { Estate } from 'src/app/model/estate.model';
 })
 export class AnnonceComponent implements OnInit {
 
- // $: any;
+  user: User = new User;
+  email: string;
  pagination: Pagination;
  message: string;
  estates:List<Entity>;
- constructor(private dataService: DataService, private router: Router) { }
+ constructor(private dataService: DataService, private api: UserService, private router: Router) { }
 
  ngOnInit() {
-   
+//get current user
+  this.api.getUserCurrent()
+  .subscribe(
+    (e) => {
+      this.user = e;
+      this.user.email = this.email;
+    },
+    (error) => console.log(error)
+  );
+
+// get estates 
    this.estates = new List<Entity>() ;
    this.pagination = new Pagination();
-   this.pagination.filters = {'equal.validationState' : 'posted'};
-   this.pagination.count = 10;
-   this.dataService.getEntities('estate', this.pagination.count).subscribe(
+   this.pagination.filters = {'like.owner.email' : this.email};
+   this.pagination.count = 30;
+   this.dataService.getEntities('estate', this.pagination.count, this.pagination.filters).subscribe(
        (e)=> {this.estates = e;
         console.log(e);
       },
