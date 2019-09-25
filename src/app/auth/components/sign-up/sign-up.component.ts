@@ -29,9 +29,8 @@ export class SignUpComponent implements OnInit {
     this.loading = true;
     this.userService.postUser(this.newUser.postableUser()).subscribe(
       (t) => {
-        this.isSaved = true;
+       this.isSaved = true;
        this.loading = false;
-       this.router.navigate(['/']);
      },
       (error) => {
        this.loading = false;

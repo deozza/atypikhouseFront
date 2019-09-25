@@ -13,16 +13,18 @@ export class ActivateUserComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router,private  auth: AuthService) { }
 
   routingSubscription: any;
+  token: Token = new Token;
   
 
   ngOnInit() {
     this.routingSubscription =
     this.route.params.subscribe(params => {
     if (params.token) {
-      this.auth.activateUser(params.token)
+      this.token.token = params.token;
+      this.auth.activateUser(this.token.activateUser())
       .subscribe(
         (e)=> {console.log(e);
-          this.router.navigate(['/login'])
+          this.router.navigate(['/login']);
         },
         (error) => {
           this.router.navigate(['/error']);

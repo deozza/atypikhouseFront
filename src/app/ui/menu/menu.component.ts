@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { AuthService } from 'src/app/auth/services/auth.service';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +12,7 @@ export class MenuComponent implements OnInit {
 
   public isConnected:boolean;
 
-  constructor(public auth: AuthService) { }
+  constructor(public auth: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.isConnected = this.auth.hasToken();
@@ -59,6 +60,6 @@ export class MenuComponent implements OnInit {
 
   logout() {
     this.auth.deleteToken();
-    window.location.reload();
+   this.router.navigate(['/'])
   }
 }

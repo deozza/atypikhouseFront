@@ -51,7 +51,8 @@ export class AnnoncesComponent implements OnInit {
     this.dataService.validateEntity(estate.uuid).subscribe(
       (t) => {
         alert("l'annonce est bien validée");
-        this.router.navigate(['/crm']);
+        this.router.navigate(['/admin-annonces']);
+        window.location.reload();
       },
       (error) => {
         if(error.status == 409) {

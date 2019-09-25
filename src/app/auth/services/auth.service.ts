@@ -72,7 +72,7 @@ export class AuthService {
     }
 
     public activateUser(token: Token){
-        return this.http.post<Token>(API_URL + '/user/activate', token)
+        return this.http.patch<Token>(API_URL + '/user/activate', token)
     }
 
 }
