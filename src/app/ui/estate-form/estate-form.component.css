@@ -135,6 +135,7 @@ h4 {
   height:20px;
   line-height: 20px;
   cursor:pointer;
+  font-family: 'Roboto',sans-serif;
 }
 
 
@@ -198,6 +199,7 @@ h4 {
   margin: 10px;
   border: none;
   border-bottom: 1px solid #007792;
+  height:35px;
 
 }
 
@@ -208,6 +210,8 @@ h4 {
   box-shadow: 0 0 1px #007792;
   outline-color: rgba(0, 119, 146, 1);
   outline-width: thin;
+  height:35px;
+
 
 }
 #add-estate .add-estate-form .addEstateDescription{
@@ -235,6 +239,7 @@ display: flex;justify-content: space-around;width:100%;
 #add-estate .add-estate-form .addEstateUtilities input[type="checkbox"]{
   position: relative;
   display: inline-block;
+  margin-right: 5px;
 }
 #add-estate .add-estate-form .addEstateUtilities input[type="checkbox"]:after{
   content:"";

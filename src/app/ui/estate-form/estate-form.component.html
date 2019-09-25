@@ -26,7 +26,8 @@
                 ng-minlength="25" maxlength="250">
 
             </div>
-            <div class="addEstateLine">
+
+            <div class="addEstateItem">
               <label class="active" for="address">Addresse</label>
               <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
 
@@ -52,7 +53,7 @@
             <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms"
                 type="number" [(ngModel)]="estate.rooms" [className]="getStatus('rooms') ? 'errorClass' : ''" required>
             </div>
-            <div class="addEstateLine">
+            <div class="addEstateItem">
               <label class="active" for="price">Prix</label>
               <input name="price" id="price" type="number" [(ngModel)]="estate.price" required>
 
