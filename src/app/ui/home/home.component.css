@@ -1,7 +1,8 @@
 section{
   width:100%;
   min-height: 100vh;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-bottom:20px;
 
 }

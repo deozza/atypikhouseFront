@@ -2,13 +2,20 @@
 
 #admin-content #admin-avis {
   background-color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 
 }
 
@@ -17,7 +24,8 @@
 #admin-content #admin-avis .adminavis {
   border: 1px solid #ccc;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -41,15 +49,22 @@
   margin-top: -12px;
   right: -10px;
   border-radius: 12px;
-  box-shadow: 0px 0px 4px #555;
+  -webkit-box-shadow: 0px 0px 4px #555;
+          box-shadow: 0px 0px 4px #555;
 
 }
 
 #admin-content #admin-avis .adminavis {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 10px;
 }
 
@@ -97,9 +112,15 @@
 }
 
 #admin-content #admin-avis .adminavis .avisInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 
 }
 
@@ -120,10 +141,18 @@
 }
 
 #admin-content #admin-avis .adminavis .estategrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 #admin-content #admin-avis .adminavis .estategrade .gradeitemfilled {
@@ -131,7 +160,8 @@
   height:15px;
   width:15px;
   margin:5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border:1px solid #ccc;
   border-radius:15px;
 }
@@ -141,15 +171,21 @@
   width:15px;
   margin:5px;
   border-radius:15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border:1px solid #ccc;
 }
 
 #admin-content #admin-avis .adminavis .avisOptions {
   width:70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
 #admin-content #admin-avis .adminavis .avisOptions a{
  display: block;
@@ -180,12 +216,22 @@
 @media only screen and (max-width: 1023px) {
 
   #admin-content #admin-avis .adminavis {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
   #admin-content #admin-avis .adminavis .avisInfo {
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       margin:10px auto;
 
   }
