@@ -10,7 +10,7 @@ header {
   align-content: center;
   align-items: center;
   z-index: 2000;
-  margin-bottom:50px;
+  margin-bottom:0px;
 }
 
 header h1 {
@@ -49,11 +49,31 @@ header a {
   box-sizing: border-box;
   border-radius: 2px;
   color: #fff;
+  position: relative;
+
 }
 #main-nav a:hover {
-  background-color: rgba(232, 167, 32, 1);
   color: #fff;
+  position: relative;
 }
+#main-nav a:after {
+ content:"";
+ position: absolute;
+ display:block;
+ bottom:-5px;
+ left:0;
+ height:1px;
+ width:0%;
+ background-color:goldenrod;
+ transition:width ease 1s;
+}
+#main-nav a:hover:after {
+  width:100%;
+  transition:width ease 1s;
+
+
+}
+
 #profile-item {
   width: 30px;
   height: 30px;
@@ -70,13 +90,15 @@ header a {
   cursor: pointer;
   position: relative;
 }
-#profile-links {
+.profile-links-visible {
   position: absolute;
   height: 300px;
   width: 150px;
   background-color: #fff;
   display: flex;
-  justify-content: space-around;
+  box-sizing:border-box;
+  padding-top: 10px;
+  justify-content: space-between;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -84,28 +106,45 @@ header a {
   transition: right 1s ease 0s;
   transition: opacity 1s ease 0s;
 }
-#profile-links a {
+.profile-links-visible a {
   text-align: center;
   display: block;
   width: 100%;
   color: #000;
 }
-#profile-links a:hover {
+.profile-links-visible a:hover {
   text-decoration: underline;
 }
-#profile-links a:last-child {
+.profile-links-visible a:last-child button {
   text-align: center;
   display: block;
   width: 100%;
   color: #CB4840;
-  text-decoration: underline;
+  text-decoration:none;
+  border:none;
+  box-sizing:border-box;
+  padding:10px;
+  background-color:#CB4840;
+  color:#fff;
+}
+.hiddenbody{
+  overflow: hidden !important;
+
+}
+
+.profile-links-visible a:last-child:hover button {
+text-decoration: none;
+color:#000;
 }
 .profile-links-visible {
   display: flex;
   opacity: 1;
   right: 0;
   top: 50px;
+  border:1px solid #007470;
+  box-sizing: border-box;
 }
+
 .profile-links-hidden {
   opacity: 0;
   right: -150px;
@@ -118,10 +157,7 @@ header a {
 #burger {
   display: none;
 }
-#main-nav .active-link {
-  background-color: rgba(232, 167, 32, 1);
-  color: #fff;
-}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #logo-Atypik {
       display: block;

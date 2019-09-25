@@ -5,7 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FileUploader} from 'ng2-file-upload';
 import { from } from 'rxjs';
-import { ThrowStmt } from '@angular/compiler';
+import * as $ from 'jquery';
+
 
 
 @Component({
@@ -26,6 +27,10 @@ export class EstateFormComponent implements OnInit {
   categories: any[];
   environments: any[];
   photo:Blob[] = [];
+  changed = false;
+  isSaved= false;
+
+
 
   public uploader: FileUploader = new FileUploader({
     isHTML5: true
@@ -36,6 +41,15 @@ export class EstateFormComponent implements OnInit {
     constructor(private api: DataService, private route: ActivatedRoute, private router: Router, private fb: FormBuilder) { }
 
     ngOnInit() {
+
+      // $(document).ready(function() {
+      //   $(".addEstateCategory div label input[type='radio']").click(function(){
+
+      //     $(".addEstateCategory div label:after input:checked").toggleClass("checkedInputRadioCategory");
+
+      //   });
+      // });
+
       this.estate = new Estate();
       this.getUtilities();
       this.uploadForm = this.fb.group({
@@ -54,7 +68,6 @@ export class EstateFormComponent implements OnInit {
       });
      }
      updateUtil(service: any, event) {
-      console.log(service, event, "Selected");
       if (event.target.checked) {
         this.estate.utilities.push(service);
       } else if (!event.target.checked) {
@@ -65,7 +78,6 @@ export class EstateFormComponent implements OnInit {
     }
 
     updateEnv(service: any, event) {
-      console.log(service, event, "Selected");
       if (event.target.checked) {
         this.estate.environment.push(service);
       } else if (!event.target.checked) {
@@ -76,7 +88,8 @@ export class EstateFormComponent implements OnInit {
     }
 
      save() {
-      this.api.addEntity(this.estate.cleanEstate(), 'estate')
+        this.changed = true;
+        this.api.addEntity(this.estate.cleanEstate(), 'estate')
       .subscribe(
         data => {
           console.log(data);
@@ -84,40 +97,15 @@ export class EstateFormComponent implements OnInit {
         error => {
           if (error.status == 409) {
             this.entityUuid = error.error.context.uuid;
-            console.log( error.status  + ':' +  error.error.context.uuid);
             this.isPosted = true;
           }
           else {
             this.error = true;
-            // Object.entries(error.error.error.children).forEach(
-            //   ([cle, value]) => {Object.entries(value).forEach(
-            //     ([key, value]) => {console.log(cle, value[0]);
-            //     this.errors.push(cle + ":" + value[0]);
-            //     }
-            //   );
-            // }
-            // );
-            // console.log(this.errors)
+            this.handleError(error);
           }
         }
       );
     }
-    // onFileSelected(file: Blob){
-    //   this.photo.push(file);
-    // }
-
-    // uploadFile() {
-    //   for (let photo of this.photo )
-    //   {this.api.postFile(this.entityUuid, 'image', photo)
-    //   .subscribe(
-    //     data => {
-    //       console.log(data);
-    //     },
-    //     error => {
-    //         console.log( error.status  );
-    //     }
-    //   );
-    // }}
 
     uploadSubmit() {
       for (let i = 0; i < this.uploader.queue.length; i++) {
@@ -152,7 +140,33 @@ export class EstateFormComponent implements OnInit {
     }
 
     validate() {
-      this.router.navigate(['/estate', this.entityUuid]);
+    this.isSaved = true;
+    }
+
+    getClass(){
+      return 'errorClass';
+    }
+
+    getStatus(str: string) {
+      return this.errors.hasOwnProperty(str);
+    }
+
+    private handleError(error){
+      this.errors = [];
+      if(error.status === 400) {
+        if(error.error.error.children === undefined){
+          this.errors.push(error.error.error);
+        }else{
+          for (const value in error.error.error.children) {
+            if (value === 'password') {
+              this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+            } else {
+              this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+            }
+  
+          }
+        }
+      }
     }
 
 

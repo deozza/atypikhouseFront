@@ -71,4 +71,8 @@ export class AuthService {
         return throwError(error);
     }
 
+    public activateUser(token: Token){
+        return this.http.patch<Token>(API_URL + '/user/activate', token)
+    }
+
 }

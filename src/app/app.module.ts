@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { MatInputModule, MatIconModule, MatCardModule} from '@angular/material';
+import { FilterPipe }from './filter.pipe';
+
 
 import { AuthTokenInterceptor } from './token.interceptor';
 import { EstateFormComponent } from './ui/estate-form/estate-form.component';
@@ -37,6 +40,17 @@ import { ConditionsPrivacyComponent } from './ui/conditions-privacy/conditions-p
 import { FourOhFourComponent } from './ui/four-oh-four/four-oh-four.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MessengerComponent } from './ui/messenger/messenger.component';
+import { ListReservationComponent } from './ui/list-reservation/list-reservation.component';
+import { NotificationComponent } from './ui/notification/notification.component';
+import { ClearEstateFormComponent } from './ui/admin/clear-estate-form/clear-estate-form.component';
+import { UserAnnoncesComponent } from './ui/user-annonces/user-annonces.component';
+import { AnnonceComponent } from './ui/annonce/annonce.component';
+
+import { PaypalComponent } from './ui/paypal/paypal.component';
+import { SearchComponent } from './ui/search/search.component';
+import { ActivateUserComponent } from './auth/components/activate-user/activate-user.component';
+import { ErrorComponent } from './auth/components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -63,8 +77,18 @@ import { environment } from '../environments/environment';
     ContactComponent,
     FaqComponent,
     ConditionsPrivacyComponent,
-    FourOhFourComponent
-
+    FourOhFourComponent,
+    MessengerComponent,
+    ListReservationComponent,
+    NotificationComponent,
+    AnnonceComponent,
+    ClearEstateFormComponent,    
+    PaypalComponent,
+    UserAnnoncesComponent,
+    SearchComponent,
+    ErrorComponent,
+    FilterPipe,
+    ActivateUserComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -76,6 +100,7 @@ import { environment } from '../environments/environment';
     ReactiveFormsModule,
     FileUploadModule,
     MatIconModule,
+   
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
 
@@ -83,11 +108,9 @@ import { environment } from '../environments/environment';
 
   providers: [
     {provide: HTTP_INTERCEPTORS,
-    useClass: AuthTokenInterceptor,
-
-
-    multi: true,
+    useClass: AuthTokenInterceptor, multi: true,
   }
+
 
     ],
   bootstrap: [AppComponent]

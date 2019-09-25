@@ -33,7 +33,7 @@ export class DataService {
     if (filters !== {}) {
           // tslint:disable-next-line: forin
           for (const key in filters) {
-        url += '&filterBy' + key + '=' + filters[key] ;
+        url += '&filterBy['+key+']=' + filters[key] ;
       }
     }
     return this.http.get<List<Entity>>(url);
@@ -49,8 +49,12 @@ export class DataService {
     return this.http.patch<Entity>(API_URL + '/entity/' + uuid, value);
   }
 
-  public validateEntity(uuid: string, value: Entity): Observable<Entity> {
-    return this.http.patch<Entity>(API_URL + '/validate/' + uuid, value);
+  public validateEntity(uuid: string): Observable<Entity> {
+    return this.http.patch<Entity>(API_URL + '/validate/' + uuid, '');
+  }
+
+  public retrogradeEntity(uuid: string): Observable<Entity> {
+    return this.http.patch<Entity>(API_URL + '/retrograde/' + uuid, '');
   }
   public deleteEntity(uuid: string): Observable<Entity> {
     return this.http.delete<Entity>(API_URL + '/entity/' + uuid);
@@ -71,8 +75,14 @@ export class DataService {
 
   }
 
+  public addEmbedded(value: any, uuid: string, property: string): Observable<any> {
+    return this.http.post<any>(API_URL + '/entity/' + uuid + '/embedded/' + property , value);
+  }
 
 
+  public getAll(kind: string): Observable<List<Entity> >{
+    return this.http.get<List<Entity>>(API_URL + '/entities/' + kind);
+    }
 
 
 

@@ -1,0 +1,128 @@
+section{
+  background-color:#fff;
+  width:100%;
+  min-height: 90vh;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto',sans-serif;
+}
+section h4{
+  box-sizing: border-box;
+  background-color:#007772;
+  color:#fff;
+  font-size: 25px;
+  padding:10px;
+  width:80%;
+  max-width: 900px;
+  text-align:center;
+}
+
+#clearEstateReason{
+  width:80%;
+  max-width: 900px;
+  background-color:#fff;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding:20px 0;
+  border:1px solid #007772;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#clearEstateReason .annonceThumbnail {
+  display: block;
+  height: 200px;
+  width: 200px;
+  max-width:200px;
+  background-color: #007772;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#clearEstateReason .annonceThumbnail img {
+  display: block;
+  height: 200px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#clearEstateReason .estatetoclear{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  height:auto;
+  box-sizing: border-box;
+  border-bottom:1px solid #007772;
+  padding:20px;
+}
+#clearEstateReason .reasonsforclear{
+  background-color:#00777131;
+  width:100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:20px;
+}
+#clearEstateReason .reasonsforclear label{
+  margin-bottom:20px;
+}
+#clearEstateReason .reasonsforclear input[type="text"]{
+  height:150px;
+  font-size: 18px;
+  line-height: 22px;
+  box-sizing: border-box;
+  padding:10px;
+
+}
+#clearEstateReason input[type="submit"]{
+  display: block;
+  width:50%;
+  max-width:300px;
+  background-color:#007772;
+  color:#fff;
+  border:none;
+  box-sizing: border-box;
+  height:40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.container #FormErrors{
+  background-color: rgba(203, 71, 64, 0.557);
+  color:#fff;
+  box-sizing: border-box;
+  width:80%;
+  line-height: 22px;
+  margin:20px;
+}
+@media only screen and (max-width: 1024px) {
+  section h4{
+    width:100%;
+  }
+  #clearEstateReason{
+    width:100%;
+  }
+  #clearEstateReason .estatetoclear{
+    width:100%;
+
+    flex-direction: column
+  }
+  #clearEstateReason .estatetoclear p{
+    margin-top: 20px;
+  }
+}

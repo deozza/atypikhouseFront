@@ -16,6 +16,7 @@ export class Properties {
        postal_code: string;
        country: string;
        legal_id: string;
+       total_price: number;
 
        public constructor(entity = null) {
 
@@ -35,5 +36,6 @@ export class Properties {
         this.postal_code = entity !== null ? entity.postal_code : '';
         this.country = entity !== null ? entity.country : '';
         this.legal_id = entity !== null ? entity.legal_id : '';
+        this.total_price = entity !== null ? entity.total_price : '';
       }
 }

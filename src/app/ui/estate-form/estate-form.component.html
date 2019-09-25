@@ -1,54 +1,72 @@
-<section>
+<link rel="stylesheet" href="../../../assets/css/text-section-white.css">
 
+<section>
   <div id="add-estate" *ngIf="!isPosted">
     <h3>Créer votre annonce</h3>
     <div class="add-estate-form">
+        <div id="FormErrors">
+            <ng-container *ngIf="this.errors !== undefined" >
+                <p *ngFor="let message of this.errors">{{message}}</p>
+            </ng-container>
+        </div>
       <form class="col s12">
         <h4>Type de bien</h4>
         <div class="addEstateCategory">
           <div *ngFor="let category of enumerations.enumerations?.estate_category">
-            <label for="category">{{category}}</label> <input type="radio" id="estate_category" name="estate_category"
-              [value]="category" [(ngModel)]="estate.estate_category" class="form-control" required>
-
+            <label for="category">{{category}}</label>
+             <input type="radio" id="estate_category" name="estate_category"
+              [value]="category" [(ngModel)]="estate.estate_category" required>
           </div>
-
-
         </div>
         <div class="add-estate-form">
           <h4>Informations</h4>
           <div class="addEstateLine">
-            <div class="addEstateItem"><label for="title">Titre</label><input name="title" id="title" type="text"
-                [(ngModel)]="estate.title" required></div>
+            <div class="addEstateItem"><label for="title">Titre</label>
+              <input name="title" id="title" type="text" [(ngModel)]="estate.title" required #title="ngModel"
+                ng-minlength="25" maxlength="250">
+              <!--<div *ngIf="error" class="error">
+                  <div>
+                  {{ errors.title }}
+                  </div>
+                </div>-->
+            </div>
             <div class="addEstateLine">
               <label class="active" for="address">Address</label>
               <input name="address" id="address" type="text" [(ngModel)]="estate.address" required>
-
+              <!--<div *ngIf="error" class="error">
+                  <div>
+                  {{ errors.address}}
+                  </div>
+                </div>-->
             </div>
             <div class="addEstateItem"><label for="">Ville</label><input name="city" id="city" type="text"
-                [(ngModel)]="estate.city" required></div>
+                [(ngModel)]="estate.city" [className]="getStatus('city') ? 'errorClass' : ''" required></div>
             <div class="addEstateItem"><label for="">Code Postal</label><input name="postal_code" id="postal_code"
-                type="text" [(ngModel)]="estate.postal_code" required></div>
+                type="text" [(ngModel)]="estate.postal_code" [className]="getStatus('postal_code') ? 'errorClass' : ''"
+                required></div>
             <div class="addEstateItem"><label for="">Pays</label><input name="country" id="country" type="text"
-                [(ngModel)]="estate.country" required></div>
+                [(ngModel)]="estate.country" [className]="getStatus('country') ? 'errorClass' : ''" required></div>
           </div>
           <div class="addEstateDescription">
             <label for="">Description</label> <textarea rows="5" cols="50" name="description" id="description"
-              type="text" [(ngModel)]="estate.description" required>
+              type="text" [(ngModel)]="estate.description" [className]="getStatus('description') ? 'errorClass' : ''"
+              required>
                     Enter your name
                     </textarea>
           </div>
           <div class="addEstateLine">
             <div class="addEstateItem"><label for="">Surface</label><input name="surface" id="surface" type="number"
-                [(ngModel)]="estate.surface" required></div>
+                [(ngModel)]="estate.surface" [className]="getStatus('surface') ? 'errorClass' : ''" required></div>
             <div class="addEstateItem"><label for="">Nombre de pièces</label><input name="rooms" id="rooms"
-                type="number" [(ngModel)]="estate.rooms" required></div>
+                type="number" [(ngModel)]="estate.rooms" [className]="getStatus('rooms') ? 'errorClass' : ''" required>
+            </div>
             <div class="addEstateLine">
               <label class="active" for="price">Prix</label>
               <input name="price" id="price" type="number" [(ngModel)]="estate.price" required>
 
             </div>
             <div class="addEstateItem"><label for="beds">Lits</label><input name="beds" id="beds" type="number"
-                [(ngModel)]="estate.beds" required></div>
+                [(ngModel)]="estate.beds" [className]="getStatus('beds') ? 'errorClass' : ''" required></div>
             <div class="addEstateItem"><label for="bath_room">Nombre Salle de bain</label><input name="bath_room"
                 id="bath_room" type="number" [(ngModel)]="estate.bath_room" required></div>
           </div>
@@ -58,7 +76,7 @@
           <div class="addEstateUtilities">
             <div *ngFor="let utility of enumerations.enumerations?.utilities">
               <input type="checkbox" id="{{utility}}" name="utilities" [value]="utility"
-                (change)="updateUtil(utility, $event)" required>
+                (change)="updateUtil(utility, $event)">
               <label for="utility">{{ utility }}</label>
             </div>
           </div>
@@ -80,57 +98,70 @@
 
 
     </div>
-    <div *ngIf="error">
-        <p>Merci de vérifier ces champs</p>
-        <ul><li *ngFor="let error of errors"> {{ error }}</li></ul>
+
+    <div class="add-estate-form" *ngIf="isPosted">
+      <h4>Ajouter des images</h4>
+      <form class="col s12" [formGroup]="uploadForm" (ngSubmit)="uploadSubmit()">
+        <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader"
+          multiple /><br />
+        <br>
+        <div class="drop-zone">
+          <div ng2FileDrop [uploader]="uploader" class="drop-zone">
+
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th width="90%">
+
+              </th>
+              <th width="10%">
+
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of uploader.queue">
+              <th width="90%">
+                <strong>{{ item?.file?.name }}</strong>
+              </th>
+              <th class="text-center" width="10%">
+                <mat-icon (click)="item.remove()">delete</mat-icon>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <button mat-raised-button color="accent" type="submit">Upload Images</button>
+      </form>
+
+      <div class="input-field col s6">
+        <a (click)="validate()">Valider</a>
+      </div>
+
     </div>
 
+    <div class="add-estate-form" *ngIf="isSaved">
+      <h4>Votre annonce est en cours de validation, merci.</h4>
+      <div class="text-section">
+        <div class="text-section-content">
+          <a [routerLink]="['/']">Accueil</a>
+        </div>
+
+      </div>
+    </div>
+
+
   </div>
+
 
 
 </section>
 
-<div class="row" *ngIf="isPosted">
-  <h3>Ajouter des images</h3>
-  <form [formGroup]="uploadForm" (ngSubmit)="uploadSubmit()">
-    <input formControlName="document" type="file" ng2FileSelect accept=".png" [uploader]="uploader" multiple /><br />
-    <br>
-    <div class="drop-zone">
-      <div ng2FileDrop [uploader]="uploader" class="drop-zone">
 
-      </div>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th width="90%">
 
-          </th>
-          <th width="10%">
 
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of uploader.queue">
-          <th width="90%">
-            <strong>{{ item?.file?.name }}</strong>
-          </th>
-          <th class="text-center" width="10%">
-            <mat-icon (click)="item.remove()">delete</mat-icon>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-    <button mat-raised-button color="accent" type="submit">Upload Images</button>
-  </form>
 
-  <div class="input-field col s6">
-    <button class="btn waves-effect waves-light" (click)="validate()">Valider
-      <i class="material-icons right">send</i>
-    </button>
-  </div>
 
-</div>
 

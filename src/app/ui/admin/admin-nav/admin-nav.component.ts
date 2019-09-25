@@ -10,6 +10,7 @@ export class AdminNavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

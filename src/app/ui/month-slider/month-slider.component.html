@@ -5,22 +5,34 @@
           <div class="month-slide active-slide" (click)="goDetails(estate_1)">
               <div class="month-slide-content">
                   <div class="month-slide-label">
-                      <h4>{{estate_1?.properties.country}}</h4>
+                      <h4>{{estate_1?.properties.city}}</h4>
                   </div>
                   <img src="../../../assets/images/bg/BG-01.jpg" alt="">
-
+                  <p (click)="goDetails(estate_1)" >J&rsquo;en profite ></p>
               </div>
           </div>
           <div class="month-slide">
               <div class="month-slide-content" (click)="goDetails(estate_2)">
                   <div class="month-slide-label">
-                      <h4>{{estate_2?.properties.country}}</h4>
+                      <h4>{{estate_2?.properties.city}}</h4>
                   </div><img src="../../../assets/images/bg/BG-02.jpg" alt="">
+                  <p (click)="goDetails(estate_2)" >J&rsquo;en profite ></p>
+
               </div>
           </div>
+          <div class="month-slide">
+            <div class="month-slide-content" (click)="goDetails(estate_2)">
+                <div class="month-slide-label">
+                    <h4>{{estate_3?.properties.city}}</h4>
+                </div><img src="../../../assets/images/bg/BG-03.jpg" alt="">
+                <p (click)="goDetails(estate_3)" >J&rsquo;en profite ></p>
+
+            </div>
+        </div>
       </div>
       <div id="slide-controller">
           <div class="bullet-slider bullet-slider-active"></div>
+          <div class="bullet-slider"></div>
           <div class="bullet-slider"></div>
       </div>
   </div>

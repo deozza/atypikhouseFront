@@ -13,69 +13,76 @@ import { Estate } from 'src/app/model/estate.model';
   styleUrls: ['./annonces.component.css']
 })
 export class AnnoncesComponent implements OnInit {
-  $: any;
+  // $: any;
   pagination: Pagination;
   message: string;
   estates:List<Entity>;
   constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit() {
-
     this.estates = new List<Entity>() ;
     this.pagination = new Pagination();
-
-    this.pagination.count = 3;
-    this.dataService.getEntities('estate', this.pagination.count, 1).subscribe(
-        (e)=> {this.estates = e;
-          console.log(this.estates)
-
-        },
+    this.pagination.count = 30;
+    this.dataService.getAll('estate').subscribe(
+        (e)=> {this.estates = e;},
         (error) => console.log(error)
     );
-
-  }
-close(){
-      $("#admin-annonces").css({"filter": "blur(0px)"}, {"transition": "filter ease 0.5s"});
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-      $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-
-}
-
-  validateEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="confirm"
-  };
-  clearEstate(){
-    $("#admin-annonces").css({"filter": "blur(6px)"}, {"transition": "filter ease 0.5s"});
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-closed");
-    $("#admin-annonces-overlay").toggleClass("admin-overlay-open");
-    this.message="erase"
-  };
-
-
-  delete(estate: Entity) {
-    this.dataService.deleteEntity(estate.uuid).subscribe(
-      (t) => {this.router.navigate(['/annonces']);
-     },
-      (error) => {
-       console.log(error);
-     }
-    );
   }
 
-  validate(estate: Entity) {
-    this.dataService.validateEntity(estate.uuid, estate).subscribe(
-      (t) => {this.router.navigate(['/annonces']);
-     },
+  retrogradeEstate(estate: Entity) {
+    this.dataService.retrogradeEntity(estate.uuid).subscribe(
+      (t) => {
+        alert("l'annonce est bien validée");
+        this.router.navigate(['/crm']);
+      },
       (error) => {
+        if(error.status == 409) {
+          this.router.navigate(['/crm']);
+        }
+        else
        console.log(error);
      }
 
     );
-
-
   }
+
+
+  validateEstate(estate: Entity) {
+    this.dataService.validateEntity(estate.uuid).subscribe(
+      (t) => {
+        alert("l'annonce est bien validée");
+        this.router.navigate(['/admin-annonces']);
+        window.location.reload();
+      },
+      (error) => {
+        if(error.status == 409) {
+          this.router.navigate(['/crm']);
+        }
+        else
+       console.log(error);
+     }
+
+    );
+  }
+  deleteFrom(estate: Estate){
+    this.router.navigate(['/clearEstateForm', estate.uuid ])
+  }
+  goDetails(estate: Estate){
+  this.router.navigate(['/estate', estate.uuid ])
+  }
+
+  getStatus(exp){
+   if (exp.includes("posted"))
+   {
+     return true
+   }
+  }
+
+  getStar(exp){
+    if (exp.includes("published"))
+    {
+      return true
+    }
+   }
 
 }

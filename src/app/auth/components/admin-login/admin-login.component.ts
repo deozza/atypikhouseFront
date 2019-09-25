@@ -11,19 +11,16 @@ import { Router } from '@angular/router';
 export class AdminLoginComponent implements OnInit {
   credentials: Credentials = new Credentials();
   loading: boolean = false;
+  errors = [];
   constructor(private auth: AuthService, private router: Router) {}
 
-
   ngOnInit() {
-    function randomIntFromInterval(min, max) {
-      return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-  var val = randomIntFromInterval(1,3);
+      function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
 
-
-  var backgroundImage = document.getElementById("loginSection");
-  backgroundImage.style.backgroundImage = "url('https://source.unsplash.com/random')";
-
+    let backgroundImage = document.getElementById("loginSection");
+    backgroundImage.style.backgroundImage = "url('https://source.unsplash.com/random')";
   }
 
   public login() {
@@ -35,10 +32,28 @@ export class AdminLoginComponent implements OnInit {
   },
    (error) => {
     this.loading = false;
-    console.log(error);
+    this.handleError(error);
   }
 
  );
+  }
+
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
   }
 
 }

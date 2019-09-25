@@ -5,8 +5,8 @@ import { Reservation } from 'src/app/model/reservation.model';
 import { Estate } from 'src/app/model/estate.model';
 import { DomSanitizer } from '@angular/platform-browser';
 
-
 import { Entity } from 'src/app/model/entity.model';
+import { locale } from 'moment';
 
 @Component({
   selector: 'app-estate',
@@ -18,11 +18,12 @@ export class EstateComponent implements OnInit {
 
 
   constructor(private _sanitizer: DomSanitizer, private api: DataService, private route: ActivatedRoute, private router: Router) { }
-
+  errors: any[] = [];
   estate:Entity = new Entity;
   booking: Reservation = new Reservation ();
   imagePaths:any[] = [];
   routingSubscription: any;
+  entityUuid = '';
   price: number;
   src: any;
 
@@ -43,7 +44,6 @@ export class EstateComponent implements OnInit {
               (this._sanitizer.bypassSecurityTrustResourceUrl(image) as any).changingThisBreaksApplicationSecurity);
             }
           }}
-          console.log(this.imagePaths);
         },
         (error) => console.log(error)
     );
@@ -96,13 +96,18 @@ calculate()
 {
   var dd= new Date(this.booking.leaving_at).getTime();
   var da= new Date(this.booking.coming_at).getTime();
-  console.log(dd);
+
    if ( !(dd) || !(da) || da>dd ) {
       this.booking.total_price=0;
       return;
   }
+
+  if ( da == dd ) {
+    this.booking.total_price = this.price;
+    return;
+}
   var days = ( (  dd - da ) / (1000*60*60*24) );
-  console.log(days);
+
   var cost = days * this.price;
   if (isNaN(cost))
      cost = 0;
@@ -115,22 +120,23 @@ calculate()
 
 
   saveReservation() {
-    console.log(this.booking);
-    this.api.addEntity(this.booking, 'reservation')
+    this.api.addEntity(this.booking.sanitizeBooking(), 'reservation')
     .subscribe(
       (t) => {
-       this.router.navigate(['/']);
-       console.log(t);
+       this.entityUuid = t.uuid;
+        this.router.navigate(['/payment',  this.entityUuid]);
      },
-      (error) => {
-       console.log(error);
-     }
+     error => {
+      this.handleError(error);
+      }     
+   
     );
   }
 
 
 
-  getClass(utility) { (2)
+  getClass(utility)
+  { (2)
     switch (utility) {
       case 'chauffage':
         return 'fas fa-fire';
@@ -141,6 +147,23 @@ calculate()
     }
   }
 
+  private handleError(error){
+    this.errors = [];
+    if(error.status === 400) {
+      if(error.error.error.children === undefined){
+        this.errors.push(error.error.error);
+      }else{
+        for (const value in error.error.error.children) {
+          if (value === 'password') {
+            this.errors.push(value+" : "+error.error.error.children[value].children.first.errors);
+          } else {
+            this.errors.push(!Array.isArray(error.error.error.children[value]) ? value+" : "+error.error.error.children[value].errors : undefined);
+          }
+
+        }
+      }
+    }
+  }
 
 
 

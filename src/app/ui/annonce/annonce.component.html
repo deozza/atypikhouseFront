@@ -1,0 +1,47 @@
+<section class="profileModel">
+    <aside>
+      <ul>
+        <li><a [routerLink]="['/profil']">Profil</a></li>
+        <li><a [routerLink]="['/messenger']"  >Messagerie</a></li>
+        <li><a [routerLink]="['/reservations']">Mes Réservations</a></li>
+        <li><a [routerLink]="['/notification']">Notifications</a></li>
+        <li><a [routerLink]="['/annonces']" class="activeProfileLink">Mes annonces</a></li>
+      </ul>
+    </aside>
+    <div class="profileContent">
+
+      <div class="profilecontainer">
+          <h3>Annonces</h3>
+          <div class="adminAnnonce" *ngFor="let estate of estates.items">
+            <div class="annonceThumbnail"><img src="../../../assets/images/bg/BG-01.jpg" alt=""></div>
+            <p class="estateTitle" style="width: 15vw;">{{estate.properties.title}}</p>
+            <p class="estateCountry" style="width: 5vw;">{{estate.properties.city}}</p>
+            <p class="estateCity" style="width: 5vw;">{{estate.properties.country}}</p>
+            <p *ngIf="getStatus(estate.validation_state)" style="width: 5vw;" class="validationState">Validée</p>
+
+            <div class="estateOptions" style="width: 10vw;">
+                <div (click)="goDetails(estate)" class="seeEstate"></div>
+                <div (click)="deleteFrom(estate)"  class="clearEstate"></div>
+
+            </div>
+
+          </div>
+         
+      </div>
+
+      
+
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+

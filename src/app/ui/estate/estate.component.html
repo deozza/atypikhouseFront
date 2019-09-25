@@ -1,24 +1,30 @@
-<img [src]="getImagePath()" alt="user image">
+
 <section>
   <div id="estate-content">
       <div id="reservation-overlay">
 
           <div id="reservation-overlay-content">
+                <div id="FormErrors">
+                        <ng-container *ngIf="this.errors !== undefined" >
+                            <p *ngFor="let message of this.errors">{{message}}</p>
+                        </ng-container>
+                    </div>
+
               <form>
 
               <div id="reservation-dates">
-                  <div class="reservation-date-start input-field col s6">
+                  <div class="reservation-date-cont reservation-date-start input-field col s6">
                         <label for="leaving_at">Date arrivée</label>
                       <input type="date"  name="coming_at" id="coming_at"  [(ngModel)]="booking.coming_at" required>
                   </div>
-                  <div class="reservation-date-end input-field col s6">
+                  <div class=" reservation-date-cont reservation-date-end input-field col s6">
                      <label for="leaving_at">Date de départ</label>
                       <input type="date"  name="leaving_at" id="leaving_at" (change)="calculate()"  [(ngModel)]="booking.leaving_at" required>
                   </div>
               </div>
               <div class="reservation-price">
               <p>Prix par nuit</p>
-<!--                   <p class="reservation-price-empty">Renseignez les dates de votre séjour pour avoir le prix</p>-->
+                  <p class="reservation-price-empty">Renseignez les dates de votre séjour pour avoir le prix</p>
                   <p class="reservation-price-amount">{{estate.properties?.price}}</p>
               </div>
 
@@ -36,6 +42,8 @@
 
             </form>
           </div>
+
+
           <div id="close-overlay">+</div>
 
        </div>

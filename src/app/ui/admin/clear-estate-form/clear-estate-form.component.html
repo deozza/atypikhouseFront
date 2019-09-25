@@ -1,0 +1,23 @@
+<section>
+  <h4>Raisons pour Refus</h4>
+  <div id="FormErrors">
+    <ng-container *ngIf="this.errors !== undefined" >
+        <p *ngFor="let message of this.errors">{{message}}</p>
+    </ng-container>
+</div>
+<form id="clearEstateReason" action="">
+  <div class="estatetoclear">
+    <div class="annonceThumbnail"><img src="../../../../assets/images/bg/BG-01.jpg" alt=""></div>
+    <p class="estateTitle">{{estate.properties?.title}}</p>
+    <p class="estateCountry">{{estate.properties.country}}</p>
+    <p class="estateCity">{{estate.properties.city}}</p>
+  </div>
+ <div class="reasonsforclear">
+    <label for="listofReasons">Reasons</label>
+    <input type="text" placeholder="Photos Non descriptives, Description trop courte." name="content" id="content" [(ngModel)]="notif.content">
+ </div>
+  <input type="submit" (click)="sendNotif()">
+
+</form>
+
+</section>

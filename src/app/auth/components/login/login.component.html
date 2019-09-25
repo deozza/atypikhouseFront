@@ -6,8 +6,13 @@
             <h2>Se connecter</h2>
             <a [routerLink]="['/sign-up']">ou créer un compte</a>
         </div>
+        <div id="FormErrors">
+            <ng-container *ngIf="this.errors !== undefined" >
+                <p *ngFor="let message of this.errors">{{message}}</p>
+            </ng-container>
+        </div>
         <form id="loginForm">
-            <label for="email"><b>Email</b></label>
+            <label for="email"><b>Identifiant</b></label>
             <input type="text" id="email" placeholder="ex : saitama@heroassociation.gov" name="email" [(ngModel)]="credentials.login" required>
 
             <label for="psw"><b>Mot de passe</b></label>
