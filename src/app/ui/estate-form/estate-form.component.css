@@ -122,9 +122,8 @@ h4 {
 
 #add-estate .addEstateCategory input[type="radio"] {
   /* display: block; */
-
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   position: relative;
   cursor: pointer;
   opacity: 1;
@@ -138,45 +137,49 @@ h4 {
   cursor:pointer;
 }
 
-#add-estate .addEstateCategory label:after{
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  margin-left: -25px;
-  height: 50px;
-  width: 50px;
-
-  cursor:pointer;
-  /* z-index: 1000; */
-}
 
 #add-estate .addEstateCategory .checkedInputRadioCategory{
-
   background-color: green;
-  /* z-index: 1000; */
+}
+#add-estate .add-estate-form .estateContainerCat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
+#add-estate .add-estate-form .addEstateCategory input[type="radio"]{
+  margin:0;
+  padding:0;
+}
+
+#add-estate .add-estate-form .addEstateCategory input[type="radio"]:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  box-sizing:border-box;
+  border:1px solid #ccc;
+  border-radius:15px;
+
+}
 
 #add-estate .add-estate-form .addEstateCategory input[type="radio"]:checked:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
-  height: 50px;
-  width: 50px;
-  background-color: green;
+  height: 25px;
+  width: 25px;
+  background-color: lightseagreen;
+  border-radius:15px;
 
 }
 
-#add-estate .add-estate-form .addEstateCategory #cabane:after {
-  background-color: #007772;
-  /* background-image: url(../annonce/estate-icons/estate-treehouse.png); */
-  background-size: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
 
-}
 
 
 #add-estate .add-estate-form .addEstateLine {

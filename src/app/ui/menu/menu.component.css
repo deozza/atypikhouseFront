@@ -126,6 +126,7 @@ header a {
   padding:10px;
   background-color:#CB4840;
   color:#fff;
+  cursor: pointer;
 }
 .hiddenbody{
   overflow: hidden !important;

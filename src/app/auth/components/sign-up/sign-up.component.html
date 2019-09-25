@@ -26,8 +26,8 @@
                 <input type="checkbox" checked="checked" name="remember" style="width: 20px;">
             </label>
         </form>
-        <div class="container-title" *ngIf="isSaved">
-                <h2 style="text-align: center; margin-top: 50px;">Merci pour votre inscrption, vous allez recevoir un email de comfirmation.</h2>
+        <div class="container-title" *ngIf="isSaved" id="MerciSignup">
+                <h2 style="text-align: center;">Merci pour votre inscription, vous allez recevoir un email de comfirmation.</h2>
                 <div class="text-section">
                   <div class="text-section-content">
                     <a [routerLink]="['/']">Accueil</a>

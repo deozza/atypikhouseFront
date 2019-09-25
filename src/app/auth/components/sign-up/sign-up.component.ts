@@ -31,6 +31,7 @@ export class SignUpComponent implements OnInit {
       (t) => {
        this.isSaved = true;
        this.loading = false;
+       document.getElementById("MerciSignup").style.height = "auto !important";
      },
       (error) => {
        this.loading = false;
