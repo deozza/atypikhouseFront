@@ -136,6 +136,11 @@ calculate()
         this.router.navigate(['/payment',  this.entityUuid]);
      },
      error => {
+       if(error.status == 409)
+       {
+        this.entityUuid = error.error.context.uuid;
+        this.router.navigate(['/payment',  this.entityUuid]);
+       }
       this.handleError(error);
       }     
    
