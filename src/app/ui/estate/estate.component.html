@@ -4,12 +4,7 @@
       <div id="reservation-overlay">
 
           <div id="reservation-overlay-content">
-                <div id="FormErrors">
-                        <ng-container *ngIf="this.errors !== undefined" >
-                            <p *ngFor="let message of this.errors">{{message}}</p>
-                        </ng-container>
-                    </div>
-
+                
               <form>
 
               <div id="reservation-dates">
@@ -39,6 +34,12 @@
                       <input type="number" name="total_price" id="total_price" [(ngModel)]="booking.total_price">
               </div>
               <a (click)="saveReservation()">Je Confirme</a>
+              <div id="FormErrors">
+                    <ng-container *ngIf="this.errors !== undefined" >
+                        <p *ngFor="let message of this.errors">{{message}}</p>
+                    </ng-container>
+            </div>
+
 
             </form>
           </div>

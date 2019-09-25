@@ -74,9 +74,6 @@ for (var i = 0; i < thumbnails.length; i++) {
  }
 var overlay = document.getElementById('reservation-overlay');
 var closeOverlay = document.getElementById('close-overlay');
-
-
-
 closeOverlay.addEventListener("click",function(){
     overlay.style.right = "-100vw";
      document.querySelectorAll("html")[0].style.overflow= "auto";

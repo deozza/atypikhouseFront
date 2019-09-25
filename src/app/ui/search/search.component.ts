@@ -31,7 +31,7 @@ ngOnInit() {
 this.estates = new List<Entity>() ;
 this.pagination = new Pagination();
 this.pagination.filters = {'equal.validationState' : 'published'};
-this.pagination.count = 50;
+this.pagination.count = 200;
 this.dataService.getEntities('estate', this.pagination.count, 1).subscribe(
     (e)=> {this.estates = e;
     },
