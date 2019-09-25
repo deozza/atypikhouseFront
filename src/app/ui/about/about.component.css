@@ -2,11 +2,12 @@ p{
   font-family: 'Roboto',sans-serif;
   line-height: 25px;
   font-size: 16px;
+  text-align: center !important;
 }
 
 p strong,p em{
-  color:lightseagreen
+  color:lightseagreen;
+  font-weight: 700
 }
 
-p strong{
-font-weight: 900;}
+

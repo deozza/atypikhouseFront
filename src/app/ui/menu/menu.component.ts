@@ -27,6 +27,12 @@ export class MenuComponent implements OnInit {
 
       }
     });
+
+    $('#mobile-nav a').click(function(){
+      console.log('Heeeeey');
+      // toggleMenu();
+      //Trying to make the menu toggle when link has been clicked
+    });
     function toggleMenu() {
         burger.classList.toggle('burger');
         burger.classList.toggle('burger-close');
