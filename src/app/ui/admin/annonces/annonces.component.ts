@@ -24,7 +24,7 @@ export class AnnoncesComponent implements OnInit {
     this.pagination = new Pagination();
     this.pagination.count = 30;
     this.dataService.getAll('estate').subscribe(
-        (e)=> {this.estates = e;},
+        (e)=> {this.estates = e; console.log(e)},
         (error) => console.log(error)
     );
   }
